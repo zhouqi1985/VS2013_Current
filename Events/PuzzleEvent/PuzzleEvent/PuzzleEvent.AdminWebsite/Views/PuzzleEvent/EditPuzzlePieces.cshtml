@@ -1,0 +1,88 @@
+﻿@using ObjectUtil.Common
+@using ObjectUtil.Dictionary
+@using PuzzleEvent.Database.Database
+@model PuzzlePieces
+
+@{
+    ViewBag.Title = "编辑";
+}
+
+@section title
+{
+    <script type="text/javascript">
+		$(document).ready(function()
+		{
+		    //singer 选中变换class
+			$('.form .left, .form input, .form textarea, .form select').focus(function(){
+				$(this).parents('tr').addClass("over");
+			}).blur(function(){
+				$(this).parents('tr').removeClass("over");
+			});
+
+		});
+    </script>
+}
+
+@Html.HeadBegin("编辑")
+@Html.HeadEnd()
+
+
+<!--- data op --->
+<div id="data">
+    @using (Html.BeginForm())
+    {
+        <table width="100%" border="0" cellspacing="0" class="table-data form">
+            <!------------>
+            <!--  -->
+            <tr style="display:none;">
+                <th width="20%">PuzzlePieceId:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.PuzzlePieceId, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("PuzzlePieceId").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">PuzzlePieceName:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.PuzzlePieceName, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("PuzzlePieceName").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">PuzzlePieceDesc:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.PuzzlePieceDesc, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("PuzzlePieceDesc").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">PuzzleID:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.PuzzleID, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("PuzzleID").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">PieceOrder:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.PieceOrder, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("PieceOrder").NotEmpty())
+                </td>
+            </tr>
+            <tr>
+                <th>&nbsp;</th>
+                <td height="50" class="clear-form-td"><input type="submit" class="bt-big" name="button2" id="button2" value="提  交" /></td>
+            </tr>
+            <!------------>
+        </table>
+
+    }
+
+</div>
+<!--- data ed --->
+@Html.Foot()
+

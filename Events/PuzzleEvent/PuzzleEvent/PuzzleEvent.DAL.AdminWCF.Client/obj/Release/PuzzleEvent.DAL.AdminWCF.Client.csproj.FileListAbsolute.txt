@@ -1,0 +1,17 @@
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL.AdminWCF.Client\bin\Release\PuzzleEvent.DAL.AdminWCF.Client.dll.config
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL.AdminWCF.Client\bin\Release\PuzzleEvent.DAL.AdminWCF.Client.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL.AdminWCF.Client\bin\Release\PuzzleEvent.DAL.AdminWCF.Client.pdb
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL.AdminWCF.Client\bin\Release\CommonLibs.Common.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL.AdminWCF.Client\bin\Release\CommonLibs.EnterpriseLibrary.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL.AdminWCF.Client\bin\Release\CommonLibs.Web.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL.AdminWCF.Client\bin\Release\LogBLLV2.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL.AdminWCF.Client\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL.AdminWCF.Client\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL.AdminWCF.Client\bin\Release\Microsoft.Practices.ServiceLocation.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL.AdminWCF.Client\bin\Release\Microsoft.Practices.Unity.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL.AdminWCF.Client\bin\Release\Microsoft.Practices.Unity.Interception.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL.AdminWCF.Client\bin\Release\PuzzleEvent.Database.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL.AdminWCF.Client\bin\Release\PuzzleEvent.Database.pdb
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL.AdminWCF.Client\obj\Release\PuzzleEvent.DAL.AdminWCF.Client.csprojResolveAssemblyReference.cache
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL.AdminWCF.Client\obj\Release\PuzzleEvent.DAL.AdminWCF.Client.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL.AdminWCF.Client\obj\Release\PuzzleEvent.DAL.AdminWCF.Client.pdb

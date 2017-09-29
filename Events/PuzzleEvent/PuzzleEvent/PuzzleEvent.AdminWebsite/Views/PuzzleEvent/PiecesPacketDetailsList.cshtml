@@ -1,0 +1,85 @@
+﻿@using ObjectUtil.Common
+@using ObjectUtil.Dictionary
+@using PuzzleEvent.Database.Database
+@model List<PiecesPacketDetails>
+
+@{
+    ViewBag.Title = "列表";
+}
+
+@section title
+{
+    <script type="text/javascript" src="@Url.Content("/Content/js/jquery.input.title.js")"></script>
+    <script src="@Url.Content("/Content/js/jtip.js")" type="text/javascript"></script>
+    <script type="text/javascript" src="@Url.Content("/Content/js/jquery.table.js")"></script>
+}
+
+@Html.HeadBegin("列表")
+@using (Html.BeginForm("PiecesPacketDetailsList", "PuzzleEvent"))
+{
+    <text>
+        <input type="hidden" name="PageIndex" value="1" />
+        UserID
+        @Html.TextBox("UserID", null, new { Class = "input" })
+        AreaID
+        @Html.DropDownList("AreaID")
+        IsPuzzle
+        @Html.DropDownList("IsPuzzle")
+        PuzzlePacketID
+        @Html.TextBox("PuzzlePacketID", null, new { Class = "input" })
+        PuzzlePieceId
+        @Html.TextBox("PuzzlePieceId", null, new { Class = "input" })
+        PuzzleDrawID
+        @Html.TextBox("PuzzleDrawID", null, new { Class = "input" })
+        <input type="submit" value="搜索" class="bt-samll" />
+        <input type="submit" value="导出Excel" name="btnExportExcel" class="bt-samll" />
+    </text>
+}
+@Html.HeadEnd()
+
+<!--- data op --->
+
+<div id="data">
+    <table width="100%" align="center" cellpadding="0" cellspacing="0" class="table-data list">
+        <!-- 请程序注意 头部的jquery .list 已经变换成为特殊的 .list_cut ----------->
+        <tr>
+            <th>ReceiveID</th>
+            <th>UserID</th>
+            <th>AreaID</th>
+            <th>AvatarID</th>
+            <th>CreateTS</th>
+            <th>Points</th>
+            <th>是否拼图</th>
+            <th>道具礼包ID</th>
+            <th>碎片Id</th>
+            <th>PuzzleDrawID</th>
+        </tr>
+        <!------------->
+        @foreach (var item in Model)
+        {
+
+            <tr>
+
+                <td>&nbsp; @item.ReceiveID</td>
+                <td>&nbsp; @item.UserID</td>
+                <td>&nbsp; @item.AreaID</td>
+                <td>&nbsp; @item.AvatarID</td>
+                <td>&nbsp; @item.CreateTS</td>
+                <td>&nbsp; @item.Points</td>
+                <td>&nbsp; @(item.IsPuzzle==0?"否":"是")</td>
+                <td>&nbsp; @item.PuzzlePacketID</td>
+                <td>&nbsp; @item.PuzzlePieceId</td>
+                <td>&nbsp; @item.PuzzleDrawID</td>
+            </tr>
+        }
+    </table>
+
+    <!--- page op --->
+    <div id="page">
+        @Html.Pager()
+    </div>
+    <!--- page ed --->
+
+</div>
+<!--- data ed --->
+@Html.Foot()

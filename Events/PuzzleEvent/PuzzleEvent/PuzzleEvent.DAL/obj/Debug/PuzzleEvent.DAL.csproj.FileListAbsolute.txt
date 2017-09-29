@@ -1,0 +1,14 @@
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL\bin\Debug\PuzzleEvent.DAL.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL\bin\Debug\PuzzleEvent.DAL.pdb
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL\bin\Debug\CommonLibs.Common.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL\bin\Debug\CommonLibs.EnterpriseLibrary.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL\bin\Debug\Microsoft.Practices.Unity.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL\bin\Debug\PuzzleEvent.Database.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL\bin\Debug\PuzzleEvent.Database.pdb
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL\obj\Debug\PuzzleEvent.DAL.csprojResolveAssemblyReference.cache
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL\obj\Debug\PuzzleEvent.DAL.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL\obj\Debug\PuzzleEvent.DAL.pdb

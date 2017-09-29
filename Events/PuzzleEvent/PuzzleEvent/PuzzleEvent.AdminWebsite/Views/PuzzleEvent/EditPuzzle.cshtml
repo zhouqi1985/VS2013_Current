@@ -1,0 +1,128 @@
+﻿@using ObjectUtil.Common
+@using ObjectUtil.Dictionary
+@using PuzzleEvent.Database.Database
+@model Puzzle
+
+@{
+    ViewBag.Title = "编辑";
+}
+
+@section title
+{
+    <script type="text/javascript">
+		$(document).ready(function()
+		{
+		    //singer 选中变换class
+			$('.form .left, .form input, .form textarea, .form select').focus(function(){
+				$(this).parents('tr').addClass("over");
+			}).blur(function(){
+				$(this).parents('tr').removeClass("over");
+			});
+
+		});
+    </script>
+}
+
+@Html.HeadBegin("编辑")
+@Html.HeadEnd()
+
+
+<!--- data op --->
+<div id="data">
+    @using (Html.BeginForm())
+    {
+        <table width="100%" border="0" cellspacing="0" class="table-data form">
+            <!------------>
+            <!--  -->
+            <tr style="display:none;">
+                <th width="20%">PuzzleId:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.PuzzleId, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("PuzzleId").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">PuzzleName:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.PuzzleName, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("PuzzleName").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">PuzzleDesc:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.PuzzleDesc, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("PuzzleDesc").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">PuzzleNode:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.PuzzleNode, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("PuzzleNode").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">PuzzleTypeID:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.PuzzleTypeID, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("PuzzleTypeID").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">PuzzlePacketTypeID:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.PuzzlePacketTypeID, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("PuzzlePacketTypeID").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">RateBegin:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.RateBegin, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("RateBegin").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">RateEnd:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.RateEnd, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("RateEnd").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">PacketID:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.PacketID, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("PacketID").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">NodeType:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.NodeType, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("NodeType").NotEmpty())
+                </td>
+            </tr>
+            <tr>
+                <th>&nbsp;</th>
+                <td height="50" class="clear-form-td"><input type="submit" class="bt-big" name="button2" id="button2" value="提  交" /></td>
+            </tr>
+            <!------------>
+        </table>
+
+    }
+
+</div>
+<!--- data ed --->
+@Html.Foot()
+

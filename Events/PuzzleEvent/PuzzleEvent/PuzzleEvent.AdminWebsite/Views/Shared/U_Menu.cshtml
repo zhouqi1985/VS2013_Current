@@ -1,0 +1,91 @@
+﻿@using ObjectUtil.DataBase
+@using ObjectUtil.Common
+@using AdminBLL.Admin;
+
+@helper AddButton(string name, string url)
+{
+    <text>&nbsp; &nbsp;</text><input type="button" class="bt-big" onclick="location.href='@url    ';" value="@name" />
+}
+@AddButton("统计", "/PuzzleEvent/AllAnalyze")
+
+
+@{
+    int adminId = (int)HttpContext.Current.User.Identity.ToUserCookie().UserID;
+
+    //获取该用户所有权限
+    List<View_Admin_SuperviseFunction> funList;
+
+    if (HttpContext.Current.Session["menu"] != null)
+    {
+        funList = HttpContext.Current.Session["menu"] as List<View_Admin_SuperviseFunction>;
+    }
+    else
+    {
+        Admin adminUser = new Admin();
+        funList = adminUser.GetSuperviseFunction(adminId, 1);
+        HttpContext.Current.Session["menu"] = funList;
+    }
+
+    var currentFunUrl = "/" + ViewContext.RouteData.Values["controller"] + "/" + ViewContext.RouteData.Values["action"];
+
+    View_Admin_SuperviseFunction currentFun = null;
+    string funUrl;
+    bool isFouth = false;
+
+    foreach (var item in funList)
+    {
+        if (item.FunURL.IndexOf('?') >= 0)
+        {
+            funUrl = item.FunURL.Substring(0, item.FunURL.IndexOf('?'));
+        }
+        else
+        {
+            funUrl = item.FunURL;
+        }
+
+        if (funUrl.ToLower() == currentFunUrl.ToLower())
+        {
+            currentFun = item;
+            break;
+        }
+    }
+
+    if (currentFun != null)
+    {
+        //默认显示当前页面的下级权限菜单
+        int pid = currentFun.FunID;
+        //如果要求显示同级
+        if (ViewBag.ShowSameLevel != null && ViewBag.ShowSameLevel == true)
+        {
+            pid = currentFun.ParentFun.Value;
+        }
+
+        foreach (var menuItem in funList.Where(f => f.ParentFun == pid && f.MenuOrder >= 0).OrderBy(f => f.MenuOrder))
+        {
+            //找爹
+            var parentFun = funList.FirstOrDefault(f => f.FunID == menuItem.ParentFun);
+            if (parentFun != null)
+            {
+                //有爹找爷
+                var grandfather = funList.FirstOrDefault(gf => gf.FunID == parentFun.ParentFun);
+
+                if (grandfather != null)
+                {
+                    //有爷爷的话看上面是不是还有一层
+                    isFouth = funList.Exists(gf => gf.FunID == grandfather.ParentFun);
+                }
+            }
+
+            //不是第四层的话就显示按钮
+            if (!isFouth)
+            {
+                <text>
+                    @AddButton(menuItem.FunName, menuItem.FunURL)
+                </text>
+            }
+        }
+    }
+
+}
+
+

@@ -1,0 +1,17 @@
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL.WCF\obj\Debug\PuzzleEvent.DAL.WCF.csprojResolveAssemblyReference.cache
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL.WCF\bin\PuzzleEvent.DAL.WCF.dll.config
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL.WCF\bin\PuzzleEvent.DAL.WCF.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL.WCF\bin\PuzzleEvent.DAL.WCF.pdb
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL.WCF\bin\CommonLibs.Common.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL.WCF\bin\CommonLibs.EnterpriseLibrary.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL.WCF\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL.WCF\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL.WCF\bin\Microsoft.Practices.ServiceLocation.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL.WCF\bin\Microsoft.Practices.Unity.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL.WCF\bin\Microsoft.Practices.Unity.Interception.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL.WCF\bin\PuzzleEvent.DAL.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL.WCF\bin\PuzzleEvent.Database.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL.WCF\bin\PuzzleEvent.DAL.pdb
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL.WCF\bin\PuzzleEvent.Database.pdb
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL.WCF\obj\Debug\PuzzleEvent.DAL.WCF.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.DAL.WCF\obj\Debug\PuzzleEvent.DAL.WCF.pdb

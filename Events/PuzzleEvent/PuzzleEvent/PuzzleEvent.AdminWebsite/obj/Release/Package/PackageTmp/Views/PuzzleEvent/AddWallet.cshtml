@@ -1,0 +1,73 @@
+﻿
+@using ObjectUtil.Common
+@using ObjectUtil.Dictionary
+@using PuzzleEvent.Database.Database
+@model Wallet
+
+@{
+    ViewBag.Title = "编辑";
+}
+
+@section title
+{
+    <script type="text/javascript">
+		$(document).ready(function()
+		{
+		    //singer 选中变换class
+			$('.form .left, .form input, .form textarea, .form select').focus(function(){
+				$(this).parents('tr').addClass("over");
+			}).blur(function(){
+				$(this).parents('tr').removeClass("over");
+			});
+
+		});
+    </script>
+}
+
+@Html.HeadBegin("编辑")
+@Html.HeadEnd()
+
+
+<!--- data op --->
+<div id="data">
+    @using (Html.BeginForm())
+    {
+        <table width="100%" border="0" cellspacing="0" class="table-data form">
+            <!------------>
+            <!--  -->
+            <tr>
+                <th width="20%">UserId:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.UserId, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("UserId").NotEmpty().Min(1,"请填写UserId"))
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">区服:</th>
+                <td width="80%">
+                    @Html.DropDownList("GameAreaId")
+                    @Html.JQueryValidationMessage(j => j.Bind("GameAreaId").NotEmpty().Min(0,"请选择区服"))
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">剩余积分:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.BalancePoints, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("BalancePoints").NotEmpty().Min(1,"请填写积分"))
+                </td>
+            </tr>
+            <tr>
+                <th>&nbsp;</th>
+                <td height="50" class="clear-form-td"><input type="submit" class="bt-big" name="button2" id="button2" value="提  交" /></td>
+            </tr>
+            <!------------>
+        </table>
+
+    }
+
+</div>
+<!--- data ed --->
+@Html.Foot()
+

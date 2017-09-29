@@ -1,0 +1,92 @@
+﻿@using ObjectUtil.Common
+@using ObjectUtil.Dictionary
+@using PuzzleEvent.Database.Database
+
+@model List<Analyze>
+@{
+    ViewBag.Title = "统计";
+}
+
+@section title
+{
+    <script type="text/javascript" src="@Url.Content("/Content/js/jquery.input.title.js")"></script>
+    <script src="@Url.Content("/Content/js/jtip.js")" type="text/javascript"></script>
+    <script type="text/javascript" src="@Url.Content("/Content/js/jquery.table.js")"></script>
+}
+
+@Html.HeadBegin("统计")
+@using (Html.BeginForm("AllAnalyze", "PuzzleEvent"))
+{
+    <text>
+        <input type="submit" value="导出Excel" name="btnExportExcel" class="bt-samll" />
+    </text>
+}
+@Html.HeadEnd()
+
+<!--- data op --->
+<div id="data">
+    <table width="100%" align="center" cellpadding="0" cellspacing="0" class="table-data list">
+        <!-- 请程序注意 头部的jquery .list 已经变换成为特殊的 .list_cut ----------->
+        <tr>
+            <th>日期</th>
+            <th>充值积分</th>
+            <th>其他途径获得的积分</th>
+            <th>消耗总积分</th>
+            <th>活动参与人数</th>
+            <th>暴君礼盒兑换数量</th>
+            <th>超能礼盒兑换数量</th>
+            <th>极品道具礼盒兑换数量</th>
+            <th>红包领取数量</th>
+            <th>新年礼物领取数量</th>
+        </tr>
+        @foreach (var m in Model)
+        {
+            <tr>
+                <td>@m.Date.ToString("yyyy-MM-dd")</td>
+                <td>@m.PayPoint</td>
+                <td>@m.OtherPoint</td>
+                <td>@m.BillPoint</td>
+                <td>@m.Persons</td>
+                <td>@m.BJNum</td>
+                <td>@m.CNNum</td>
+                <td>@m.JPNum</td>
+                <td>@m.RedNum</td>
+                <td>@m.XNNum</td>
+            </tr>
+        }
+    </table>
+</div>
+
+@Html.HeadBegin("兑换礼包统计")
+@using (Html.BeginForm("AllAnalyze", "PuzzleEvent"))
+{
+    <text>
+        <input type="submit" value="导出Excel" name="btnExportExcel2" class="bt-samll" />
+    </text>
+}
+@Html.HeadEnd()
+<div id="data">
+    <table width="100%" align="center" cellpadding="0" cellspacing="0" class="table-data list">
+        <tr>
+            <th>日期</th>
+            @foreach (var m in Model[0].ListPacket)
+            {
+                <th>@m.PacketName</th>
+            }
+        </tr>
+        <!------------->
+        @for (int i = 0; i < Model.Count; i++)
+        {
+            <tr>
+                <td>@Model[i].Date.ToString("yyyy-MM-dd")</td>
+                @for (int j = 0; j < Model[i].ListPacket.Count; j++)
+                {
+                    <td>@Model[i].ListPacket[j].ExchangeNum</td>
+                }
+            </tr>
+        }
+    </table>
+
+</div>
+<!--- data ed --->
+@Html.Foot()

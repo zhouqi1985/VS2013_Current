@@ -1,0 +1,75 @@
+﻿@using ObjectUtil.Common
+@using ObjectUtil.Dictionary
+@using PuzzleEvent.Database.Database
+@model List<UserPiecesTotal>
+
+@{
+    ViewBag.Title = "列表";
+}
+
+@section title
+{
+    <script type="text/javascript" src="@Url.Content("/Content/js/jquery.input.title.js")"></script>
+    <script src="@Url.Content("/Content/js/jtip.js")" type="text/javascript"></script>
+    <script type="text/javascript" src="@Url.Content("/Content/js/jquery.table.js")"></script>
+}
+
+@Html.HeadBegin("列表")
+@using (Html.BeginForm("UserPiecesTotalList", "PuzzleEvent"))
+{
+    <text>
+        <input type="hidden" name="PageIndex" value="1" />
+        UserId
+        @Html.TextBox("UserId", null, new { Class = "input" })
+        AreaID
+        @Html.DropDownList("AreaID")
+        PuzzleTypeID
+        @Html.DropDownList("PuzzleTypeId")
+        <input type="submit" value="搜索" class="bt-samll" />
+        <input type="submit" value="导出Excel" name="btnExportExcel" class="bt-samll" />
+    </text>
+}
+@Html.HeadEnd()
+
+<!--- data op --->
+
+<div id="data">
+    <table width="100%" align="center" cellpadding="0" cellspacing="0" class="table-data list">
+        <!-- 请程序注意 头部的jquery .list 已经变换成为特殊的 .list_cut ----------->
+        <tr>
+            <th>RecordID</th>
+            <th>UserId</th>
+            <th>AreaID</th>
+            <th>PiecesTotal</th>
+            <th>PiecesConsume</th>
+            <th>PiecesBalance</th>
+            <th>PiecesOccupied</th>
+            <th>PuzzleTypeID</th>
+        </tr>
+        <!------------->
+        @foreach (var item in Model)
+        {
+
+            <tr>
+
+                <td>&nbsp; @item.RecordID</td>
+                <td>&nbsp; @item.UserId</td>
+                <td>&nbsp; @item.AreaID</td>
+                <td>&nbsp; @item.PiecesTotal</td>
+                <td>&nbsp; @item.PiecesConsume</td>
+                <td>&nbsp; @item.PiecesBalance</td>
+                <td>&nbsp; @item.PiecesOccupied</td>
+                <td>&nbsp; @PuzzleEvent.AdminWebsite.Controllers.PuzzleEventController.GetPuzzleTypeName(@item.PuzzleTypeID)</td>
+            </tr>
+        }
+    </table>
+
+    <!--- page op --->
+    <div id="page">
+        @Html.Pager()
+    </div>
+    <!--- page ed --->
+
+</div>
+<!--- data ed --->
+@Html.Foot()

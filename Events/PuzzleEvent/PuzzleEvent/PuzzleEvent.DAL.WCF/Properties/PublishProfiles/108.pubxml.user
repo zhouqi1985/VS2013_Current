@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>\\192.168.20.108\Publish\WebSite\event.userapi.zygames.com\qqsm\201604\PuzzleEvent</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/CommonLibs.Common.dll">
+      <publishTime>04/05/2016 17:05:07</publishTime>
+    </File>
+    <File Include="bin/CommonLibs.EnterpriseLibrary.dll">
+      <publishTime>04/05/2016 17:05:09</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Common.dll">
+      <publishTime>04/05/2016 17:05:09</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Data.dll">
+      <publishTime>04/05/2016 17:05:09</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.ServiceLocation.dll">
+      <publishTime>04/05/2016 17:05:09</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.dll">
+      <publishTime>04/05/2016 17:05:09</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.Interception.dll">
+      <publishTime>04/05/2016 17:05:09</publishTime>
+    </File>
+    <File Include="bin/PuzzleEvent.DAL.dll">
+      <publishTime>04/19/2016 19:10:12</publishTime>
+    </File>
+    <File Include="bin/PuzzleEvent.DAL.WCF.dll">
+      <publishTime>04/19/2016 19:10:12</publishTime>
+    </File>
+    <File Include="bin/PuzzleEvent.Database.dll">
+      <publishTime>04/13/2016 10:15:24</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>04/06/2016 09:59:19</publishTime>
+    </File>
+    <File Include="PuzzleEventService.svc">
+      <publishTime>04/05/2016 13:39:29</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/07/2016 19:21:34</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

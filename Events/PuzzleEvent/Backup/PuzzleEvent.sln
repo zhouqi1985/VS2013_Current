@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PuzzleEvent.Database", "PuzzleEvent\PuzzleEvent.Database\PuzzleEvent.Database.csproj", "{D6D4D300-028F-4D58-8842-D1F24E2534C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PuzzleEvent.DAL", "PuzzleEvent\PuzzleEvent.DAL\PuzzleEvent.DAL.csproj", "{8085B6EA-F84A-4AD0-99E6-45D5F24548BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PuzzleEvent.DAL.WCF", "PuzzleEvent\PuzzleEvent.DAL.WCF\PuzzleEvent.DAL.WCF.csproj", "{9AB46443-2259-47EC-A0D4-2A36B7C27028}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PuzzleEvent.DAL.WCF.Client", "PuzzleEvent\PuzzleEvent.DAL.WCF.Client\PuzzleEvent.DAL.WCF.Client.csproj", "{9FF59808-F507-4DB3-B079-1C70E72EF0E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PuzzleEvent.DAL.AdminWCF", "PuzzleEvent\PuzzleEvent.DAL.AdminWCF\PuzzleEvent.DAL.AdminWCF.csproj", "{64412304-5135-4DE6-B6BF-B456DED39549}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PuzzleEvent.DAL.AdminWCF.Client", "PuzzleEvent\PuzzleEvent.DAL.AdminWCF.Client\PuzzleEvent.DAL.AdminWCF.Client.csproj", "{536FF76E-1755-4AE7-99B4-51F44CE95886}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.20.109:8080/tfs/platform
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = PuzzleEvent\\PuzzleEvent.DAL.AdminWCF.Client\\PuzzleEvent.DAL.AdminWCF.Client.csproj
+		SccProjectName1 = PuzzleEvent/PuzzleEvent.DAL.AdminWCF.Client
+		SccLocalPath1 = PuzzleEvent\\PuzzleEvent.DAL.AdminWCF.Client
+		SccProjectUniqueName2 = PuzzleEvent\\PuzzleEvent.DAL.AdminWCF\\PuzzleEvent.DAL.AdminWCF.csproj
+		SccProjectName2 = PuzzleEvent/PuzzleEvent.DAL.AdminWCF
+		SccLocalPath2 = PuzzleEvent\\PuzzleEvent.DAL.AdminWCF
+		SccProjectUniqueName3 = PuzzleEvent\\PuzzleEvent.DAL.WCF.Client\\PuzzleEvent.DAL.WCF.Client.csproj
+		SccProjectName3 = PuzzleEvent/PuzzleEvent.DAL.WCF.Client
+		SccLocalPath3 = PuzzleEvent\\PuzzleEvent.DAL.WCF.Client
+		SccProjectUniqueName4 = PuzzleEvent\\PuzzleEvent.DAL.WCF\\PuzzleEvent.DAL.WCF.csproj
+		SccProjectName4 = PuzzleEvent/PuzzleEvent.DAL.WCF
+		SccLocalPath4 = PuzzleEvent\\PuzzleEvent.DAL.WCF
+		SccProjectUniqueName5 = PuzzleEvent\\PuzzleEvent.DAL\\PuzzleEvent.DAL.csproj
+		SccProjectName5 = PuzzleEvent/PuzzleEvent.DAL
+		SccLocalPath5 = PuzzleEvent\\PuzzleEvent.DAL
+		SccProjectUniqueName6 = PuzzleEvent\\PuzzleEvent.Database\\PuzzleEvent.Database.csproj
+		SccProjectName6 = PuzzleEvent/PuzzleEvent.Database
+		SccLocalPath6 = PuzzleEvent\\PuzzleEvent.Database
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6D4D300-028F-4D58-8842-D1F24E2534C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6D4D300-028F-4D58-8842-D1F24E2534C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6D4D300-028F-4D58-8842-D1F24E2534C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6D4D300-028F-4D58-8842-D1F24E2534C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8085B6EA-F84A-4AD0-99E6-45D5F24548BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8085B6EA-F84A-4AD0-99E6-45D5F24548BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8085B6EA-F84A-4AD0-99E6-45D5F24548BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8085B6EA-F84A-4AD0-99E6-45D5F24548BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AB46443-2259-47EC-A0D4-2A36B7C27028}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AB46443-2259-47EC-A0D4-2A36B7C27028}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AB46443-2259-47EC-A0D4-2A36B7C27028}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AB46443-2259-47EC-A0D4-2A36B7C27028}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FF59808-F507-4DB3-B079-1C70E72EF0E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FF59808-F507-4DB3-B079-1C70E72EF0E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FF59808-F507-4DB3-B079-1C70E72EF0E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FF59808-F507-4DB3-B079-1C70E72EF0E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64412304-5135-4DE6-B6BF-B456DED39549}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64412304-5135-4DE6-B6BF-B456DED39549}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64412304-5135-4DE6-B6BF-B456DED39549}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64412304-5135-4DE6-B6BF-B456DED39549}.Release|Any CPU.Build.0 = Release|Any CPU
+		{536FF76E-1755-4AE7-99B4-51F44CE95886}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{536FF76E-1755-4AE7-99B4-51F44CE95886}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{536FF76E-1755-4AE7-99B4-51F44CE95886}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{536FF76E-1755-4AE7-99B4-51F44CE95886}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

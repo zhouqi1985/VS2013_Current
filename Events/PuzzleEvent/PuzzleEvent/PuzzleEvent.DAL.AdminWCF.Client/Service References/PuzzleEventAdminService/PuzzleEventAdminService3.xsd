@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Wallet">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BalancePoints" type="xs:int" />
+      <xs:element minOccurs="0" name="CreateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="GameAreaId" type="xs:int" />
+      <xs:element minOccurs="0" name="LoginName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Note" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PaymentId" type="xs:long" />
+      <xs:element minOccurs="0" name="TotalPoints" type="xs:int" />
+      <xs:element minOccurs="0" name="UserId" type="xs:long" />
+      <xs:element minOccurs="0" name="WId" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Wallet" nillable="true" type="tns:Wallet" />
+  <xs:complexType name="ArrayOfWallet">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Wallet" nillable="true" type="tns:Wallet" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWallet" nillable="true" type="tns:ArrayOfWallet" />
+  <xs:complexType name="ExchangePacket">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AreaName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AvatarId" type="xs:long" />
+      <xs:element minOccurs="0" name="AvatarName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="GameArea" type="xs:int" />
+      <xs:element minOccurs="0" name="IsDelete" type="xs:int" />
+      <xs:element minOccurs="0" name="IsLimit" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsNotice" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LimitCount" type="xs:int" />
+      <xs:element minOccurs="0" name="NeedPoints" type="xs:int" />
+      <xs:element minOccurs="0" name="PacketDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PacketId" type="xs:long" />
+      <xs:element minOccurs="0" name="PacketName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PuzzleTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="Sex" type="xs:int" />
+      <xs:element minOccurs="0" name="TotalCount" type="xs:int" />
+      <xs:element minOccurs="0" name="UserId" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ExchangePacket" nillable="true" type="tns:ExchangePacket" />
+  <xs:complexType name="Puzzle">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="NodeType" type="xs:int" />
+      <xs:element minOccurs="0" name="PacketID" type="xs:int" />
+      <xs:element minOccurs="0" name="PuzzleDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PuzzleId" type="xs:int" />
+      <xs:element minOccurs="0" name="PuzzleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PuzzleNode" type="xs:int" />
+      <xs:element minOccurs="0" name="PuzzlePacketTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="PuzzleTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="RateBegin" type="xs:int" />
+      <xs:element minOccurs="0" name="RateEnd" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Puzzle" nillable="true" type="tns:Puzzle" />
+  <xs:complexType name="PuzzlePieces">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="PieceOrder" type="xs:int" />
+      <xs:element minOccurs="0" name="PuzzleID" type="xs:int" />
+      <xs:element minOccurs="0" name="PuzzleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PuzzlePieceDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PuzzlePieceId" type="xs:int" />
+      <xs:element minOccurs="0" name="PuzzlePieceName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PuzzleTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="PuzzleTypeName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PuzzlePieces" nillable="true" type="tns:PuzzlePieces" />
+  <xs:complexType name="PuzzlePacket">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IsNotice" type="xs:boolean" />
+      <xs:element minOccurs="0" name="PuzzleID" type="xs:int" />
+      <xs:element minOccurs="0" name="PuzzlePacketDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PuzzlePacketId" type="xs:int" />
+      <xs:element minOccurs="0" name="PuzzlePacketName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PuzzlePacketTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="Rate" type="xs:decimal" />
+      <xs:element minOccurs="0" name="RateBegin" type="xs:int" />
+      <xs:element minOccurs="0" name="RateEnd" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PuzzlePacket" nillable="true" type="tns:PuzzlePacket" />
+  <xs:complexType name="PuzzleRate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="PuzzlePiecesCount" type="xs:int" />
+      <xs:element minOccurs="0" name="PuzzleRateTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="PuzzleTypeId" type="xs:int" />
+      <xs:element minOccurs="0" name="Rate" type="xs:decimal" />
+      <xs:element minOccurs="0" name="RateBegin" type="xs:int" />
+      <xs:element minOccurs="0" name="RateEnd" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PuzzleRate" nillable="true" type="tns:PuzzleRate" />
+  <xs:complexType name="ArrayOfExchangePacket">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ExchangePacket" nillable="true" type="tns:ExchangePacket" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfExchangePacket" nillable="true" type="tns:ArrayOfExchangePacket" />
+  <xs:complexType name="ArrayOfPuzzlePieces">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PuzzlePieces" nillable="true" type="tns:PuzzlePieces" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPuzzlePieces" nillable="true" type="tns:ArrayOfPuzzlePieces" />
+  <xs:complexType name="ArrayOfPuzzlePacket">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PuzzlePacket" nillable="true" type="tns:PuzzlePacket" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPuzzlePacket" nillable="true" type="tns:ArrayOfPuzzlePacket" />
+  <xs:complexType name="ArrayOfPuzzleRate">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PuzzleRate" nillable="true" type="tns:PuzzleRate" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPuzzleRate" nillable="true" type="tns:ArrayOfPuzzleRate" />
+  <xs:complexType name="ArrayOfPuzzle">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Puzzle" nillable="true" type="tns:Puzzle" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPuzzle" nillable="true" type="tns:ArrayOfPuzzle" />
+  <xs:complexType name="UserPuzzleNode">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AreaID" type="xs:int" />
+      <xs:element minOccurs="0" name="NodeCurrent" type="xs:int" />
+      <xs:element minOccurs="0" name="NodeID" type="xs:long" />
+      <xs:element minOccurs="0" name="NodeTotal" type="xs:long" />
+      <xs:element minOccurs="0" name="PuzzleID" type="xs:int" />
+      <xs:element minOccurs="0" name="PuzzleTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="UserId" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UserPuzzleNode" nillable="true" type="tns:UserPuzzleNode" />
+  <xs:complexType name="ArrayOfUserPuzzleNode">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserPuzzleNode" nillable="true" type="tns:UserPuzzleNode" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUserPuzzleNode" nillable="true" type="tns:ArrayOfUserPuzzleNode" />
+  <xs:complexType name="PuzzleReceiveDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AreaID" type="xs:int" />
+      <xs:element minOccurs="0" name="AvatarID" type="xs:long" />
+      <xs:element minOccurs="0" name="CreateTS" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="PuzzleID" type="xs:int" />
+      <xs:element minOccurs="0" name="PuzzleTypeId" type="xs:int" />
+      <xs:element minOccurs="0" name="ReceivePuzzleID" type="xs:int" />
+      <xs:element minOccurs="0" name="UserID" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PuzzleReceiveDetails" nillable="true" type="tns:PuzzleReceiveDetails" />
+  <xs:complexType name="ArrayOfPuzzleReceiveDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PuzzleReceiveDetails" nillable="true" type="tns:PuzzleReceiveDetails" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPuzzleReceiveDetails" nillable="true" type="tns:ArrayOfPuzzleReceiveDetails" />
+  <xs:complexType name="UserPiecesTotal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AreaID" type="xs:int" />
+      <xs:element minOccurs="0" name="IsFirst" type="xs:int" />
+      <xs:element minOccurs="0" name="PiecesBalance" type="xs:int" />
+      <xs:element minOccurs="0" name="PiecesConsume" type="xs:int" />
+      <xs:element minOccurs="0" name="PiecesOccupied" type="xs:int" />
+      <xs:element minOccurs="0" name="PiecesTotal" type="xs:long" />
+      <xs:element minOccurs="0" name="PuzzleTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="RecordID" type="xs:long" />
+      <xs:element minOccurs="0" name="RemainPoints" type="xs:long" />
+      <xs:element minOccurs="0" name="UserId" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UserPiecesTotal" nillable="true" type="tns:UserPiecesTotal" />
+  <xs:complexType name="ArrayOfUserPiecesTotal">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserPiecesTotal" nillable="true" type="tns:UserPiecesTotal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUserPiecesTotal" nillable="true" type="tns:ArrayOfUserPiecesTotal" />
+  <xs:complexType name="PuzzleDrawDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActualCount" type="xs:int" />
+      <xs:element minOccurs="0" name="AllPiecesRate" type="xs:int" />
+      <xs:element minOccurs="0" name="AreaID" type="xs:int" />
+      <xs:element minOccurs="0" name="AvatarID" type="xs:long" />
+      <xs:element minOccurs="0" name="AvatarName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AwardName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AwardPuzzlePacket" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateTS" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DrawCount" type="xs:int" />
+      <xs:element minOccurs="0" name="DrawRS" type="xs:int" />
+      <xs:element minOccurs="0" name="ExtraCount" type="xs:int" />
+      <xs:element minOccurs="0" name="IsComplete" type="xs:int" />
+      <xs:element minOccurs="0" name="IsNotice" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsPuzzle" type="xs:int" />
+      <xs:element minOccurs="0" name="LoginName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PacketRate" type="xs:int" />
+      <xs:element minOccurs="0" name="PiecesOrder" type="xs:int" />
+      <xs:element minOccurs="0" name="Points" type="xs:int" />
+      <xs:element minOccurs="0" name="PuzzleDrawID" type="xs:int" />
+      <xs:element minOccurs="0" name="PuzzleID" type="xs:int" />
+      <xs:element minOccurs="0" name="PuzzleNotice" type="xs:boolean" />
+      <xs:element minOccurs="0" name="PuzzleRandom" type="xs:int" />
+      <xs:element minOccurs="0" name="PuzzleTypeId" type="xs:int" />
+      <xs:element minOccurs="0" name="Rate" type="xs:int" />
+      <xs:element minOccurs="0" name="Sex" type="xs:int" />
+      <xs:element minOccurs="0" name="UserID" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PuzzleDrawDetails" nillable="true" type="tns:PuzzleDrawDetails" />
+  <xs:complexType name="ArrayOfPuzzleDrawDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PuzzleDrawDetails" nillable="true" type="tns:PuzzleDrawDetails" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPuzzleDrawDetails" nillable="true" type="tns:ArrayOfPuzzleDrawDetails" />
+  <xs:complexType name="PacketQueueLog">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AvatarId" type="xs:long" />
+      <xs:element minOccurs="0" name="CreateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="GameArea" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+      <xs:element minOccurs="0" name="LogId" type="xs:long" />
+      <xs:element minOccurs="0" name="PacketId" type="xs:long" />
+      <xs:element minOccurs="0" name="Sex" type="xs:int" />
+      <xs:element minOccurs="0" name="Source" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserId" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PacketQueueLog" nillable="true" type="tns:PacketQueueLog" />
+  <xs:complexType name="ArrayOfPacketQueueLog">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PacketQueueLog" nillable="true" type="tns:PacketQueueLog" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPacketQueueLog" nillable="true" type="tns:ArrayOfPacketQueueLog" />
+  <xs:complexType name="PiecesPacketDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AreaID" type="xs:int" />
+      <xs:element minOccurs="0" name="AvatarID" type="xs:long" />
+      <xs:element minOccurs="0" name="CreateTS" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IsPuzzle" type="xs:int" />
+      <xs:element minOccurs="0" name="Points" type="xs:int" />
+      <xs:element minOccurs="0" name="PuzzleDrawID" type="xs:int" />
+      <xs:element minOccurs="0" name="PuzzlePacketID" type="xs:int" />
+      <xs:element minOccurs="0" name="PuzzlePieceId" type="xs:int" />
+      <xs:element minOccurs="0" name="ReceiveID" type="xs:long" />
+      <xs:element minOccurs="0" name="UserID" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PiecesPacketDetails" nillable="true" type="tns:PiecesPacketDetails" />
+  <xs:complexType name="ArrayOfPiecesPacketDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PiecesPacketDetails" nillable="true" type="tns:PiecesPacketDetails" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPiecesPacketDetails" nillable="true" type="tns:ArrayOfPiecesPacketDetails" />
+  <xs:complexType name="ExchangePacketReceive">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AvatarId" type="xs:long" />
+      <xs:element minOccurs="0" name="CreateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ExchangeId" type="xs:long" />
+      <xs:element minOccurs="0" name="GameArea" type="xs:int" />
+      <xs:element minOccurs="0" name="PacketId" type="xs:long" />
+      <xs:element minOccurs="0" name="PiecesCount" type="xs:int" />
+      <xs:element minOccurs="0" name="PuzzleTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="Sex" type="xs:int" />
+      <xs:element minOccurs="0" name="UserId" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ExchangePacketReceive" nillable="true" type="tns:ExchangePacketReceive" />
+  <xs:complexType name="ArrayOfExchangePacketReceive">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ExchangePacketReceive" nillable="true" type="tns:ExchangePacketReceive" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfExchangePacketReceive" nillable="true" type="tns:ArrayOfExchangePacketReceive" />
+</xs:schema>

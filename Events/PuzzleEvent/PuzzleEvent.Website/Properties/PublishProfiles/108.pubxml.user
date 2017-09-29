@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>\\192.168.20.108\Publish\WebSite\Event\qqsm\201604\PuzzleEvent</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/AvatarSelector.Libs.dll">
+      <publishTime>04/05/2016 17:04:46</publishTime>
+    </File>
+    <File Include="bin/CommonLibs.Common.dll">
+      <publishTime>04/05/2016 17:05:07</publishTime>
+    </File>
+    <File Include="bin/CommonLibs.EnterpriseLibrary.dll">
+      <publishTime>04/05/2016 17:05:09</publishTime>
+    </File>
+    <File Include="bin/CommonLibs.Web.dll">
+      <publishTime>04/06/2016 10:22:37</publishTime>
+    </File>
+    <File Include="bin/Conis.JSON.dll">
+      <publishTime>04/05/2016 17:55:27</publishTime>
+    </File>
+    <File Include="bin/FluentValidation.dll">
+      <publishTime>04/05/2016 17:55:27</publishTime>
+    </File>
+    <File Include="bin/FluentValidation.Mvc.dll">
+      <publishTime>04/05/2016 17:55:27</publishTime>
+    </File>
+    <File Include="bin/LogBLL.dll">
+      <publishTime>04/07/2016 11:13:01</publishTime>
+    </File>
+    <File Include="bin/LogBLLV2.dll">
+      <publishTime>04/06/2016 10:22:37</publishTime>
+    </File>
+    <File Include="bin/MarsGameApi.WCF.Client.dll">
+      <publishTime>04/13/2016 17:10:52</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Caching.dll">
+      <publishTime>04/05/2016 17:55:27</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Common.dll">
+      <publishTime>04/05/2016 17:55:27</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Data.dll">
+      <publishTime>04/05/2016 17:55:27</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.ServiceLocation.dll">
+      <publishTime>04/05/2016 17:05:09</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.dll">
+      <publishTime>04/05/2016 17:05:09</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.Interception.dll">
+      <publishTime>04/05/2016 17:05:09</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>04/05/2016 16:07:49</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Mvc.FixedDisplayModes.dll">
+      <publishTime>04/05/2016 16:07:51</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>04/05/2016 16:07:49</publishTime>
+    </File>
+    <File Include="bin/ObjectUtil.dll">
+      <publishTime>04/05/2016 17:55:27</publishTime>
+    </File>
+    <File Include="bin/PageControllerBase.dll">
+      <publishTime>04/05/2016 18:11:50</publishTime>
+    </File>
+    <File Include="bin/PuzzleEvent.DAL.WCF.Client.dll">
+      <publishTime>04/19/2016 19:10:27</publishTime>
+    </File>
+    <File Include="bin/PuzzleEvent.Database.dll">
+      <publishTime>04/13/2016 10:15:24</publishTime>
+    </File>
+    <File Include="bin/PuzzleEvent.Website.dll">
+      <publishTime>04/19/2016 19:10:29</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>04/05/2016 16:07:51</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.WebRequest.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>04/05/2016 16:07:50</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>04/05/2016 16:07:51</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>04/05/2016 16:07:52</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>04/05/2016 16:07:50</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>04/05/2016 16:07:50</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>04/05/2016 16:07:50</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>04/05/2016 16:07:50</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>04/05/2016 16:07:50</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Net.Http.Formatting.resources.dll">
+      <publishTime>04/05/2016 16:07:54</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Helpers.resources.dll">
+      <publishTime>04/05/2016 16:07:53</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Http.resources.dll">
+      <publishTime>04/05/2016 16:07:54</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Http.WebHost.resources.dll">
+      <publishTime>04/05/2016 16:07:54</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Mvc.resources.dll">
+      <publishTime>04/05/2016 16:07:53</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Razor.resources.dll">
+      <publishTime>04/05/2016 16:07:52</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.WebPages.Deployment.resources.dll">
+      <publishTime>04/05/2016 16:07:53</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.WebPages.Razor.resources.dll">
+      <publishTime>04/05/2016 16:07:53</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.WebPages.resources.dll">
+      <publishTime>04/05/2016 16:07:53</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>04/05/2016 16:07:47</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>04/18/2016 16:08:26</publishTime>
+    </File>
+    <File Include="Properties/DataSources/ObjectUtil.DataBase.ErrLog.datasource">
+      <publishTime>04/06/2016 12:01:05</publishTime>
+    </File>
+    <File Include="Properties/DataSources/ObjectUtil.StructUtil.DataPage.datasource">
+      <publishTime>04/06/2016 12:01:06</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>04/05/2016 16:07:47</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/13/2016 17:12:38</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

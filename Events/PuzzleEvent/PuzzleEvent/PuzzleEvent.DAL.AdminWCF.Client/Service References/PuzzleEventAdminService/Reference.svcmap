@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a5ad69ea-e115-4930-91d0-780fc300b6a9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://adminapi.zygames.com/Event/QQSM/201604/PuzzleEvent/PuzzleEventAdminService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PuzzleEventAdminService.xsd" MetadataType="Schema" ID="5104fc2d-ceb5-4369-b6a6-b5fe7a8a398d" SourceId="1" SourceUrl="http://adminapi.zygames.com/Event/QQSM/201604/PuzzleEvent/PuzzleEventAdminService.svc?xsd=xsd4" />
+    <MetadataFile FileName="PuzzleEventAdminService1.xsd" MetadataType="Schema" ID="bf623dab-1286-4493-b68e-9251d5845d46" SourceId="1" SourceUrl="http://adminapi.zygames.com/Event/QQSM/201604/PuzzleEvent/PuzzleEventAdminService.svc?xsd=xsd0" />
+    <MetadataFile FileName="PuzzleEventAdminService2.xsd" MetadataType="Schema" ID="b4705b53-10d0-4d0f-99da-b89d2c1aea65" SourceId="1" SourceUrl="http://adminapi.zygames.com/Event/QQSM/201604/PuzzleEvent/PuzzleEventAdminService.svc?xsd=xsd1" />
+    <MetadataFile FileName="PuzzleEventAdminService3.xsd" MetadataType="Schema" ID="74909c82-efdc-4a1d-9706-a070f4c73a94" SourceId="1" SourceUrl="http://adminapi.zygames.com/Event/QQSM/201604/PuzzleEvent/PuzzleEventAdminService.svc?xsd=xsd2" />
+    <MetadataFile FileName="PuzzleEventAdminService4.xsd" MetadataType="Schema" ID="5bb752d8-a50c-4cbf-8bc0-0615f172928c" SourceId="1" SourceUrl="http://adminapi.zygames.com/Event/QQSM/201604/PuzzleEvent/PuzzleEventAdminService.svc?xsd=xsd3" />
+    <MetadataFile FileName="PuzzleEventAdminService.disco" MetadataType="Disco" ID="eeaf7221-c3e4-46c8-80d3-26311dd6a7a7" SourceId="1" SourceUrl="http://adminapi.zygames.com/Event/QQSM/201604/PuzzleEvent/PuzzleEventAdminService.svc?disco" />
+    <MetadataFile FileName="PuzzleEventAdminService.wsdl" MetadataType="Wsdl" ID="901c90d4-5672-49b6-adb2-ba5c96a12d16" SourceId="1" SourceUrl="http://adminapi.zygames.com/Event/QQSM/201604/PuzzleEvent/PuzzleEventAdminService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

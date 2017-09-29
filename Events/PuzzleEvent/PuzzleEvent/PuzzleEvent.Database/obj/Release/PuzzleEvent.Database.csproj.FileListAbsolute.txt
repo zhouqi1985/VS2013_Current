@@ -1,0 +1,5 @@
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.Database\bin\Release\PuzzleEvent.Database.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.Database\bin\Release\PuzzleEvent.Database.pdb
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.Database\obj\Release\PuzzleEvent.Database.csprojResolveAssemblyReference.cache
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.Database\obj\Release\PuzzleEvent.Database.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.Database\obj\Release\PuzzleEvent.Database.pdb

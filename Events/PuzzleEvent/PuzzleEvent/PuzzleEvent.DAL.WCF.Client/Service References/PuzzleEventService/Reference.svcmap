@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="aa79db70-e411-4040-9eb7-842def104c7e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://event.userapi.zygames.com/qqsm/201604/PuzzleEvent/PuzzleEventService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PuzzleEventService.disco" MetadataType="Disco" ID="85174085-6dd5-4f4c-82d7-b0c991562d50" SourceId="1" SourceUrl="http://event.userapi.zygames.com/qqsm/201604/PuzzleEvent/PuzzleEventService.svc?disco" />
+    <MetadataFile FileName="PuzzleEventService1.xsd" MetadataType="Schema" ID="0ed6f124-4994-40d2-9512-5e5f3c161ae8" SourceId="1" SourceUrl="http://event.userapi.zygames.com/qqsm/201604/PuzzleEvent/PuzzleEventService.svc?xsd=xsd2" />
+    <MetadataFile FileName="PuzzleEventService2.xsd" MetadataType="Schema" ID="d88aa53d-7579-403d-83d3-4a9f0c1807b6" SourceId="1" SourceUrl="http://event.userapi.zygames.com/qqsm/201604/PuzzleEvent/PuzzleEventService.svc?xsd=xsd1" />
+    <MetadataFile FileName="PuzzleEventService.wsdl" MetadataType="Wsdl" ID="d73252a5-2880-4ca8-9c45-5d08418df2b6" SourceId="1" SourceUrl="http://event.userapi.zygames.com/qqsm/201604/PuzzleEvent/PuzzleEventService.svc?wsdl" />
+    <MetadataFile FileName="PuzzleEventService3.xsd" MetadataType="Schema" ID="6f863bdb-8e13-4276-892b-b8f67df338d3" SourceId="1" SourceUrl="http://event.userapi.zygames.com/qqsm/201604/PuzzleEvent/PuzzleEventService.svc?xsd=xsd3" />
+    <MetadataFile FileName="PuzzleEventService.xsd" MetadataType="Schema" ID="51a9808a-08a3-46ec-af36-13a4295eebcd" SourceId="1" SourceUrl="http://event.userapi.zygames.com/qqsm/201604/PuzzleEvent/PuzzleEventService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

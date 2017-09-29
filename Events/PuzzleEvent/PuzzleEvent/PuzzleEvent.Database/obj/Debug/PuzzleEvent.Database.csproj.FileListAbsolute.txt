@@ -1,0 +1,4 @@
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.Database\bin\Debug\PuzzleEvent.Database.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.Database\bin\Debug\PuzzleEvent.Database.pdb
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.Database\obj\Debug\PuzzleEvent.Database.dll
+E:\ZyProject\Events\PuzzleEvent\PuzzleEvent\PuzzleEvent.Database\obj\Debug\PuzzleEvent.Database.pdb

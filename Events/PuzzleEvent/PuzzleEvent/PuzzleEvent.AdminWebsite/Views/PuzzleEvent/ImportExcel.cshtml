@@ -1,0 +1,68 @@
+﻿
+@using ObjectUtil.Common
+@using ObjectUtil.Dictionary
+@using PuzzleEvent.Database.Database
+
+
+@{
+    ViewBag.Title = "编辑";
+}
+
+@section title
+{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //singer 选中变换class
+            $('.form .left, .form input, .form textarea, .form select').focus(function () {
+                $(this).parents('tr').addClass("over");
+            }).blur(function () {
+                $(this).parents('tr').removeClass("over");
+            });
+
+        });
+    </script>
+}
+
+@Html.HeadBegin("编辑")
+@Html.HeadEnd()
+
+
+<!--- data op --->
+<div id="data">
+    @using (Html.BeginForm("ImportExcel", "PuzzleEvent", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <table width="100%" border="0" cellspacing="0" class="table-data form">
+            <!------------>
+            <!--  -->
+            <tr style="display:none;">       
+            <!--  -->
+            <tr>
+                <th width="20%">类型:</th>
+                <td width="80%">
+                    @Html.DropDownList("Typeid")
+                    @Html.JQueryValidationMessage(j => j.Bind("Typeid").NotEmpty())
+                </td>
+            </tr>
+            <tr>
+                <th width="20%">文件:</th>
+                <td width="80%">
+                    <input id="wpic" type="file" name="file" />
+                </td>
+            </tr>
+            <tr>
+                <th>&nbsp;</th>
+                <td height="50" class="clear-form-td">
+                    <input type="submit" class="bt-big" name="button2" id="button2" value="提  交" />
+                </td>
+            </tr>
+
+        </table>
+
+    }
+  
+</div>
+<!--- data ed --->
+@Html.Foot()
+
+
+

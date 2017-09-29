@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="PuzzleEventService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_IPuzzleEventService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://event.userapi.zygames.com/qqsm/201604/PuzzleEvent/PuzzleEventService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://event.userapi.zygames.com/qqsm/201604/PuzzleEvent/PuzzleEventService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://event.userapi.zygames.com/qqsm/201604/PuzzleEvent/PuzzleEventService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" />
+      <xsd:import schemaLocation="http://event.userapi.zygames.com/qqsm/201604/PuzzleEvent/PuzzleEventService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/CommonLibs.Common" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IPuzzleEventService_GetUserPiecesTotalAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserPiecesTotalAll" />
+  </wsdl:message>
+  <wsdl:message name="IPuzzleEventService_GetUserPiecesTotalAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserPiecesTotalAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPuzzleEventService_AddOrdinaryPacketReceive_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddOrdinaryPacketReceive" />
+  </wsdl:message>
+  <wsdl:message name="IPuzzleEventService_AddOrdinaryPacketReceive_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddOrdinaryPacketReceiveResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPuzzleEventService_AddExchangePacketReceive_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddExchangePacketReceive" />
+  </wsdl:message>
+  <wsdl:message name="IPuzzleEventService_AddExchangePacketReceive_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddExchangePacketReceiveResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPuzzleEventService_GetPiecesReceive_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPiecesReceive" />
+  </wsdl:message>
+  <wsdl:message name="IPuzzleEventService_GetPiecesReceive_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPiecesReceiveResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPuzzleEventService_AddPuzzleDrawDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPuzzleDrawDetails" />
+  </wsdl:message>
+  <wsdl:message name="IPuzzleEventService_AddPuzzleDrawDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPuzzleDrawDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPuzzleEventService_AddPiecesPacketDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPiecesPacketDetails" />
+  </wsdl:message>
+  <wsdl:message name="IPuzzleEventService_AddPiecesPacketDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPiecesPacketDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPuzzleEventService_PuzzleDraw_InputMessage">
+    <wsdl:part name="parameters" element="tns:PuzzleDraw" />
+  </wsdl:message>
+  <wsdl:message name="IPuzzleEventService_PuzzleDraw_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PuzzleDrawResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPuzzleEventService_GetRankListList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRankListList" />
+  </wsdl:message>
+  <wsdl:message name="IPuzzleEventService_GetRankListList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRankListListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPuzzleEventService_GetRedPacket_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRedPacket" />
+  </wsdl:message>
+  <wsdl:message name="IPuzzleEventService_GetRedPacket_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRedPacketResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPuzzleEventService_PuzzleReceive_InputMessage">
+    <wsdl:part name="parameters" element="tns:PuzzleReceive" />
+  </wsdl:message>
+  <wsdl:message name="IPuzzleEventService_PuzzleReceive_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PuzzleReceiveResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IPuzzleEventService">
+    <wsdl:operation name="GetUserPiecesTotalAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPuzzleEventService/GetUserPiecesTotalAll" message="tns:IPuzzleEventService_GetUserPiecesTotalAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPuzzleEventService/GetUserPiecesTotalAllResponse" message="tns:IPuzzleEventService_GetUserPiecesTotalAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOrdinaryPacketReceive">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPuzzleEventService/AddOrdinaryPacketReceive" message="tns:IPuzzleEventService_AddOrdinaryPacketReceive_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPuzzleEventService/AddOrdinaryPacketReceiveResponse" message="tns:IPuzzleEventService_AddOrdinaryPacketReceive_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddExchangePacketReceive">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPuzzleEventService/AddExchangePacketReceive" message="tns:IPuzzleEventService_AddExchangePacketReceive_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPuzzleEventService/AddExchangePacketReceiveResponse" message="tns:IPuzzleEventService_AddExchangePacketReceive_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPiecesReceive">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPuzzleEventService/GetPiecesReceive" message="tns:IPuzzleEventService_GetPiecesReceive_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPuzzleEventService/GetPiecesReceiveResponse" message="tns:IPuzzleEventService_GetPiecesReceive_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPuzzleDrawDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPuzzleEventService/AddPuzzleDrawDetails" message="tns:IPuzzleEventService_AddPuzzleDrawDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPuzzleEventService/AddPuzzleDrawDetailsResponse" message="tns:IPuzzleEventService_AddPuzzleDrawDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPiecesPacketDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPuzzleEventService/AddPiecesPacketDetails" message="tns:IPuzzleEventService_AddPiecesPacketDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPuzzleEventService/AddPiecesPacketDetailsResponse" message="tns:IPuzzleEventService_AddPiecesPacketDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PuzzleDraw">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPuzzleEventService/PuzzleDraw" message="tns:IPuzzleEventService_PuzzleDraw_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPuzzleEventService/PuzzleDrawResponse" message="tns:IPuzzleEventService_PuzzleDraw_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRankListList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPuzzleEventService/GetRankListList" message="tns:IPuzzleEventService_GetRankListList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPuzzleEventService/GetRankListListResponse" message="tns:IPuzzleEventService_GetRankListList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRedPacket">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPuzzleEventService/GetRedPacket" message="tns:IPuzzleEventService_GetRedPacket_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPuzzleEventService/GetRedPacketResponse" message="tns:IPuzzleEventService_GetRedPacket_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PuzzleReceive">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPuzzleEventService/PuzzleReceive" message="tns:IPuzzleEventService_PuzzleReceive_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPuzzleEventService/PuzzleReceiveResponse" message="tns:IPuzzleEventService_PuzzleReceive_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IPuzzleEventService" type="tns:IPuzzleEventService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetUserPiecesTotalAll">
+      <soap:operation soapAction="http://tempuri.org/IPuzzleEventService/GetUserPiecesTotalAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrdinaryPacketReceive">
+      <soap:operation soapAction="http://tempuri.org/IPuzzleEventService/AddOrdinaryPacketReceive" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExchangePacketReceive">
+      <soap:operation soapAction="http://tempuri.org/IPuzzleEventService/AddExchangePacketReceive" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPiecesReceive">
+      <soap:operation soapAction="http://tempuri.org/IPuzzleEventService/GetPiecesReceive" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPuzzleDrawDetails">
+      <soap:operation soapAction="http://tempuri.org/IPuzzleEventService/AddPuzzleDrawDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPiecesPacketDetails">
+      <soap:operation soapAction="http://tempuri.org/IPuzzleEventService/AddPiecesPacketDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PuzzleDraw">
+      <soap:operation soapAction="http://tempuri.org/IPuzzleEventService/PuzzleDraw" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRankListList">
+      <soap:operation soapAction="http://tempuri.org/IPuzzleEventService/GetRankListList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRedPacket">
+      <soap:operation soapAction="http://tempuri.org/IPuzzleEventService/GetRedPacket" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PuzzleReceive">
+      <soap:operation soapAction="http://tempuri.org/IPuzzleEventService/PuzzleReceive" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="NetTcpBinding_IPuzzleEventService" type="tns:IPuzzleEventService">
+    <wsp:PolicyReference URI="#NetTcpBinding_IPuzzleEventService_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="GetUserPiecesTotalAll">
+      <soap12:operation soapAction="http://tempuri.org/IPuzzleEventService/GetUserPiecesTotalAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrdinaryPacketReceive">
+      <soap12:operation soapAction="http://tempuri.org/IPuzzleEventService/AddOrdinaryPacketReceive" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExchangePacketReceive">
+      <soap12:operation soapAction="http://tempuri.org/IPuzzleEventService/AddExchangePacketReceive" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPiecesReceive">
+      <soap12:operation soapAction="http://tempuri.org/IPuzzleEventService/GetPiecesReceive" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPuzzleDrawDetails">
+      <soap12:operation soapAction="http://tempuri.org/IPuzzleEventService/AddPuzzleDrawDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPiecesPacketDetails">
+      <soap12:operation soapAction="http://tempuri.org/IPuzzleEventService/AddPiecesPacketDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PuzzleDraw">
+      <soap12:operation soapAction="http://tempuri.org/IPuzzleEventService/PuzzleDraw" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRankListList">
+      <soap12:operation soapAction="http://tempuri.org/IPuzzleEventService/GetRankListList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRedPacket">
+      <soap12:operation soapAction="http://tempuri.org/IPuzzleEventService/GetRedPacket" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PuzzleReceive">
+      <soap12:operation soapAction="http://tempuri.org/IPuzzleEventService/PuzzleReceive" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PuzzleEventService">
+    <wsdl:port name="BasicHttpBinding_IPuzzleEventService" binding="tns:BasicHttpBinding_IPuzzleEventService">
+      <soap:address location="http://event.userapi.zygames.com/qqsm/201604/PuzzleEvent/PuzzleEventService.svc" />
+    </wsdl:port>
+    <wsdl:port name="NetTcpBinding_IPuzzleEventService" binding="tns:NetTcpBinding_IPuzzleEventService">
+      <soap12:address location="net.tcp://web1:7151/qqsm/201604/PuzzleEvent/PuzzleEventService.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://web1:7151/qqsm/201604/PuzzleEvent/PuzzleEventService.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://adminapi.zygames.com/Event/QQSM/201604/PuzzleEvent/PuzzleEventAdminService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" />
+  <xs:import schemaLocation="http://adminapi.zygames.com/Event/QQSM/201604/PuzzleEvent/PuzzleEventAdminService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/CommonLibs.Common" />
+  <xs:element name="AddWallet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="wallet" nillable="true" type="q1:Wallet" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddWalletResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddWalletResult" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWalletList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q2:DataPage" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="searchWallet" nillable="true" type="q3:Wallet" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWalletListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="GetWalletListResult" nillable="true" type="q4:ArrayOfWallet" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q5:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateExchangePacket">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="exchangePacket" nillable="true" type="q6:ExchangePacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateExchangePacketResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateExchangePacketResult" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExchangePacket">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="searchExchangePacket" nillable="true" type="q7:ExchangePacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExchangePacketResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="GetExchangePacketResult" nillable="true" type="q8:ExchangePacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePuzzle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="puzzle" nillable="true" type="q9:Puzzle" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePuzzleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdatePuzzleResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPuzzle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="searchPuzzle" nillable="true" type="q10:Puzzle" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPuzzleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="GetPuzzleResult" nillable="true" type="q11:Puzzle" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePuzzlePieces">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="puzzlePieces" nillable="true" type="q12:PuzzlePieces" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePuzzlePiecesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdatePuzzlePiecesResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPuzzlePieces">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="searchPuzzlePieces" nillable="true" type="q13:PuzzlePieces" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPuzzlePiecesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="GetPuzzlePiecesResult" nillable="true" type="q14:PuzzlePieces" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePuzzlePacket">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="puzzlePacket" nillable="true" type="q15:PuzzlePacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePuzzlePacketResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdatePuzzlePacketResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPuzzlePacket">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="searchPuzzlePacket" nillable="true" type="q16:PuzzlePacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPuzzlePacketResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="GetPuzzlePacketResult" nillable="true" type="q17:PuzzlePacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePuzzleRate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="puzzleRate" nillable="true" type="q18:PuzzleRate" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePuzzleRateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdatePuzzleRateResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPuzzleRate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="searchPuzzleRate" nillable="true" type="q19:PuzzleRate" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPuzzleRateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="GetPuzzleRateResult" nillable="true" type="q20:PuzzleRate" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExchangePacketList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q21:DataPage" />
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="searchExchangePacket" nillable="true" type="q22:ExchangePacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExchangePacketListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="GetExchangePacketListResult" nillable="true" type="q23:ArrayOfExchangePacket" />
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q24:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPuzzlePiecesList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q25:DataPage" />
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="searchPuzzlePieces" nillable="true" type="q26:PuzzlePieces" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPuzzlePiecesListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="GetPuzzlePiecesListResult" nillable="true" type="q27:ArrayOfPuzzlePieces" />
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q28:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPuzzlePacketList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q29:DataPage" />
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="searchPuzzlePacket" nillable="true" type="q30:PuzzlePacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPuzzlePacketListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="GetPuzzlePacketListResult" nillable="true" type="q31:ArrayOfPuzzlePacket" />
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q32:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPuzzleRateList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q33:DataPage" />
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="searchPuzzleRate" nillable="true" type="q34:PuzzleRate" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPuzzleRateListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="GetPuzzleRateListResult" nillable="true" type="q35:ArrayOfPuzzleRate" />
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q36:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPuzzleList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q37:DataPage" />
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="searchPuzzle" nillable="true" type="q38:Puzzle" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPuzzleListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="GetPuzzleListResult" nillable="true" type="q39:ArrayOfPuzzle" />
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q40:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserPuzzleNodeList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q41:DataPage" />
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="searchUserPuzzleNode" nillable="true" type="q42:UserPuzzleNode" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserPuzzleNodeListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="GetUserPuzzleNodeListResult" nillable="true" type="q43:ArrayOfUserPuzzleNode" />
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q44:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserPuzzleNode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="searchUserPuzzleNode" nillable="true" type="q45:UserPuzzleNode" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserPuzzleNodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="GetUserPuzzleNodeResult" nillable="true" type="q46:UserPuzzleNode" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUserPuzzleNode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="userPuzzleNode" nillable="true" type="q47:UserPuzzleNode" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUserPuzzleNodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateUserPuzzleNodeResult" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitPuzzleRate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PuzzleTypeId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitPuzzleRateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SubmitPuzzleRateResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitPuzzlePacketRate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PuzzlePacketTypeID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitPuzzlePacketRateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SubmitPuzzlePacketRateResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPuzzleReceiveDetailsList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q48:DataPage" />
+        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="searchPuzzleReceiveDetails" nillable="true" type="q49:PuzzleReceiveDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPuzzleReceiveDetailsListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="GetPuzzleReceiveDetailsListResult" nillable="true" type="q50:ArrayOfPuzzleReceiveDetails" />
+        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q51:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserPiecesTotalList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q52:DataPage" />
+        <xs:element xmlns:q53="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="searchUserPiecesTotal" nillable="true" type="q53:UserPiecesTotal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserPiecesTotalListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q54="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="GetUserPiecesTotalListResult" nillable="true" type="q54:ArrayOfUserPiecesTotal" />
+        <xs:element xmlns:q55="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q55:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPuzzleDrawDetailsList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q56="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q56:DataPage" />
+        <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="searchPuzzleDrawDetails" nillable="true" type="q57:PuzzleDrawDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPuzzleDrawDetailsListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q58="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="GetPuzzleDrawDetailsListResult" nillable="true" type="q58:ArrayOfPuzzleDrawDetails" />
+        <xs:element xmlns:q59="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q59:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPacketQueueLogList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q60="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q60:DataPage" />
+        <xs:element xmlns:q61="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="searchPacketQueueLog" nillable="true" type="q61:PacketQueueLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPacketQueueLogListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q62="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="GetPacketQueueLogListResult" nillable="true" type="q62:ArrayOfPacketQueueLog" />
+        <xs:element xmlns:q63="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q63:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPiecesPacketDetailsList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q64="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q64:DataPage" />
+        <xs:element xmlns:q65="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="searchPiecesPacketDetails" nillable="true" type="q65:PiecesPacketDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPiecesPacketDetailsListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q66="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="GetPiecesPacketDetailsListResult" nillable="true" type="q66:ArrayOfPiecesPacketDetails" />
+        <xs:element xmlns:q67="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q67:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExchangePacketReceiveList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q68="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q68:DataPage" />
+        <xs:element xmlns:q69="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="searchExchangePacketReceive" nillable="true" type="q69:ExchangePacketReceive" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExchangePacketReceiveListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q70="http://schemas.datacontract.org/2004/07/PuzzleEvent.Database.Database" minOccurs="0" name="GetExchangePacketReceiveListResult" nillable="true" type="q70:ArrayOfExchangePacketReceive" />
+        <xs:element xmlns:q71="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q71:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="importCSVtoDB">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ds" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="TableName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="importCSVtoDBResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="importCSVtoDBResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
