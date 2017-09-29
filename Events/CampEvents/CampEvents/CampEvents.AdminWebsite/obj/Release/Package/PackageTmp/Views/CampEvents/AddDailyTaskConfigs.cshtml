@@ -1,0 +1,106 @@
+﻿@using ObjectUtil.Common
+@using ObjectUtil.Dictionary
+@using CampEvents.Database.Database
+@model DailyTaskConfig
+
+@{
+    ViewBag.Title = "编辑";
+}
+
+@section title
+{
+    <script type="text/javascript">
+		$(document).ready(function()
+		{
+		    //singer 选中变换class
+			$('.form .left, .form input, .form textarea, .form select').focus(function(){
+				$(this).parents('tr').addClass("over");
+			}).blur(function(){
+				$(this).parents('tr').removeClass("over");
+			});
+
+		});
+    </script>
+}
+
+@Html.HeadBegin("编辑")
+@Html.HeadEnd()
+
+
+<!--- data op --->
+<div id="data">
+    @using (Html.BeginForm())
+    {
+        <table width="100%" border="0" cellspacing="0" class="table-data form">
+            <!------------>
+            <!--  -->
+            <tr>
+                <th width="20%">TaskConfigId:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.TaskConfigId, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("TaskConfigId").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">TaskName:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.TaskName, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("TaskName").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">TaskDesc:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.TaskDesc, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("TaskDesc").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">GetPoints:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.GetPoints, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("GetPoints").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">MaxLimit:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.MaxLimit, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("MaxLimit").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">WeekendDouble:</th>
+                <td width="80%">
+                    @Html.CheckBoxFor(m => Model.WeekendDouble, new { Class = "input", Size = "40" })
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">NumPerTime:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.NumPerTime, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("NumPerTime").NotEmpty())
+                </td>
+            </tr>
+            <tr>
+                <th>&nbsp;</th>
+                <td height="50" class="clear-form-td">
+                    <input type="submit" class="bt-big" name="button2" id="button2" value="提  交" />
+                    <input type="button" name="goback" class="bt-big" value="返  回" onclick="javascript:history.go(-1);" />
+                </td>
+            </tr>
+            <!------------>
+        </table>
+
+    }
+
+</div>
+<!--- data ed --->
+@Html.Foot()
+

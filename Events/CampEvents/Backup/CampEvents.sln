@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampEvents.Database", "CampEvents\CampEvents.Database\CampEvents.Database.csproj", "{9B302AE8-6C24-4559-A32E-3598A916B1B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampEvents.DAL", "CampEvents\CampEvents.DAL\CampEvents.DAL.csproj", "{6F73319F-C7A1-47A9-AF02-A80D59D0687E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampEvents.DAL.WCF", "CampEvents\CampEvents.DAL.WCF\CampEvents.DAL.WCF.csproj", "{24A2EA33-B8CB-4355-ACA1-145A39932CE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampEvents.DAL.WCF.Client", "CampEvents\CampEvents.DAL.WCF.Client\CampEvents.DAL.WCF.Client.csproj", "{46BA81B2-CE6B-4288-A724-DB7EBD385CB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampEvents.DAL.AdminWCF", "CampEvents\CampEvents.DAL.AdminWCF\CampEvents.DAL.AdminWCF.csproj", "{957E4838-3C38-41CB-A3F1-23E4CBDFD136}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampEvents.DAL.AdminWCF.Client", "CampEvents\CampEvents.DAL.AdminWCF.Client\CampEvents.DAL.AdminWCF.Client.csproj", "{1CDD2E50-AC7F-48E7-B701-0C64485E72C7}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.20.109:8080/tfs/platform
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CampEvents\\CampEvents.DAL.AdminWCF.Client\\CampEvents.DAL.AdminWCF.Client.csproj
+		SccProjectName1 = CampEvents/CampEvents.DAL.AdminWCF.Client
+		SccLocalPath1 = CampEvents\\CampEvents.DAL.AdminWCF.Client
+		SccProjectUniqueName2 = CampEvents\\CampEvents.DAL.AdminWCF\\CampEvents.DAL.AdminWCF.csproj
+		SccProjectName2 = CampEvents/CampEvents.DAL.AdminWCF
+		SccLocalPath2 = CampEvents\\CampEvents.DAL.AdminWCF
+		SccProjectUniqueName3 = CampEvents\\CampEvents.DAL.WCF.Client\\CampEvents.DAL.WCF.Client.csproj
+		SccProjectName3 = CampEvents/CampEvents.DAL.WCF.Client
+		SccLocalPath3 = CampEvents\\CampEvents.DAL.WCF.Client
+		SccProjectUniqueName4 = CampEvents\\CampEvents.DAL.WCF\\CampEvents.DAL.WCF.csproj
+		SccProjectName4 = CampEvents/CampEvents.DAL.WCF
+		SccLocalPath4 = CampEvents\\CampEvents.DAL.WCF
+		SccProjectUniqueName5 = CampEvents\\CampEvents.DAL\\CampEvents.DAL.csproj
+		SccProjectName5 = CampEvents/CampEvents.DAL
+		SccLocalPath5 = CampEvents\\CampEvents.DAL
+		SccProjectUniqueName6 = CampEvents\\CampEvents.Database\\CampEvents.Database.csproj
+		SccProjectName6 = CampEvents/CampEvents.Database
+		SccLocalPath6 = CampEvents\\CampEvents.Database
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B302AE8-6C24-4559-A32E-3598A916B1B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B302AE8-6C24-4559-A32E-3598A916B1B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B302AE8-6C24-4559-A32E-3598A916B1B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B302AE8-6C24-4559-A32E-3598A916B1B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F73319F-C7A1-47A9-AF02-A80D59D0687E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F73319F-C7A1-47A9-AF02-A80D59D0687E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F73319F-C7A1-47A9-AF02-A80D59D0687E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F73319F-C7A1-47A9-AF02-A80D59D0687E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24A2EA33-B8CB-4355-ACA1-145A39932CE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24A2EA33-B8CB-4355-ACA1-145A39932CE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24A2EA33-B8CB-4355-ACA1-145A39932CE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24A2EA33-B8CB-4355-ACA1-145A39932CE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46BA81B2-CE6B-4288-A724-DB7EBD385CB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46BA81B2-CE6B-4288-A724-DB7EBD385CB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46BA81B2-CE6B-4288-A724-DB7EBD385CB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46BA81B2-CE6B-4288-A724-DB7EBD385CB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{957E4838-3C38-41CB-A3F1-23E4CBDFD136}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{957E4838-3C38-41CB-A3F1-23E4CBDFD136}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{957E4838-3C38-41CB-A3F1-23E4CBDFD136}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{957E4838-3C38-41CB-A3F1-23E4CBDFD136}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CDD2E50-AC7F-48E7-B701-0C64485E72C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CDD2E50-AC7F-48E7-B701-0C64485E72C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CDD2E50-AC7F-48E7-B701-0C64485E72C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CDD2E50-AC7F-48E7-B701-0C64485E72C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="CampEvents.DAL.WCF.CampEventsService" CodeBehind="CampEventsService.svc.cs" %>

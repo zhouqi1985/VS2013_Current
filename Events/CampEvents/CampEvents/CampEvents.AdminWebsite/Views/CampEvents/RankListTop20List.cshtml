@@ -1,0 +1,93 @@
+﻿@using ObjectUtil.Common
+@using ObjectUtil.Dictionary
+@using CampEvents.Database.Database
+@model List<RankListTop20>
+
+@{
+    ViewBag.Title = "列表";
+}
+
+@section title
+{
+    <script type="text/javascript" src="@Url.Content("/Content/js/jquery.input.title.js")"></script>
+    <script src="@Url.Content("/Content/js/jtip.js")" type="text/javascript"></script>
+    <script type="text/javascript" src="@Url.Content("/Content/js/jquery.table.js")"></script>
+}
+
+@Html.HeadBegin("列表")
+@using (Html.BeginForm("RankListTop20List", "CampEvents"))
+{
+    <text>
+        <input type="hidden" name="PageIndex" value="1" />
+        UserId
+        @Html.TextBox("UserId", null, new { Class = "input" })
+        AreaId
+        @Html.TextBox("AreaId", null, new { Class = "input" })
+        <input type="submit" value="搜索" class="bt-samll" />
+        <input type="submit" value="导出Excel" name="btnExportExcel" class="bt-samll" />
+    </text>
+}
+@Html.HeadEnd()
+
+<!--- data op --->
+
+<div id="data">
+    <form action="/CampEvents/CalculateRankPacket" method="post">
+        <table width="100%" align="center" cellpadding="0" cellspacing="0" class="table-data list">
+            <!-- 请程序注意 头部的jquery .list 已经变换成为特殊的 .list_cut ----------->
+            <tr>
+                <th>Id</th>
+                <th>UserId</th>
+                <th>AvatarId</th>
+                <th>AvatarName</th>
+                <th>AreaId</th>
+                <th>AreaName</th>
+                <th>TotalGetPoints</th>
+                <th>CreateTime</th>
+                <th>RankOrder</th>
+                <th>CutOffDate</th>
+                <th>CampId</th>
+                <th>PacketId</th>
+                <th width="10%">操作</th>
+            </tr>
+            <!------------->
+            @foreach (var item in Model)
+            {
+
+                <tr>
+
+                    <td>&nbsp; @item.Id</td>
+                    <td>&nbsp; @item.UserId</td>
+                    <td>&nbsp; @item.AvatarId</td>
+                    <td>&nbsp; @item.AvatarName</td>
+                    <td>&nbsp; @item.AreaId</td>
+                    <td>&nbsp; @item.AreaName</td>
+                    <td>&nbsp; @item.TotalGetPoints</td>
+                    <td>&nbsp; @item.CreateTime</td>
+                    <td>&nbsp; @item.RankOrder</td>
+                    <td>&nbsp; @item.CutOffDate</td>
+                    <td>&nbsp; @item.CampId</td>
+                    <td>
+                        <input type="hidden" name="RankId" value=@item.Id>
+                        <input type="text" name="PacketId" value=0 />
+                    </td>
+                    <td>
+                        <input type="button" class="bt-list" value="删除" onclick="if(confirm('确定删除此项?'))location='/CampEvents/DelRankListTop20?Id=@item.Id'" />
+                    </td>
+                </tr>
+            }
+        </table>
+        <input type="submit" class="bt-big" name="button2" id="button2" value="设置排行榜礼包" />
+    </form>
+
+
+</div>
+
+
+        <!--- page op --->
+<div id="page">
+    @Html.Pager(new AdminButton("/CampEvents/AddRankListTop20", "增加"))
+</div>
+<!--- page ed --->
+<!--- data ed --->
+@Html.Foot()

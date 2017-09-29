@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CampEventsAdminService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_ICampEventsAdminService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://adminapi.zygames.com/CampEvents/CampEventsAdminService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://adminapi.zygames.com/CampEvents/CampEventsAdminService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://adminapi.zygames.com/CampEvents/CampEventsAdminService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" />
+      <xsd:import schemaLocation="http://adminapi.zygames.com/CampEvents/CampEventsAdminService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/CommonLibs.Common" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICampEventsAdminService_UpdateBasicConfig_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBasicConfig" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_UpdateBasicConfig_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBasicConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_GetBasicConfigList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBasicConfigList" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_GetBasicConfigList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBasicConfigListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_GetCampConfigList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCampConfigList" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_GetCampConfigList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCampConfigListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_InsertDailyTaskConfig_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertDailyTaskConfig" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_InsertDailyTaskConfig_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertDailyTaskConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_UpdateDailyTaskConfig_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDailyTaskConfig" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_UpdateDailyTaskConfig_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDailyTaskConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_DeleteDailyTaskConfig_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteDailyTaskConfig" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_DeleteDailyTaskConfig_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteDailyTaskConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_GetDailyTaskConfigList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDailyTaskConfigList" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_GetDailyTaskConfigList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDailyTaskConfigListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_GetGameDailyLogHistoryList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGameDailyLogHistoryList" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_GetGameDailyLogHistoryList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGameDailyLogHistoryListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_GetGameDailyLogList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGameDailyLogList" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_GetGameDailyLogList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGameDailyLogListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_GetPacketQueueLogList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPacketQueueLogList" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_GetPacketQueueLogList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPacketQueueLogListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_InsertPacketQueue_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPacketQueue" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_InsertPacketQueue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPacketQueueResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_DeletePacketQueue_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePacketQueue" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_DeletePacketQueue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePacketQueueResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_GetPacketQueueList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPacketQueueList" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_GetPacketQueueList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPacketQueueListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_CalculateFinalPackets_InputMessage">
+    <wsdl:part name="parameters" element="tns:CalculateFinalPackets" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_CalculateFinalPackets_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CalculateFinalPacketsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_InsertPointPacketConfig_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPointPacketConfig" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_InsertPointPacketConfig_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPointPacketConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_UpdatePointPacketConfig_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePointPacketConfig" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_UpdatePointPacketConfig_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePointPacketConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_DeletePointPacketConfig_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePointPacketConfig" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_DeletePointPacketConfig_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePointPacketConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_GetPointPacketConfigsList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPointPacketConfigsList" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_GetPointPacketConfigsList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPointPacketConfigsListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_GetPointPacketExchangeLogList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPointPacketExchangeLogList" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_GetPointPacketExchangeLogList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPointPacketExchangeLogListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_InsertRankListTop20_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertRankListTop20" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_InsertRankListTop20_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertRankListTop20Response" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_DeleteRankListTop20_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRankListTop20" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_DeleteRankListTop20_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRankListTop20Response" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_GetRankListTop20List_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRankListTop20List" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_GetRankListTop20List_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRankListTop20ListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_CalculateRankPacket_InputMessage">
+    <wsdl:part name="parameters" element="tns:CalculateRankPacket" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_CalculateRankPacket_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CalculateRankPacketResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_GetUserCampLogList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserCampLogList" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_GetUserCampLogList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserCampLogListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_InsertWallet_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertWallet" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_InsertWallet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertWalletResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_DeleteWallet_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteWallet" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_DeleteWallet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteWalletResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_GetWalletList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWalletList" />
+  </wsdl:message>
+  <wsdl:message name="ICampEventsAdminService_GetWalletList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWalletListResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ICampEventsAdminService">
+    <wsdl:operation name="UpdateBasicConfig">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICampEventsAdminService/UpdateBasicConfig" message="tns:ICampEventsAdminService_UpdateBasicConfig_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICampEventsAdminService/UpdateBasicConfigResponse" message="tns:ICampEventsAdminService_UpdateBasicConfig_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBasicConfigList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICampEventsAdminService/GetBasicConfigList" message="tns:ICampEventsAdminService_GetBasicConfigList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICampEventsAdminService/GetBasicConfigListResponse" message="tns:ICampEventsAdminService_GetBasicConfigList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCampConfigList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICampEventsAdminService/GetCampConfigList" message="tns:ICampEventsAdminService_GetCampConfigList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICampEventsAdminService/GetCampConfigListResponse" message="tns:ICampEventsAdminService_GetCampConfigList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertDailyTaskConfig">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICampEventsAdminService/InsertDailyTaskConfig" message="tns:ICampEventsAdminService_InsertDailyTaskConfig_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICampEventsAdminService/InsertDailyTaskConfigResponse" message="tns:ICampEventsAdminService_InsertDailyTaskConfig_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDailyTaskConfig">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICampEventsAdminService/UpdateDailyTaskConfig" message="tns:ICampEventsAdminService_UpdateDailyTaskConfig_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICampEventsAdminService/UpdateDailyTaskConfigResponse" message="tns:ICampEventsAdminService_UpdateDailyTaskConfig_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDailyTaskConfig">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICampEventsAdminService/DeleteDailyTaskConfig" message="tns:ICampEventsAdminService_DeleteDailyTaskConfig_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICampEventsAdminService/DeleteDailyTaskConfigResponse" message="tns:ICampEventsAdminService_DeleteDailyTaskConfig_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDailyTaskConfigList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICampEventsAdminService/GetDailyTaskConfigList" message="tns:ICampEventsAdminService_GetDailyTaskConfigList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICampEventsAdminService/GetDailyTaskConfigListResponse" message="tns:ICampEventsAdminService_GetDailyTaskConfigList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGameDailyLogHistoryList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICampEventsAdminService/GetGameDailyLogHistoryList" message="tns:ICampEventsAdminService_GetGameDailyLogHistoryList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICampEventsAdminService/GetGameDailyLogHistoryListResponse" message="tns:ICampEventsAdminService_GetGameDailyLogHistoryList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGameDailyLogList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICampEventsAdminService/GetGameDailyLogList" message="tns:ICampEventsAdminService_GetGameDailyLogList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICampEventsAdminService/GetGameDailyLogListResponse" message="tns:ICampEventsAdminService_GetGameDailyLogList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPacketQueueLogList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICampEventsAdminService/GetPacketQueueLogList" message="tns:ICampEventsAdminService_GetPacketQueueLogList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICampEventsAdminService/GetPacketQueueLogListResponse" message="tns:ICampEventsAdminService_GetPacketQueueLogList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPacketQueue">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICampEventsAdminService/InsertPacketQueue" message="tns:ICampEventsAdminService_InsertPacketQueue_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICampEventsAdminService/InsertPacketQueueResponse" message="tns:ICampEventsAdminService_InsertPacketQueue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePacketQueue">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICampEventsAdminService/DeletePacketQueue" message="tns:ICampEventsAdminService_DeletePacketQueue_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICampEventsAdminService/DeletePacketQueueResponse" message="tns:ICampEventsAdminService_DeletePacketQueue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPacketQueueList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICampEventsAdminService/GetPacketQueueList" message="tns:ICampEventsAdminService_GetPacketQueueList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICampEventsAdminService/GetPacketQueueListResponse" message="tns:ICampEventsAdminService_GetPacketQueueList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CalculateFinalPackets">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICampEventsAdminService/CalculateFinalPackets" message="tns:ICampEventsAdminService_CalculateFinalPackets_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICampEventsAdminService/CalculateFinalPacketsResponse" message="tns:ICampEventsAdminService_CalculateFinalPackets_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPointPacketConfig">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICampEventsAdminService/InsertPointPacketConfig" message="tns:ICampEventsAdminService_InsertPointPacketConfig_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICampEventsAdminService/InsertPointPacketConfigResponse" message="tns:ICampEventsAdminService_InsertPointPacketConfig_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePointPacketConfig">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICampEventsAdminService/UpdatePointPacketConfig" message="tns:ICampEventsAdminService_UpdatePointPacketConfig_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICampEventsAdminService/UpdatePointPacketConfigResponse" message="tns:ICampEventsAdminService_UpdatePointPacketConfig_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePointPacketConfig">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICampEventsAdminService/DeletePointPacketConfig" message="tns:ICampEventsAdminService_DeletePointPacketConfig_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICampEventsAdminService/DeletePointPacketConfigResponse" message="tns:ICampEventsAdminService_DeletePointPacketConfig_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPointPacketConfigsList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICampEventsAdminService/GetPointPacketConfigsList" message="tns:ICampEventsAdminService_GetPointPacketConfigsList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICampEventsAdminService/GetPointPacketConfigsListResponse" message="tns:ICampEventsAdminService_GetPointPacketConfigsList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPointPacketExchangeLogList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICampEventsAdminService/GetPointPacketExchangeLogList" message="tns:ICampEventsAdminService_GetPointPacketExchangeLogList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICampEventsAdminService/GetPointPacketExchangeLogListResponse" message="tns:ICampEventsAdminService_GetPointPacketExchangeLogList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertRankListTop20">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICampEventsAdminService/InsertRankListTop20" message="tns:ICampEventsAdminService_InsertRankListTop20_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICampEventsAdminService/InsertRankListTop20Response" message="tns:ICampEventsAdminService_InsertRankListTop20_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRankListTop20">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICampEventsAdminService/DeleteRankListTop20" message="tns:ICampEventsAdminService_DeleteRankListTop20_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICampEventsAdminService/DeleteRankListTop20Response" message="tns:ICampEventsAdminService_DeleteRankListTop20_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRankListTop20List">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICampEventsAdminService/GetRankListTop20List" message="tns:ICampEventsAdminService_GetRankListTop20List_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICampEventsAdminService/GetRankListTop20ListResponse" message="tns:ICampEventsAdminService_GetRankListTop20List_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CalculateRankPacket">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICampEventsAdminService/CalculateRankPacket" message="tns:ICampEventsAdminService_CalculateRankPacket_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICampEventsAdminService/CalculateRankPacketResponse" message="tns:ICampEventsAdminService_CalculateRankPacket_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserCampLogList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICampEventsAdminService/GetUserCampLogList" message="tns:ICampEventsAdminService_GetUserCampLogList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICampEventsAdminService/GetUserCampLogListResponse" message="tns:ICampEventsAdminService_GetUserCampLogList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertWallet">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICampEventsAdminService/InsertWallet" message="tns:ICampEventsAdminService_InsertWallet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICampEventsAdminService/InsertWalletResponse" message="tns:ICampEventsAdminService_InsertWallet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWallet">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICampEventsAdminService/DeleteWallet" message="tns:ICampEventsAdminService_DeleteWallet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICampEventsAdminService/DeleteWalletResponse" message="tns:ICampEventsAdminService_DeleteWallet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWalletList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICampEventsAdminService/GetWalletList" message="tns:ICampEventsAdminService_GetWalletList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICampEventsAdminService/GetWalletListResponse" message="tns:ICampEventsAdminService_GetWalletList_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ICampEventsAdminService" type="tns:ICampEventsAdminService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UpdateBasicConfig">
+      <soap:operation soapAction="http://tempuri.org/ICampEventsAdminService/UpdateBasicConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBasicConfigList">
+      <soap:operation soapAction="http://tempuri.org/ICampEventsAdminService/GetBasicConfigList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampConfigList">
+      <soap:operation soapAction="http://tempuri.org/ICampEventsAdminService/GetCampConfigList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertDailyTaskConfig">
+      <soap:operation soapAction="http://tempuri.org/ICampEventsAdminService/InsertDailyTaskConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDailyTaskConfig">
+      <soap:operation soapAction="http://tempuri.org/ICampEventsAdminService/UpdateDailyTaskConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDailyTaskConfig">
+      <soap:operation soapAction="http://tempuri.org/ICampEventsAdminService/DeleteDailyTaskConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDailyTaskConfigList">
+      <soap:operation soapAction="http://tempuri.org/ICampEventsAdminService/GetDailyTaskConfigList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGameDailyLogHistoryList">
+      <soap:operation soapAction="http://tempuri.org/ICampEventsAdminService/GetGameDailyLogHistoryList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGameDailyLogList">
+      <soap:operation soapAction="http://tempuri.org/ICampEventsAdminService/GetGameDailyLogList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPacketQueueLogList">
+      <soap:operation soapAction="http://tempuri.org/ICampEventsAdminService/GetPacketQueueLogList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPacketQueue">
+      <soap:operation soapAction="http://tempuri.org/ICampEventsAdminService/InsertPacketQueue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePacketQueue">
+      <soap:operation soapAction="http://tempuri.org/ICampEventsAdminService/DeletePacketQueue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPacketQueueList">
+      <soap:operation soapAction="http://tempuri.org/ICampEventsAdminService/GetPacketQueueList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalculateFinalPackets">
+      <soap:operation soapAction="http://tempuri.org/ICampEventsAdminService/CalculateFinalPackets" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPointPacketConfig">
+      <soap:operation soapAction="http://tempuri.org/ICampEventsAdminService/InsertPointPacketConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePointPacketConfig">
+      <soap:operation soapAction="http://tempuri.org/ICampEventsAdminService/UpdatePointPacketConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePointPacketConfig">
+      <soap:operation soapAction="http://tempuri.org/ICampEventsAdminService/DeletePointPacketConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPointPacketConfigsList">
+      <soap:operation soapAction="http://tempuri.org/ICampEventsAdminService/GetPointPacketConfigsList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPointPacketExchangeLogList">
+      <soap:operation soapAction="http://tempuri.org/ICampEventsAdminService/GetPointPacketExchangeLogList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertRankListTop20">
+      <soap:operation soapAction="http://tempuri.org/ICampEventsAdminService/InsertRankListTop20" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRankListTop20">
+      <soap:operation soapAction="http://tempuri.org/ICampEventsAdminService/DeleteRankListTop20" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRankListTop20List">
+      <soap:operation soapAction="http://tempuri.org/ICampEventsAdminService/GetRankListTop20List" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalculateRankPacket">
+      <soap:operation soapAction="http://tempuri.org/ICampEventsAdminService/CalculateRankPacket" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserCampLogList">
+      <soap:operation soapAction="http://tempuri.org/ICampEventsAdminService/GetUserCampLogList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertWallet">
+      <soap:operation soapAction="http://tempuri.org/ICampEventsAdminService/InsertWallet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWallet">
+      <soap:operation soapAction="http://tempuri.org/ICampEventsAdminService/DeleteWallet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWalletList">
+      <soap:operation soapAction="http://tempuri.org/ICampEventsAdminService/GetWalletList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="NetTcpBinding_ICampEventsAdminService" type="tns:ICampEventsAdminService">
+    <wsp:PolicyReference URI="#NetTcpBinding_ICampEventsAdminService_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="UpdateBasicConfig">
+      <soap12:operation soapAction="http://tempuri.org/ICampEventsAdminService/UpdateBasicConfig" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBasicConfigList">
+      <soap12:operation soapAction="http://tempuri.org/ICampEventsAdminService/GetBasicConfigList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampConfigList">
+      <soap12:operation soapAction="http://tempuri.org/ICampEventsAdminService/GetCampConfigList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertDailyTaskConfig">
+      <soap12:operation soapAction="http://tempuri.org/ICampEventsAdminService/InsertDailyTaskConfig" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDailyTaskConfig">
+      <soap12:operation soapAction="http://tempuri.org/ICampEventsAdminService/UpdateDailyTaskConfig" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDailyTaskConfig">
+      <soap12:operation soapAction="http://tempuri.org/ICampEventsAdminService/DeleteDailyTaskConfig" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDailyTaskConfigList">
+      <soap12:operation soapAction="http://tempuri.org/ICampEventsAdminService/GetDailyTaskConfigList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGameDailyLogHistoryList">
+      <soap12:operation soapAction="http://tempuri.org/ICampEventsAdminService/GetGameDailyLogHistoryList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGameDailyLogList">
+      <soap12:operation soapAction="http://tempuri.org/ICampEventsAdminService/GetGameDailyLogList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPacketQueueLogList">
+      <soap12:operation soapAction="http://tempuri.org/ICampEventsAdminService/GetPacketQueueLogList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPacketQueue">
+      <soap12:operation soapAction="http://tempuri.org/ICampEventsAdminService/InsertPacketQueue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePacketQueue">
+      <soap12:operation soapAction="http://tempuri.org/ICampEventsAdminService/DeletePacketQueue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPacketQueueList">
+      <soap12:operation soapAction="http://tempuri.org/ICampEventsAdminService/GetPacketQueueList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalculateFinalPackets">
+      <soap12:operation soapAction="http://tempuri.org/ICampEventsAdminService/CalculateFinalPackets" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPointPacketConfig">
+      <soap12:operation soapAction="http://tempuri.org/ICampEventsAdminService/InsertPointPacketConfig" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePointPacketConfig">
+      <soap12:operation soapAction="http://tempuri.org/ICampEventsAdminService/UpdatePointPacketConfig" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePointPacketConfig">
+      <soap12:operation soapAction="http://tempuri.org/ICampEventsAdminService/DeletePointPacketConfig" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPointPacketConfigsList">
+      <soap12:operation soapAction="http://tempuri.org/ICampEventsAdminService/GetPointPacketConfigsList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPointPacketExchangeLogList">
+      <soap12:operation soapAction="http://tempuri.org/ICampEventsAdminService/GetPointPacketExchangeLogList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertRankListTop20">
+      <soap12:operation soapAction="http://tempuri.org/ICampEventsAdminService/InsertRankListTop20" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRankListTop20">
+      <soap12:operation soapAction="http://tempuri.org/ICampEventsAdminService/DeleteRankListTop20" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRankListTop20List">
+      <soap12:operation soapAction="http://tempuri.org/ICampEventsAdminService/GetRankListTop20List" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalculateRankPacket">
+      <soap12:operation soapAction="http://tempuri.org/ICampEventsAdminService/CalculateRankPacket" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserCampLogList">
+      <soap12:operation soapAction="http://tempuri.org/ICampEventsAdminService/GetUserCampLogList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertWallet">
+      <soap12:operation soapAction="http://tempuri.org/ICampEventsAdminService/InsertWallet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWallet">
+      <soap12:operation soapAction="http://tempuri.org/ICampEventsAdminService/DeleteWallet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWalletList">
+      <soap12:operation soapAction="http://tempuri.org/ICampEventsAdminService/GetWalletList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CampEventsAdminService">
+    <wsdl:port name="BasicHttpBinding_ICampEventsAdminService" binding="tns:BasicHttpBinding_ICampEventsAdminService">
+      <soap:address location="http://adminapi.zygames.com/CampEvents/CampEventsAdminService.svc" />
+    </wsdl:port>
+    <wsdl:port name="NetTcpBinding_ICampEventsAdminService" binding="tns:NetTcpBinding_ICampEventsAdminService">
+      <soap12:address location="net.tcp://web1:7100/CampEvents/CampEventsAdminService.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://web1:7100/CampEvents/CampEventsAdminService.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

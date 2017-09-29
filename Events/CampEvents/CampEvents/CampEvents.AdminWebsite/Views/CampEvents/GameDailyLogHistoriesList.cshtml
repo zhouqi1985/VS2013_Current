@@ -1,0 +1,85 @@
+﻿@using ObjectUtil.Common
+@using ObjectUtil.Dictionary
+@using CampEvents.Database.Database
+@model List<GameDailyLogHistory>
+
+@{
+    ViewBag.Title = "列表";
+}
+
+@section title
+{
+    <script type="text/javascript" src="@Url.Content("/Content/js/jquery.input.title.js")"></script>
+    <script src="@Url.Content("/Content/js/jtip.js")" type="text/javascript"></script>
+    <script type="text/javascript" src="@Url.Content("/Content/js/jquery.table.js")"></script>
+}
+
+@Html.HeadBegin("列表")
+@using (Html.BeginForm("GameDailyLogHistoriesList", "CampEvents"))
+{
+    <text>
+        <input type="hidden" name="PageIndex" value="1" />
+        UserId
+        @Html.TextBox("UserId", null, new { Class = "input" })
+        AreaId
+        @Html.TextBox("AreaId", null, new { Class = "input" })
+        RecordDate
+        @Html.TextBoxWithCalendar("RecordDate", DateTime.Now.AddDays(-1).ToShortDateString(), new { Class = "input", Size = "40" }, "yy-mm-dd")
+        TaskConfigId
+        @Html.TextBox("TaskConfigId", null, new { Class = "input" })
+        FromId
+        @Html.TextBox("FromId", null, new { Class = "input" })
+        <input type="submit" value="搜索" class="bt-samll" />
+        <input type="submit" value="导出Excel" name="btnExportExcel" class="bt-samll" />
+    </text>
+}
+@Html.HeadEnd()
+
+<!--- data op --->
+
+<div id="data">
+    <table width="100%" align="center" cellpadding="0" cellspacing="0" class="table-data list">
+        <!-- 请程序注意 头部的jquery .list 已经变换成为特殊的 .list_cut ----------->
+        <tr>
+            <th>HistoryId</th>
+            <th>UserId</th>
+            <th>AreaId</th>
+            <th>AvatarId</th>
+            <th>AvatarName</th>
+            <th>RecordDate</th>
+            <th>TaskConfigId</th>
+            <th>FinalNumber</th>
+            <th>TaskGetPoints</th>
+            <th>CreateTime</th>
+            <th>FromId</th>
+        </tr>
+        <!------------->
+        @foreach (var item in Model)
+        {
+
+            <tr>
+
+                <td>&nbsp; @item.HistoryId</td>
+                <td>&nbsp; @item.UserId</td>
+                <td>&nbsp; @item.AreaId</td>
+                <td>&nbsp; @item.AvatarId</td>
+                <td>&nbsp; @item.AvatarName</td>
+                <td>&nbsp; @item.RecordDate</td>
+                <td>&nbsp; @item.TaskConfigId</td>
+                <td>&nbsp; @item.FinalNumber</td>
+                <td>&nbsp; @item.TaskGetPoints</td>
+                <td>&nbsp; @item.CreateTime</td>
+                <td>&nbsp; @item.FromId</td>
+            </tr>
+        }
+    </table>
+
+    <!--- page op --->
+    <div id="page">
+        @Html.Pager(new AdminButton("/CampEvents/GameDailyLogsList", "当天日志"))
+    </div>
+    <!--- page ed --->
+
+</div>
+<!--- data ed --->
+@Html.Foot()

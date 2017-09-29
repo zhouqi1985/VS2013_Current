@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5a0a61f4-3feb-42af-9fef-7d49ba361d32" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://adminapi.zygames.com/CampEvents/CampEventsAdminService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CampEventsAdminService.disco" MetadataType="Disco" ID="b993a227-b28c-4131-8b5c-31e0fa166a08" SourceId="1" SourceUrl="http://adminapi.zygames.com/CampEvents/CampEventsAdminService.svc?disco" />
+    <MetadataFile FileName="CampEventsAdminService.wsdl" MetadataType="Wsdl" ID="dfb59770-ee4b-40e6-a103-3fe3d426e9bb" SourceId="1" SourceUrl="http://adminapi.zygames.com/CampEvents/CampEventsAdminService.svc?wsdl" />
+    <MetadataFile FileName="CampEventsAdminService.xsd" MetadataType="Schema" ID="d63b4110-e93c-47ba-be17-dbe49f006858" SourceId="1" SourceUrl="http://adminapi.zygames.com/CampEvents/CampEventsAdminService.svc?xsd=xsd2" />
+    <MetadataFile FileName="CampEventsAdminService1.xsd" MetadataType="Schema" ID="e4585d28-6c35-4c51-8b9b-6707ae98e541" SourceId="1" SourceUrl="http://adminapi.zygames.com/CampEvents/CampEventsAdminService.svc?xsd=xsd3" />
+    <MetadataFile FileName="CampEventsAdminService2.xsd" MetadataType="Schema" ID="18eea39f-1996-421a-a5ac-97eeb7f5effc" SourceId="1" SourceUrl="http://adminapi.zygames.com/CampEvents/CampEventsAdminService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CampEventsAdminService3.xsd" MetadataType="Schema" ID="0a06428a-0781-4631-8ced-b9a8f8742cd6" SourceId="1" SourceUrl="http://adminapi.zygames.com/CampEvents/CampEventsAdminService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

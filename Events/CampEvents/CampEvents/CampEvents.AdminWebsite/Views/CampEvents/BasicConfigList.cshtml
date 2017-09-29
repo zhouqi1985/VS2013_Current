@@ -1,0 +1,55 @@
+﻿@using ObjectUtil.Common
+@using ObjectUtil.Dictionary
+@using CampEvents.Database.Database
+@model List<BasicConfig>
+
+@{
+    ViewBag.Title = "列表";
+}
+
+@section title
+{
+    <script type="text/javascript" src="@Url.Content("/Content/js/jquery.input.title.js")"></script>
+    <script src="@Url.Content("/Content/js/jtip.js")" type="text/javascript"></script>
+    <script type="text/javascript" src="@Url.Content("/Content/js/jquery.table.js")"></script>
+}
+
+@Html.HeadBegin("列表")
+@Html.HeadEnd()
+
+<!--- data op --->
+
+<div id="data">
+    <table width="100%" align="center" cellpadding="0" cellspacing="0" class="table-data list">
+        <!-- 请程序注意 头部的jquery .list 已经变换成为特殊的 .list_cut ----------->
+        <tr>
+            <th>BasicId</th>
+            <th>ConfigName</th>
+            <th>ConfigValue</th>
+            <th width="10%">操作</th>
+        </tr>
+        <!------------->
+        @foreach (var item in Model)
+        {
+
+            <tr>
+
+                <td>&nbsp; @item.BasicId</td>
+                <td>&nbsp; @item.ConfigName</td>
+                <td>&nbsp; @item.ConfigValue</td>
+                <td>
+                    <input type="button" class="bt-list" value="编辑" onclick="location.href='/CampEvents/EditBasicConfig?BasicId=@item.BasicId'" />
+                </td>
+            </tr>
+        }
+    </table>
+
+    <!--- page op --->
+    <div id="page">
+        @Html.Pager()
+    </div>
+    <!--- page ed --->
+
+</div>
+<!--- data ed --->
+@Html.Foot()

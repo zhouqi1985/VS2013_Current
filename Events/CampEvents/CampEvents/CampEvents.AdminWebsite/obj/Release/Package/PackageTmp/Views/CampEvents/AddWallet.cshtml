@@ -1,0 +1,139 @@
+﻿@using ObjectUtil.Common
+@using ObjectUtil.Dictionary
+@using CampEvents.Database.Database
+@model Wallet
+
+@{
+    ViewBag.Title = "编辑";
+}
+
+@section title
+{
+    <script type="text/javascript">
+		$(document).ready(function()
+		{
+		    //singer 选中变换class
+			$('.form .left, .form input, .form textarea, .form select').focus(function(){
+				$(this).parents('tr').addClass("over");
+			}).blur(function(){
+				$(this).parents('tr').removeClass("over");
+			});
+
+		});
+    </script>
+}
+
+@Html.HeadBegin("编辑")
+@Html.HeadEnd()
+
+
+<!--- data op --->
+<div id="data">
+    @using (Html.BeginForm())
+    {
+        <table width="100%" border="0" cellspacing="0" class="table-data form">
+            <!------------>
+            <!--  -->
+            <tr style="display:none;">
+                <th width="20%">WId:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.WId, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("WId").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">UserId:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.UserId, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("UserId").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">AreaId:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.AreaId, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("AreaId").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">AvatarId:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.AvatarId, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("AvatarId").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">AvatarName:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.AvatarName, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("AvatarName").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">DailyGetPoints:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.DailyGetPoints, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("DailyGetPoints").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">BalancePoints:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.BalancePoints, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("BalancePoints").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">FinishedTaskNum:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.FinishedTaskNum, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("FinishedTaskNum").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">RecordDate:</th>
+                <td width="80%">
+                    @Html.TextBoxWithCalendar("RecordDate", DateTime.Now.AddDays(-1).ToShortDateString(), new { Class = "input", Size = "40" }, "yy-mm-dd")
+                    @Html.JQueryValidationMessage(j => j.Bind("RecordDate").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">Source:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.Source, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("Source").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">CampId:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.CampId, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("CampId").NotEmpty())
+                </td>
+            </tr>
+            <tr>
+                <th>&nbsp;</th>
+                <td height="50" class="clear-form-td">
+                    <input type="submit" class="bt-big" name="button2" id="button2" value="提  交" />
+                    <input type="button" name="goback" class="bt-big" value="返  回" onclick="javascript:history.go(-1);" />
+                </td>
+            </tr>
+            <!------------>
+        </table>
+
+    }
+
+</div>
+<!--- data ed --->
+@Html.Foot()
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b2651c03-b2fa-4dbb-bb4b-337e2f8043b9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://event.userapi.zygames.com/qqsm/201709/CampEvents/CampEventsService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CampEventsService.wsdl" MetadataType="Wsdl" ID="5d346256-729e-46ca-b380-cd68ea22939e" SourceId="1" SourceUrl="http://event.userapi.zygames.com/qqsm/201709/CampEvents/CampEventsService.svc?wsdl" />
+    <MetadataFile FileName="CampEventsService.disco" MetadataType="Disco" ID="18ea432f-6bd9-44cb-a43c-08131e4f0a52" SourceId="1" SourceUrl="http://event.userapi.zygames.com/qqsm/201709/CampEvents/CampEventsService.svc?disco" />
+    <MetadataFile FileName="CampEventsService.xsd" MetadataType="Schema" ID="59643737-82a2-4c88-97b3-53b075802e86" SourceId="1" SourceUrl="http://event.userapi.zygames.com/qqsm/201709/CampEvents/CampEventsService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CampEventsService1.xsd" MetadataType="Schema" ID="37d1a517-f621-4107-aa38-7e8f9b526b53" SourceId="1" SourceUrl="http://event.userapi.zygames.com/qqsm/201709/CampEvents/CampEventsService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CampEventsService2.xsd" MetadataType="Schema" ID="aba99a52-00fd-4822-a660-993044a189d7" SourceId="1" SourceUrl="http://event.userapi.zygames.com/qqsm/201709/CampEvents/CampEventsService.svc?xsd=xsd2" />
+    <MetadataFile FileName="CampEventsService3.xsd" MetadataType="Schema" ID="fbca0336-0bbf-4290-ab79-6abe8f38ef6a" SourceId="1" SourceUrl="http://event.userapi.zygames.com/qqsm/201709/CampEvents/CampEventsService.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

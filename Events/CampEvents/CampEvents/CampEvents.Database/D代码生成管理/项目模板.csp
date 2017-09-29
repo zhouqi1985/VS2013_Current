@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<codeSmith xmlns="http://www.codesmithtools.com/schema/csp.xsd">
+  <variables>
+    <add key="ConnectionString1" value="Data Source=192.168.20.108;Initial Catalog=CampEventsDB;User ID=sa;Password=123.123a" />
+  </variables>
+  <propertySets>
+    <propertySet name="Step1 生成存储过程" template="\\192.168.20.108\Publish\CommonLibs\CodeSmith模版测试\项目模板测试V2.0\P1生成存储过程.cst">
+      <property name="Add">True</property>
+      <property name="Update">True</property>
+      <property name="Delete">True</property>
+      <property name="GetByID">True</property>
+      <property name="GetList">True</property>
+      <property name="ExecuteSql">True</property>
+    </propertySet>
+    <propertySet name="Step2 Database 生成实体类" template="\\192.168.20.108\Publish\CommonLibs\CodeSmith模版测试\项目模板测试V2.0\P2生成实体类.cst">
+      <property name="OutputDirectory">..\Database\</property>
+      <property name="Tables">
+        <connectionString>$(ConnectionString1)</connectionString>
+        <providerType>SchemaExplorer.SqlSchemaProvider,SchemaExplorer.SqlSchemaProvider</providerType>        
+      </property>
+    </propertySet>
+    <propertySet name="Step3.1 DAL CampEventsDAL.cs" output="..\..\CampEvents.DAL\CampEventsDAL.cs" template="\\192.168.20.108\Publish\CommonLibs\CodeSmith模版测试\项目模板测试V2.0\P3.1 DAL Class.cst" mergeType="PreserveRegions" mergeInit="RegionNameRegex=代码生成器生成|">
+      <property name="Database">
+        <connectionString>$(ConnectionString1)</connectionString>
+        <providerType>SchemaExplorer.SqlSchemaProvider,SchemaExplorer.SqlSchemaProvider</providerType>
+      </property>
+    </propertySet>
+    <propertySet name="Step3.2 DAL CampEventsDAL.csp" output="..\..\CampEvents.DAL\CampEventsDAL.csp" template="\\192.168.20.108\Publish\CommonLibs\CodeSmith模版测试\项目模板测试V2.0\P3.2 DAL Project.cst" mergeType="PreserveRegions" mergeInit="RegionNameRegex=代码生成器生成|;Language=XML">
+      <property name="Add">True</property>
+      <property name="Update">True</property>
+      <property name="Delete">True</property>
+      <property name="GetByID">True</property>
+      <property name="GetList">True</property>
+      <property name="Database">
+        <connectionString>$(ConnectionString1)</connectionString>
+        <providerType>SchemaExplorer.SqlSchemaProvider,SchemaExplorer.SqlSchemaProvider</providerType>
+      </property>
+    </propertySet>
+    <!--Controller-->
+    <propertySet name="Step6.1 Admin Controller" output="..\..\CampEvents.AdminWebsite\Controllers\CampEventsController.cs" template="\\192.168.20.108\Publish\CommonLibs\CodeSmith模版测试\项目模板测试V2.0\P6.1 AdminController.cst" mergeType="PreserveRegions" mergeInit="RegionNameRegex=代码生成器生成|">
+      <property name="Database">
+        <connectionString>$(ConnectionString1)</connectionString>
+        <providerType>SchemaExplorer.SqlSchemaProvider,SchemaExplorer.SqlSchemaProvider</providerType>
+      </property>
+    </propertySet>
+    <propertySet name="Step6.2 Admin Project" output="..\..\CampEvents.AdminWebsite\AdminWebsite.csp" template="\\192.168.20.108\Publish\CommonLibs\CodeSmith模版测试\项目模板测试V2.0\P6.2 Admin Project.cst" mergeType="PreserveRegions" mergeInit="RegionNameRegex=代码生成器生成|;Language=XML">
+      <property name="Add">True</property>
+      <property name="Update">True</property>
+      <property name="Delete">True</property>
+      <property name="GetByID">True</property>
+      <property name="GetList">True</property>
+      <property name="GetAll">True</property>
+      <property name="Database">
+        <connectionString>$(ConnectionString1)</connectionString>
+        <providerType>SchemaExplorer.SqlSchemaProvider,SchemaExplorer.SqlSchemaProvider</providerType>
+      </property>
+    </propertySet>
+  </propertySets>
+</codeSmith>

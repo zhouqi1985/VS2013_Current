@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://adminapi.zygames.com/CampEvents/CampEventsAdminService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" />
+  <xs:import schemaLocation="http://adminapi.zygames.com/CampEvents/CampEventsAdminService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/CommonLibs.Common" />
+  <xs:element name="UpdateBasicConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" minOccurs="0" name="basicConfig" nillable="true" type="q1:BasicConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateBasicConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateBasicConfigResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBasicConfigList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBasicConfigListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" minOccurs="0" name="GetBasicConfigListResult" nillable="true" type="q2:ArrayOfBasicConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCampConfigList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCampConfigListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" minOccurs="0" name="GetCampConfigListResult" nillable="true" type="q3:ArrayOfCampConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertDailyTaskConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" minOccurs="0" name="dailytaskconfig" nillable="true" type="q4:DailyTaskConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertDailyTaskConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertDailyTaskConfigResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateDailyTaskConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" minOccurs="0" name="dailytaskconfig" nillable="true" type="q5:DailyTaskConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateDailyTaskConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateDailyTaskConfigResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteDailyTaskConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" minOccurs="0" name="dailytaskconfig" nillable="true" type="q6:DailyTaskConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteDailyTaskConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteDailyTaskConfigResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDailyTaskConfigList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDailyTaskConfigListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" minOccurs="0" name="GetDailyTaskConfigListResult" nillable="true" type="q7:ArrayOfDailyTaskConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGameDailyLogHistoryList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q8:DataPage" />
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" minOccurs="0" name="searchGameDailyLogHistory" nillable="true" type="q9:GameDailyLogHistory" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGameDailyLogHistoryListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" minOccurs="0" name="GetGameDailyLogHistoryListResult" nillable="true" type="q10:ArrayOfGameDailyLogHistory" />
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q11:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGameDailyLogList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q12:DataPage" />
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" minOccurs="0" name="searchGameDailyLog" nillable="true" type="q13:GameDailyLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGameDailyLogListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" minOccurs="0" name="GetGameDailyLogListResult" nillable="true" type="q14:ArrayOfGameDailyLog" />
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q15:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPacketQueueLogList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q16:DataPage" />
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" minOccurs="0" name="searchpacketqueuelog" nillable="true" type="q17:PacketQueueLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPacketQueueLogListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" minOccurs="0" name="GetPacketQueueLogListResult" nillable="true" type="q18:ArrayOfPacketQueueLog" />
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q19:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPacketQueue">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" minOccurs="0" name="packetqueue" nillable="true" type="q20:PacketQueue" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPacketQueueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertPacketQueueResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePacketQueue">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" minOccurs="0" name="packetqueue" nillable="true" type="q21:PacketQueue" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePacketQueueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeletePacketQueueResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPacketQueueList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q22:DataPage" />
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" minOccurs="0" name="searchPacketQueue" nillable="true" type="q23:PacketQueue" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPacketQueueListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" minOccurs="0" name="GetPacketQueueListResult" nillable="true" type="q24:ArrayOfPacketQueue" />
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q25:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalculateFinalPackets">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalculateFinalPacketsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CalculateFinalPacketsResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPointPacketConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" minOccurs="0" name="pointpacketconfig" nillable="true" type="q26:PointPacketConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPointPacketConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertPointPacketConfigResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePointPacketConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" minOccurs="0" name="pointpacketconfig" nillable="true" type="q27:PointPacketConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePointPacketConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdatePointPacketConfigResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePointPacketConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" minOccurs="0" name="pointpacketconfig" nillable="true" type="q28:PointPacketConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePointPacketConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeletePointPacketConfigResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPointPacketConfigsList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q29:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPointPacketConfigsListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" minOccurs="0" name="GetPointPacketConfigsListResult" nillable="true" type="q30:ArrayOfPointPacketConfig" />
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q31:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPointPacketExchangeLogList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q32:DataPage" />
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" minOccurs="0" name="searchPointPacketExchangeLog" nillable="true" type="q33:PointPacketExchangeLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPointPacketExchangeLogListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" minOccurs="0" name="GetPointPacketExchangeLogListResult" nillable="true" type="q34:ArrayOfPointPacketExchangeLog" />
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q35:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertRankListTop20">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" minOccurs="0" name="ranklisttop20" nillable="true" type="q36:RankListTop20" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertRankListTop20Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertRankListTop20Result" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteRankListTop20">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" minOccurs="0" name="ranklisttop20" nillable="true" type="q37:RankListTop20" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteRankListTop20Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteRankListTop20Result" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRankListTop20List">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q38:DataPage" />
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" minOccurs="0" name="searchRankListTop20" nillable="true" type="q39:RankListTop20" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRankListTop20ListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" minOccurs="0" name="GetRankListTop20ListResult" nillable="true" type="q40:ArrayOfRankListTop20" />
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q41:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalculateRankPacket">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" minOccurs="0" name="rankinfo" nillable="true" type="q42:RankListTop20" />
+        <xs:element minOccurs="0" name="packetid" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalculateRankPacketResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CalculateRankPacketResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserCampLogList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q43:DataPage" />
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" minOccurs="0" name="searchUserCampLog" nillable="true" type="q44:UserCampLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserCampLogListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" minOccurs="0" name="GetUserCampLogListResult" nillable="true" type="q45:ArrayOfUserCampLog" />
+        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q46:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertWallet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" minOccurs="0" name="wallet" nillable="true" type="q47:Wallet" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertWalletResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertWalletResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteWallet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" minOccurs="0" name="wallet" nillable="true" type="q48:Wallet" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteWalletResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteWalletResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWalletList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q49:DataPage" />
+        <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" minOccurs="0" name="searchwallet" nillable="true" type="q50:Wallet" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWalletListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/CampEvents.Database.Database" minOccurs="0" name="GetWalletListResult" nillable="true" type="q51:ArrayOfWallet" />
+        <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q52:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

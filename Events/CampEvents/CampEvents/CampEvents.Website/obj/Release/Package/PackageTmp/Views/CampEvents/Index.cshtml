@@ -1,0 +1,59 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+@{string url = "http://event.zygames.com/qqsm/201709/CampEvents/";}
+@using CampEvents.Database.Enums;
+@using ObjectUtil.Common;
+<div>
+    <input id="loginBtn" type="button" value="Login" onclick="zy.loginLayer('@url')">
+    <input id="logoutBtn" type="button" value="Logout" onclick="location.href = 'https://passport.zygames.com/logout?returnUrl=@url'+'Index'">
+</div>
+<br>
+<div>
+    接口说明：<br>
+    活动接口连接：@url<br>
+    <br>
+    各个接口说明：<br>
+    IsLogin()：<input type="button" value="是否登录" onclick="location.href = '@url'+ 'IsLogin'" /><br>
+    Login()：<input type="button" value="登录后操作" onclick="location.href = '@url'+ 'Login'" /><br>
+    GetCampInfo()：<input type="button" value="获取阵营信息" onclick="location.href = '@url'+ 'GetCampInfo'" /><br>
+    GetUserInfo()：<input type="button" value="获取用户信息" onclick="location.href = '@url'+ 'GetUserInfo'" /><br>
+
+    UserChooseCamp(int CampId)：<form method="post" action="UserChooseCamp">
+        CampId:<input type="text" name="CampId" value=""><input type="submit" value="选择阵营" /><br>
+    </form>
+    ExchangePointPacket(int ExchangeId)：<form method="post" action="ExchangePointPacket">
+        ExchangeId:<input type="text" name="ExchangeId" value=""><input type="submit" value="兑换个人积分礼包" /><br>
+    </form>
+</div>
+<br>
+<div>
+    所有返回Code如下：<br>
+    <table width="100%" align="center" cellpadding="0" cellspacing="0">
+        <!-- 请程序注意 头部的jquery .list 已经变换成为特殊的 .list_cut ----------->
+        <tr>
+            <th>Code</th>
+            <th>Description</th>
+        </tr>
+        <!------------->
+        @foreach (ErrorCode type in Enum.GetValues(typeof(ErrorCode)))
+        {
+
+            <tr align="center">
+                <td>@Enum.Format(typeof(ErrorCode), type, "D")</td>
+                <td>@type.ToDescription()</td>
+            </tr>
+        }
+    </table>
+
+
+
+</div>
+
+<script type="text/javascript">
+    var zy = {
+        loginLayer: function (url) {
+            return startPop_fmAvatar(url + 'login', "_top", 1);
+        }//登录弹窗
+    }
+</script>
