@@ -1,0 +1,129 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetFeedEvents.Database", "PetFeedEvents\PetFeedEvents.Database\PetFeedEvents.Database.csproj", "{07F1C64D-D2A8-4606-82B5-7F9B47F39392}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetFeedEvents.DAL", "PetFeedEvents\PetFeedEvents.DAL\PetFeedEvents.DAL.csproj", "{2BDBAF7D-1FC8-48CE-8C4A-56834EDD6893}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetFeedEvents.DAL.WCF", "PetFeedEvents\PetFeedEvents.DAL.WCF\PetFeedEvents.DAL.WCF.csproj", "{462603C1-D392-49FA-8D18-7B9CE384AE5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetFeedEvents.DAL.WCF.Client", "PetFeedEvents\PetFeedEvents.DAL.WCF.Client\PetFeedEvents.DAL.WCF.Client.csproj", "{09B15155-F0B0-4A9A-B394-3B2792E2D884}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetFeedEvents.DAL.AdminWCF", "PetFeedEvents\PetFeedEvents.DAL.AdminWCF\PetFeedEvents.DAL.AdminWCF.csproj", "{09390350-644A-47E8-B861-834CD54E4259}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetFeedEvents.DAL.AdminWCF.Client", "PetFeedEvents\PetFeedEvents.DAL.AdminWCF.Client\PetFeedEvents.DAL.AdminWCF.Client.csproj", "{8EF7B15B-60CC-4582-9596-6DA2D5C3199A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Admin", "Admin", "{27615E47-BB53-4334-922D-D6E77FDBD858}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Public", "Public", "{B09A7C65-5707-4890-B2FC-4902E4BC4829}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebSite", "WebSite", "{E50E1CAD-05EF-4C29-B60A-1FD8130ABA69}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{11228E2D-804D-4E43-A5AF-179E6D201E26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetFeedEventsService", "PetFeedEvents\PetFeedEventsService\PetFeedEventsService.csproj", "{6D712884-FA5F-4205-A392-500E39AAE700}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "PetFeedServiceSetup", "PetFeedEvents\PetFeedServiceSetup\PetFeedServiceSetup.vdproj", "{C994C370-4A22-41DD-8347-41A0152EFA86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetFeedEvents.AdminWebsite", "PetFeedEvents\PetFeedEvents.AdminWebsite\PetFeedEvents.AdminWebsite.csproj", "{E8B58536-FE13-4FB6-9043-B419CDEFFF40}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 10
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.20.109:8080/tfs/platform
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = PetFeedEvents\\PetFeedEvents.DAL.AdminWCF.Client\\PetFeedEvents.DAL.AdminWCF.Client.csproj
+		SccProjectTopLevelParentUniqueName1 = PetFeedEvents.sln
+		SccProjectName1 = PetFeedEvents/PetFeedEvents.DAL.AdminWCF.Client
+		SccLocalPath1 = PetFeedEvents\\PetFeedEvents.DAL.AdminWCF.Client
+		SccProjectUniqueName2 = PetFeedEvents\\PetFeedEvents.DAL.AdminWCF\\PetFeedEvents.DAL.AdminWCF.csproj
+		SccProjectTopLevelParentUniqueName2 = PetFeedEvents.sln
+		SccProjectName2 = PetFeedEvents/PetFeedEvents.DAL.AdminWCF
+		SccLocalPath2 = PetFeedEvents\\PetFeedEvents.DAL.AdminWCF
+		SccProjectUniqueName3 = PetFeedEvents\\PetFeedEvents.DAL.WCF.Client\\PetFeedEvents.DAL.WCF.Client.csproj
+		SccProjectTopLevelParentUniqueName3 = PetFeedEvents.sln
+		SccProjectName3 = PetFeedEvents/PetFeedEvents.DAL.WCF.Client
+		SccLocalPath3 = PetFeedEvents\\PetFeedEvents.DAL.WCF.Client
+		SccProjectUniqueName4 = PetFeedEvents\\PetFeedEvents.DAL.WCF\\PetFeedEvents.DAL.WCF.csproj
+		SccProjectTopLevelParentUniqueName4 = PetFeedEvents.sln
+		SccProjectName4 = PetFeedEvents/PetFeedEvents.DAL.WCF
+		SccLocalPath4 = PetFeedEvents\\PetFeedEvents.DAL.WCF
+		SccProjectUniqueName5 = PetFeedEvents\\PetFeedEvents.DAL\\PetFeedEvents.DAL.csproj
+		SccProjectTopLevelParentUniqueName5 = PetFeedEvents.sln
+		SccProjectName5 = PetFeedEvents/PetFeedEvents.DAL
+		SccLocalPath5 = PetFeedEvents\\PetFeedEvents.DAL
+		SccProjectUniqueName6 = PetFeedEvents\\PetFeedEvents.Database\\PetFeedEvents.Database.csproj
+		SccProjectTopLevelParentUniqueName6 = PetFeedEvents.sln
+		SccProjectName6 = PetFeedEvents/PetFeedEvents.Database
+		SccLocalPath6 = PetFeedEvents\\PetFeedEvents.Database
+		SccProjectUniqueName7 = PetFeedEvents\\PetFeedEventsService\\PetFeedEventsService.csproj
+		SccProjectTopLevelParentUniqueName7 = PetFeedEvents.sln
+		SccProjectName7 = PetFeedEvents/PetFeedEventsService
+		SccLocalPath7 = PetFeedEvents\\PetFeedEventsService
+		SccProjectUniqueName8 = PetFeedEvents\\PetFeedServiceSetup\\PetFeedServiceSetup.vdproj
+		SccProjectTopLevelParentUniqueName8 = PetFeedEvents.sln
+		SccProjectName8 = PetFeedEvents/PetFeedServiceSetup
+		SccLocalPath8 = PetFeedEvents\\PetFeedServiceSetup
+		SccProjectUniqueName9 = PetFeedEvents\\PetFeedEvents.AdminWebsite\\PetFeedEvents.AdminWebsite.csproj
+		SccProjectTopLevelParentUniqueName9 = PetFeedEvents.sln
+		SccProjectName9 = PetFeedEvents/PetFeedEvents.AdminWebsite
+		SccLocalPath9 = PetFeedEvents\\PetFeedEvents.AdminWebsite
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07F1C64D-D2A8-4606-82B5-7F9B47F39392}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07F1C64D-D2A8-4606-82B5-7F9B47F39392}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07F1C64D-D2A8-4606-82B5-7F9B47F39392}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07F1C64D-D2A8-4606-82B5-7F9B47F39392}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BDBAF7D-1FC8-48CE-8C4A-56834EDD6893}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BDBAF7D-1FC8-48CE-8C4A-56834EDD6893}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BDBAF7D-1FC8-48CE-8C4A-56834EDD6893}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BDBAF7D-1FC8-48CE-8C4A-56834EDD6893}.Release|Any CPU.Build.0 = Release|Any CPU
+		{462603C1-D392-49FA-8D18-7B9CE384AE5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{462603C1-D392-49FA-8D18-7B9CE384AE5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{462603C1-D392-49FA-8D18-7B9CE384AE5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{462603C1-D392-49FA-8D18-7B9CE384AE5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09B15155-F0B0-4A9A-B394-3B2792E2D884}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09B15155-F0B0-4A9A-B394-3B2792E2D884}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09B15155-F0B0-4A9A-B394-3B2792E2D884}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09B15155-F0B0-4A9A-B394-3B2792E2D884}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09390350-644A-47E8-B861-834CD54E4259}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09390350-644A-47E8-B861-834CD54E4259}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09390350-644A-47E8-B861-834CD54E4259}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09390350-644A-47E8-B861-834CD54E4259}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EF7B15B-60CC-4582-9596-6DA2D5C3199A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EF7B15B-60CC-4582-9596-6DA2D5C3199A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EF7B15B-60CC-4582-9596-6DA2D5C3199A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EF7B15B-60CC-4582-9596-6DA2D5C3199A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D712884-FA5F-4205-A392-500E39AAE700}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D712884-FA5F-4205-A392-500E39AAE700}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D712884-FA5F-4205-A392-500E39AAE700}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D712884-FA5F-4205-A392-500E39AAE700}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C994C370-4A22-41DD-8347-41A0152EFA86}.Debug|Any CPU.ActiveCfg = Debug
+		{C994C370-4A22-41DD-8347-41A0152EFA86}.Release|Any CPU.ActiveCfg = Release
+		{E8B58536-FE13-4FB6-9043-B419CDEFFF40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8B58536-FE13-4FB6-9043-B419CDEFFF40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8B58536-FE13-4FB6-9043-B419CDEFFF40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8B58536-FE13-4FB6-9043-B419CDEFFF40}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{07F1C64D-D2A8-4606-82B5-7F9B47F39392} = {B09A7C65-5707-4890-B2FC-4902E4BC4829}
+		{2BDBAF7D-1FC8-48CE-8C4A-56834EDD6893} = {B09A7C65-5707-4890-B2FC-4902E4BC4829}
+		{462603C1-D392-49FA-8D18-7B9CE384AE5A} = {E50E1CAD-05EF-4C29-B60A-1FD8130ABA69}
+		{09B15155-F0B0-4A9A-B394-3B2792E2D884} = {E50E1CAD-05EF-4C29-B60A-1FD8130ABA69}
+		{09390350-644A-47E8-B861-834CD54E4259} = {27615E47-BB53-4334-922D-D6E77FDBD858}
+		{8EF7B15B-60CC-4582-9596-6DA2D5C3199A} = {27615E47-BB53-4334-922D-D6E77FDBD858}
+		{6D712884-FA5F-4205-A392-500E39AAE700} = {11228E2D-804D-4E43-A5AF-179E6D201E26}
+		{C994C370-4A22-41DD-8347-41A0152EFA86} = {11228E2D-804D-4E43-A5AF-179E6D201E26}
+		{E8B58536-FE13-4FB6-9043-B419CDEFFF40} = {27615E47-BB53-4334-922D-D6E77FDBD858}
+	EndGlobalSection
+EndGlobal

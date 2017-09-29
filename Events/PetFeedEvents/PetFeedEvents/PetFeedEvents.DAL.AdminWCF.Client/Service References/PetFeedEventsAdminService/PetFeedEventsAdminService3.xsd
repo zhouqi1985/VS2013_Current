@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://adminapi.zygames.com/PetFeedEvents/PetFeedEventsAdminService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CommonLibs.Common" />
+  <xs:import schemaLocation="http://adminapi.zygames.com/PetFeedEvents/PetFeedEventsAdminService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/PetFeedEvents.Database.Database" />
+  <xs:element name="CleanAllData">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CleanAllDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CleanAllDataResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGameDailyLogList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q1:DataPage" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/PetFeedEvents.Database.Database" minOccurs="0" name="searchGameDailyLog" nillable="true" type="q2:GameDailyLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGameDailyLogListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/PetFeedEvents.Database.Database" minOccurs="0" name="GetGameDailyLogListResult" nillable="true" type="q3:ArrayOfGameDailyLog" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q4:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDynamicPacketQueueList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q5:DataPage" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/PetFeedEvents.Database.Database" minOccurs="0" name="searchDynamicPacketQueue" nillable="true" type="q6:DynamicPacketQueue" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDynamicPacketQueueListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/PetFeedEvents.Database.Database" minOccurs="0" name="GetDynamicPacketQueueListResult" nillable="true" type="q7:ArrayOfDynamicPacketQueue" />
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q8:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertGameDailyLog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/PetFeedEvents.Database.Database" minOccurs="0" name="gamedailylog" nillable="true" type="q9:GameDailyLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertGameDailyLogResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertGameDailyLogResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDynamicPacketQueueLogList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q10:DataPage" />
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/PetFeedEvents.Database.Database" minOccurs="0" name="searchDynamicPacketQueueLog" nillable="true" type="q11:DynamicPacketQueueLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDynamicPacketQueueLogListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/PetFeedEvents.Database.Database" minOccurs="0" name="GetDynamicPacketQueueLogListResult" nillable="true" type="q12:ArrayOfDynamicPacketQueueLog" />
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q13:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTaskConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q14:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTaskConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/PetFeedEvents.Database.Database" minOccurs="0" name="GetTaskConfigResult" nillable="true" type="q15:ArrayOfTaskConfig" />
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q16:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertTaskConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/PetFeedEvents.Database.Database" minOccurs="0" name="taskconfig" nillable="true" type="q17:TaskConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertTaskConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertTaskConfigResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateTaskConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/PetFeedEvents.Database.Database" minOccurs="0" name="taskconfig" nillable="true" type="q18:TaskConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateTaskConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateTaskConfigResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteTaskConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/PetFeedEvents.Database.Database" minOccurs="0" name="taskconfig" nillable="true" type="q19:TaskConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteTaskConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteTaskConfigResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

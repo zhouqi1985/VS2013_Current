@@ -1,0 +1,7 @@
+﻿2017-09-11 18:27:23 Information.Windows Service Start
+2017-09-11 18:27:23 Information.SendDynamicPacketMultiple Start
+2017-09-11 18:27:23 Information.SendDynamicPacketOnce Start
+2017-09-11 18:27:23 Information.SendDynamicPacket Start
+2017-09-11 18:27:23 Information.RecordDate.2017/9/10 0:00:00
+2017-09-11 18:27:28 Information.No Data.0,1,2,1
+2017-09-11 18:30:12 Information.Windows Service Stop

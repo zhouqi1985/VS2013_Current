@@ -1,0 +1,16 @@
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.Database\bin\Release\PetFeedEvents.Database.dll.config
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.Database\bin\Release\PetFeedEvents.Database.dll
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.Database\bin\Release\CommonLibs.Common.dll
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.Database\bin\Release\CommonLibs.EnterpriseLibrary.dll
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.Database\bin\Release\EntityFramework.dll
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.Database\bin\Release\EntityFramework.SqlServer.dll
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.Database\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.Database\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.Database\bin\Release\Microsoft.Practices.ServiceLocation.dll
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.Database\bin\Release\Microsoft.Practices.Unity.dll
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.Database\bin\Release\Microsoft.Practices.Unity.Interception.dll
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.Database\bin\Release\EntityFramework.xml
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.Database\bin\Release\EntityFramework.SqlServer.xml
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.Database\obj\Release\PetFeedEvents.Database.Migrations.InitialCreate.resources
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.Database\obj\Release\PetFeedEvents.Database.csproj.GenerateResource.Cache
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.Database\obj\Release\PetFeedEvents.Database.dll

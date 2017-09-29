@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="PetFeedEvents.DAL.AdminWCF.PetFeedEventsAdminService" CodeBehind="PetFeedEventsAdminService.svc.cs" %>

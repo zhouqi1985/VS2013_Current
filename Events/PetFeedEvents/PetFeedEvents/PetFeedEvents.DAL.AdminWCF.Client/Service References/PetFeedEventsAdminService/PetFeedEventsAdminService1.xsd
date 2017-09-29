@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/PetFeedEvents.Database.Database" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/PetFeedEvents.Database.Database" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://adminapi.zygames.com/PetFeedEvents/PetFeedEventsAdminService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="GameDailyLog">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ActualNum" type="xs:int" />
+          <xs:element minOccurs="0" name="AreaId" type="xs:int" />
+          <xs:element minOccurs="0" name="AvatarId" type="xs:long" />
+          <xs:element minOccurs="0" name="AvatarName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="FinalGetNum" type="xs:int" />
+          <xs:element minOccurs="0" name="GUID" type="ser:guid" />
+          <xs:element minOccurs="0" name="RecordDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="RecordId" type="xs:long" />
+          <xs:element minOccurs="0" name="Sex" type="xs:int" />
+          <xs:element minOccurs="0" name="Source" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TaskConfig" nillable="true" type="tns:TaskConfig" />
+          <xs:element minOccurs="0" name="TaskConfigId" type="xs:int" />
+          <xs:element minOccurs="0" name="UserId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GameDailyLog" nillable="true" type="tns:GameDailyLog" />
+  <xs:complexType name="BaseEntity">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="BaseEntity" nillable="true" type="tns:BaseEntity" />
+  <xs:complexType name="TaskConfig">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BindCashPerTask" type="xs:int" />
+          <xs:element minOccurs="0" name="GameDailyLogList" nillable="true" type="tns:ArrayOfGameDailyLog" />
+          <xs:element minOccurs="0" name="GoldPerTask" type="xs:int" />
+          <xs:element minOccurs="0" name="ItemCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ItemCountPerTask" type="xs:int" />
+          <xs:element minOccurs="0" name="ItemTimePerTask" type="xs:int" />
+          <xs:element minOccurs="0" name="PacketId" type="xs:int" />
+          <xs:element minOccurs="0" name="Source" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TaskConfigId" type="xs:int" />
+          <xs:element minOccurs="0" name="TaskDesc" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TaskName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TaskConfig" nillable="true" type="tns:TaskConfig" />
+  <xs:complexType name="ArrayOfGameDailyLog">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GameDailyLog" nillable="true" type="tns:GameDailyLog" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGameDailyLog" nillable="true" type="tns:ArrayOfGameDailyLog" />
+  <xs:complexType name="DynamicPacketQueue">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AvatarId" type="xs:long" />
+          <xs:element minOccurs="0" name="BindCash" type="xs:int" />
+          <xs:element minOccurs="0" name="CreateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="GUID" type="ser:guid" />
+          <xs:element minOccurs="0" name="Gold" type="xs:int" />
+          <xs:element minOccurs="0" name="Id" type="xs:long" />
+          <xs:element minOccurs="0" name="ItemCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PacketId" type="xs:int" />
+          <xs:element minOccurs="0" name="PacketItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PacketItemTime" type="xs:int" />
+          <xs:element minOccurs="0" name="Sex" type="xs:int" />
+          <xs:element minOccurs="0" name="Site" type="xs:int" />
+          <xs:element minOccurs="0" name="Source" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UserId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DynamicPacketQueue" nillable="true" type="tns:DynamicPacketQueue" />
+  <xs:complexType name="ArrayOfDynamicPacketQueue">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DynamicPacketQueue" nillable="true" type="tns:DynamicPacketQueue" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDynamicPacketQueue" nillable="true" type="tns:ArrayOfDynamicPacketQueue" />
+  <xs:complexType name="DynamicPacketQueueLog">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AvatarId" type="xs:long" />
+          <xs:element minOccurs="0" name="BindCash" type="xs:int" />
+          <xs:element minOccurs="0" name="CreateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="GUID" type="ser:guid" />
+          <xs:element minOccurs="0" name="Gold" type="xs:int" />
+          <xs:element minOccurs="0" name="ItemCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LogId" type="xs:long" />
+          <xs:element minOccurs="0" name="PacketId" type="xs:int" />
+          <xs:element minOccurs="0" name="PacketItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PacketItemTime" type="xs:int" />
+          <xs:element minOccurs="0" name="Sex" type="xs:int" />
+          <xs:element minOccurs="0" name="Site" type="xs:int" />
+          <xs:element minOccurs="0" name="Source" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UserId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DynamicPacketQueueLog" nillable="true" type="tns:DynamicPacketQueueLog" />
+  <xs:complexType name="ArrayOfDynamicPacketQueueLog">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DynamicPacketQueueLog" nillable="true" type="tns:DynamicPacketQueueLog" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDynamicPacketQueueLog" nillable="true" type="tns:ArrayOfDynamicPacketQueueLog" />
+  <xs:complexType name="ArrayOfTaskConfig">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TaskConfig" nillable="true" type="tns:TaskConfig" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTaskConfig" nillable="true" type="tns:ArrayOfTaskConfig" />
+</xs:schema>

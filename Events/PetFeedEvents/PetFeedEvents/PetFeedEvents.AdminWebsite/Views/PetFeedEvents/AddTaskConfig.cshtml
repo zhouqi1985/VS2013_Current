@@ -1,0 +1,131 @@
+﻿@using ObjectUtil.Common
+@using ObjectUtil.Dictionary
+@using PetFeedEvents.Database.Database
+@model TaskConfig
+
+@{
+    ViewBag.Title = "编辑";
+}
+
+@section title
+{
+    <script type="text/javascript">
+		$(document).ready(function()
+		{
+		    //singer 选中变换class
+			$('.form .left, .form input, .form textarea, .form select').focus(function(){
+				$(this).parents('tr').addClass("over");
+			}).blur(function(){
+				$(this).parents('tr').removeClass("over");
+			});
+
+		});
+    </script>
+}
+
+@Html.HeadBegin("编辑")
+@Html.HeadEnd()
+
+
+<!--- data op --->
+<div id="data">
+    @using (Html.BeginForm())
+    {
+        <table width="100%" border="0" cellspacing="0" class="table-data form">
+            <!------------>
+            <!--  -->
+            <tr>
+                <th width="20%">TaskConfigId:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.TaskConfigId, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("TaskConfigId").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">TaskName:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.TaskName, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("TaskName").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">TaskDesc:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.TaskDesc, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("TaskDesc").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">PacketId:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.PacketId, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("PacketId").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">ItemCode:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.ItemCode, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("ItemCode").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">ItemTimePerTask:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.ItemTimePerTask, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("ItemTimePerTask").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">ItemCountPerTask:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.ItemCountPerTask, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("ItemCountPerTask").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">GoldPerTask:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.GoldPerTask, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("GoldPerTask").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">BindCashPerTask:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.BindCashPerTask, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("BindCashPerTask").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">Source:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.Source, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("Source").NotEmpty())
+                </td>
+            </tr>
+            <tr>
+                <th>&nbsp;</th>
+                <td height="50" class="clear-form-td">
+                    <input type="submit" class="bt-big" name="button2" id="button2" value="提  交" />
+                    <input type="button" name="goback" class="bt-big" value="返  回" onclick="javascript:history.go(-1);" />
+                </td>
+            </tr>
+            <!------------>
+        </table>
+
+    }
+
+</div>
+<!--- data ed --->
+@Html.Foot()
+

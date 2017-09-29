@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>\\192.168.20.108\Publish\WebSite\adminApi.zygames.com\PetFeedEvents</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/AutoMapper.dll">
+      <publishTime>09/05/2017 18:06:20</publishTime>
+    </File>
+    <File Include="bin/CommonLibs.Common.dll">
+      <publishTime>09/12/2017 14:05:08</publishTime>
+    </File>
+    <File Include="bin/CommonLibs.EnterpriseLibrary.dll">
+      <publishTime>09/12/2017 14:05:16</publishTime>
+    </File>
+    <File Include="bin/DataTableOperator.dll">
+      <publishTime>09/13/2017 12:55:26</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>09/05/2017 11:06:16</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>09/05/2017 11:06:16</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Caching.dll">
+      <publishTime>04/16/2010 14:16:58</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Common.dll">
+      <publishTime>09/12/2017 14:05:16</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Data.dll">
+      <publishTime>09/12/2017 14:05:16</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.ServiceLocation.dll">
+      <publishTime>09/12/2017 14:05:16</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.dll">
+      <publishTime>09/12/2017 14:05:16</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.Interception.dll">
+      <publishTime>09/12/2017 14:05:16</publishTime>
+    </File>
+    <File Include="bin/PetFeedEvents.DAL.AdminWCF.dll">
+      <publishTime>09/14/2017 10:38:00</publishTime>
+    </File>
+    <File Include="bin/PetFeedEvents.DAL.dll">
+      <publishTime>09/14/2017 10:37:54</publishTime>
+    </File>
+    <File Include="bin/PetFeedEvents.Database.dll">
+      <publishTime>09/14/2017 10:37:50</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.dll">
+      <publishTime>09/05/2017 18:06:19</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>09/13/2017 10:53:35</publishTime>
+    </File>
+    <File Include="PetFeedEventsAdminService.svc">
+      <publishTime>09/05/2017 10:53:35</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/13/2017 10:53:45</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

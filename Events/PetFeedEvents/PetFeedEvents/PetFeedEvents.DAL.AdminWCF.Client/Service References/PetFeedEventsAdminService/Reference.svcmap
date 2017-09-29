@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4a17541c-01ac-48c3-85a7-cc171521ebd2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://adminapi.zygames.com/PetFeedEvents/PetFeedEventsAdminService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PetFeedEventsAdminService.xsd" MetadataType="Schema" ID="306687f6-cbdf-4d5d-95b3-97f4829c8e1a" SourceId="1" SourceUrl="http://adminapi.zygames.com/PetFeedEvents/PetFeedEventsAdminService.svc?xsd=xsd1" />
+    <MetadataFile FileName="PetFeedEventsAdminService.disco" MetadataType="Disco" ID="b1dca4ca-0184-4299-bffb-b5c7c0b48ab0" SourceId="1" SourceUrl="http://adminapi.zygames.com/PetFeedEvents/PetFeedEventsAdminService.svc?disco" />
+    <MetadataFile FileName="PetFeedEventsAdminService1.xsd" MetadataType="Schema" ID="ec1d5c46-8f2e-4ff1-a600-9aba7ef7b380" SourceId="1" SourceUrl="http://adminapi.zygames.com/PetFeedEvents/PetFeedEventsAdminService.svc?xsd=xsd3" />
+    <MetadataFile FileName="PetFeedEventsAdminService2.xsd" MetadataType="Schema" ID="82ffa6aa-28f4-44d2-8040-86db464b7b0a" SourceId="1" SourceUrl="http://adminapi.zygames.com/PetFeedEvents/PetFeedEventsAdminService.svc?xsd=xsd2" />
+    <MetadataFile FileName="PetFeedEventsAdminService.wsdl" MetadataType="Wsdl" ID="0f1fc5bb-cd63-42b8-ac5e-d6cb101607e2" SourceId="1" SourceUrl="http://adminapi.zygames.com/PetFeedEvents/PetFeedEventsAdminService.svc?wsdl" />
+    <MetadataFile FileName="PetFeedEventsAdminService3.xsd" MetadataType="Schema" ID="932bdbe5-59d6-4426-b8fc-54a734e9a26e" SourceId="1" SourceUrl="http://adminapi.zygames.com/PetFeedEvents/PetFeedEventsAdminService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

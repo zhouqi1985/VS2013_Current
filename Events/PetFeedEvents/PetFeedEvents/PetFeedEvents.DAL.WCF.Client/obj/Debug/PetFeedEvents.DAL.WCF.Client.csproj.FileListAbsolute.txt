@@ -1,0 +1,5 @@
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.DAL.WCF.Client\bin\Debug\PetFeedEvents.DAL.WCF.Client.dll
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.DAL.WCF.Client\bin\Debug\PetFeedEvents.DAL.WCF.Client.pdb
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.DAL.WCF.Client\obj\Debug\PetFeedEvents.DAL.WCF.Client.dll
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.DAL.WCF.Client\obj\Debug\PetFeedEvents.DAL.WCF.Client.pdb
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.DAL.WCF.Client\obj\Debug\PetFeedEvents.DAL.WCF.Client.csprojResolveAssemblyReference.cache

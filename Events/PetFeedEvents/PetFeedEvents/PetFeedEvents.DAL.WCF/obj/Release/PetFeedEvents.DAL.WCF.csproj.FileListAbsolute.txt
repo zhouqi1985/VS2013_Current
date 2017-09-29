@@ -1,0 +1,17 @@
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.DAL.WCF\bin\PetFeedEvents.DAL.WCF.dll.config
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.DAL.WCF\bin\PetFeedEvents.DAL.WCF.dll
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.DAL.WCF\bin\PetFeedEvents.DAL.WCF.pdb
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.DAL.WCF\bin\PetFeedEvents.DAL.dll
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.DAL.WCF\bin\PetFeedEvents.Database.dll
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.DAL.WCF\bin\EntityFramework.dll
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.DAL.WCF\bin\AutoMapper.dll
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.DAL.WCF\bin\System.Runtime.dll
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.DAL.WCF\bin\EntityFramework.xml
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.DAL.WCF\bin\AutoMapper.xml
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.DAL.WCF\bin\System.Runtime.xml
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.DAL.WCF\obj\Release\PetFeedEvents.DAL.WCF.csprojResolveAssemblyReference.cache
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.DAL.WCF\obj\Release\PetFeedEvents.DAL.WCF.dll
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.DAL.WCF\obj\Release\PetFeedEvents.DAL.WCF.pdb
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.DAL.WCF\bin\CommonLibs.Common.dll
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.DAL.WCF\bin\DataTableOperator.dll
+E:\ZyProject\Events\PetFeedEvents\PetFeedEvents\PetFeedEvents.DAL.WCF\bin\DataTableOperator.pdb
