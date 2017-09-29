@@ -1,0 +1,5 @@
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.Database\bin\Release\WeaponDesign.Database.dll
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.Database\bin\Release\WeaponDesign.Database.pdb
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.Database\obj\Release\WeaponDesign.Database.dll
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.Database\obj\Release\WeaponDesign.Database.pdb
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.Database\obj\Release\WeaponDesign.Database.csprojResolveAssemblyReference.cache

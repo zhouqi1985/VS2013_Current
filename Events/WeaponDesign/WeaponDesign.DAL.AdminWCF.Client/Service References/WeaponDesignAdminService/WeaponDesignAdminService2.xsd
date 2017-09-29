@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://adminapi.zygames.com/Event/QQSM/201512/DesignUpload/WeaponDesignAdminService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" />
+  <xs:import schemaLocation="http://adminapi.zygames.com/Event/QQSM/201512/DesignUpload/WeaponDesignAdminService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/CommonLibs.Common" />
+  <xs:element name="GetWeaponList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" minOccurs="0" name="searchWeaponList" nillable="true" type="q1:WeaponList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWeaponListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" minOccurs="0" name="GetWeaponListResult" nillable="true" type="q2:WeaponList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWeaponAllUserList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q3:DataPage" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" minOccurs="0" name="weaponuserlist" nillable="true" type="q4:WeaponUserList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWeaponAllUserListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" minOccurs="0" name="GetWeaponAllUserListResult" nillable="true" type="q5:ArrayOfWeaponUserList" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q6:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateWeaponStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" minOccurs="0" name="weaponList" nillable="true" type="q7:WeaponList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateWeaponStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateWeaponStatusResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddPraiseLog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" minOccurs="0" name="praiseLog" nillable="true" type="q8:PraiseLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddPraiseLogResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddPraiseLogResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPraiseLogList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q9:DataPage" />
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" minOccurs="0" name="searchPraiseLog" nillable="true" type="q10:PraiseLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPraiseLogListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" minOccurs="0" name="GetPraiseLogListResult" nillable="true" type="q11:ArrayOfPraiseLog" />
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q12:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCommentsListList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q13:DataPage" />
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" minOccurs="0" name="searchCommentsList" nillable="true" type="q14:CommentsList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCommentsListListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" minOccurs="0" name="GetCommentsListListResult" nillable="true" type="q15:ArrayOfCommentsList" />
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q16:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DelComment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="iD" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DelCommentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DelCommentResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePraiseNumber">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" minOccurs="0" name="praiseNumber" nillable="true" type="q17:PraiseNumber" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePraiseNumberResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdatePraiseNumberResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPraiseNumberList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q18:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPraiseNumberListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" minOccurs="0" name="GetPraiseNumberListResult" nillable="true" type="q19:ArrayOfPraiseNumber" />
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q20:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PraiseScheduleAdd">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" minOccurs="0" name="searchPraiseSchedule" nillable="true" type="q21:PraiseSchedule" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PraiseScheduleAddResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PraiseScheduleAddResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PraiseScheduleDel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" minOccurs="0" name="searchPraiseSchedule" nillable="true" type="q22:PraiseSchedule" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PraiseScheduleDelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PraiseScheduleDelResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PraiseScheduleGetByID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" minOccurs="0" name="searchPraiseSchedule" nillable="true" type="q23:PraiseSchedule" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PraiseScheduleGetByIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" minOccurs="0" name="PraiseScheduleGetByIDResult" nillable="true" type="q24:PraiseSchedule" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PraiseScheduleGetList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q25:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PraiseScheduleGetListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" minOccurs="0" name="PraiseScheduleGetListResult" nillable="true" type="q26:ArrayOfPraiseSchedule" />
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q27:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PraiseScheduleUpdate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" minOccurs="0" name="searchPraiseSchedule" nillable="true" type="q28:PraiseSchedule" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PraiseScheduleUpdateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PraiseScheduleUpdateResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E93D6759-741E-4723-94FF-3BAF6BD75A4A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WeaponDesign.DAL.WCF.Client</RootNamespace>
+    <AssemblyName>WeaponDesign.DAL.WCF.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommonLibs.Common">
+      <HintPath>..\packages\CommonLibs.Common.1.0.0.9\lib\net40\CommonLibs.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonLibs.EnterpriseLibrary">
+      <HintPath>..\packages\CommonLibs.EnterpriseLibrary.1.0.0.0\lib\CommonLibs.EnterpriseLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonLibs.Web">
+      <HintPath>..\packages\CommonLibs.Web.1.0.0.15\lib\net40\CommonLibs.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="LogBLLV2">
+      <HintPath>..\packages\LogBLLV2.1.0.0.5\lib\Net40\LogBLLV2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <HintPath>..\packages\CommonLibs.EnterpriseLibrary.1.0.0.0\lib\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>..\packages\CommonLibs.EnterpriseLibrary.1.0.0.0\lib\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\packages\CommonLibs.EnterpriseLibrary.1.0.0.0\lib\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\packages\CommonLibs.EnterpriseLibrary.1.0.0.0\lib\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception">
+      <HintPath>..\packages\CommonLibs.EnterpriseLibrary.1.0.0.0\lib\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IWeaponDesignServiceClient.cs" />
+    <Compile Include="Service References\WeaponDesignService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="WeaponDesignServiceClient.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\CommonLibs.Common.DataPage.datasource" />
+    <None Include="Properties\DataSources\WeaponDesign.Database.Database.DesignEventType.datasource" />
+    <None Include="Properties\DataSources\WeaponDesign.Database.Database.WeaponComments.datasource" />
+    <None Include="Properties\DataSources\WeaponDesign.Database.Database.WeaponList.datasource" />
+    <None Include="Properties\DataSources\WeaponDesign.Database.Database.WeaponUserList.datasource" />
+    <None Include="Service References\WeaponDesignService\WeaponDesignService.wsdl" />
+    <None Include="Service References\WeaponDesignService\WeaponDesignService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WeaponDesignService\WeaponDesignService1.wsdl" />
+    <None Include="Service References\WeaponDesignService\WeaponDesignService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WeaponDesignService\WeaponDesignService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WeaponDesignService\WeaponDesignService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WeaponDesignService\WeaponDesignService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WeaponDesignService\WeaponDesignService41.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WeaponDesignService\WeaponDesignService42.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WeaponDesignService\WeaponDesignService43.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WeaponDesign.Database\WeaponDesign.Database.csproj">
+      <Project>{b6d4c5be-c113-4f64-9463-ee680beb8d21}</Project>
+      <Name>WeaponDesign.Database</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\WeaponDesignService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WeaponDesignService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WeaponDesignService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WeaponDesignService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WeaponDesignService\WeaponDesignService1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WeaponDesignService\WeaponDesignService.disco" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

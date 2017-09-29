@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>\\192.168.20.108\Publish\WebSite\Event\qqsm\201603\WD2</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/AvatarSelector.Libs.dll">
+      <publishTime>11/27/2015 12:29:26</publishTime>
+    </File>
+    <File Include="bin/CommonLibs.Common.dll">
+      <publishTime>11/26/2015 17:30:26</publishTime>
+    </File>
+    <File Include="bin/CommonLibs.EnterpriseLibrary.dll">
+      <publishTime>11/26/2015 17:30:32</publishTime>
+    </File>
+    <File Include="bin/CommonLibs.Web.dll">
+      <publishTime>12/04/2015 18:12:56</publishTime>
+    </File>
+    <File Include="bin/Conis.JSON.dll">
+      <publishTime>11/27/2015 14:49:39</publishTime>
+    </File>
+    <File Include="bin/FluentValidation.dll">
+      <publishTime>11/27/2015 14:49:39</publishTime>
+    </File>
+    <File Include="bin/FluentValidation.Mvc.dll">
+      <publishTime>11/27/2015 14:49:39</publishTime>
+    </File>
+    <File Include="bin/LogBLLV2.dll">
+      <publishTime>12/04/2015 18:12:56</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Caching.dll">
+      <publishTime>11/27/2015 14:49:39</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Common.dll">
+      <publishTime>11/27/2015 14:49:39</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Data.dll">
+      <publishTime>11/27/2015 14:49:39</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.ServiceLocation.dll">
+      <publishTime>11/26/2015 17:30:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.dll">
+      <publishTime>11/26/2015 17:30:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.Interception.dll">
+      <publishTime>11/26/2015 17:30:32</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>12/03/2015 18:46:18</publishTime>
+    </File>
+    <File Include="bin/ObjectUtil.dll">
+      <publishTime>11/27/2015 14:49:39</publishTime>
+    </File>
+    <File Include="bin/PageControllerBase.dll">
+      <publishTime>12/03/2015 18:49:33</publishTime>
+    </File>
+    <File Include="bin/StatusIDEnum.dll">
+      <publishTime>12/10/2015 11:41:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>11/26/2015 17:35:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>11/26/2015 17:35:33</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>11/26/2015 17:35:31</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Deployment.dll">
+      <publishTime>11/26/2015 17:35:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.dll">
+      <publishTime>11/26/2015 17:35:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Razor.dll">
+      <publishTime>11/26/2015 17:35:32</publishTime>
+    </File>
+    <File Include="bin/WeaponDesign.DAL.dll">
+      <publishTime>03/28/2016 15:26:07</publishTime>
+    </File>
+    <File Include="bin/WeaponDesign.DAL.WCF.Client.dll">
+      <publishTime>03/28/2016 15:26:38</publishTime>
+    </File>
+    <File Include="bin/WeaponDesign.Database.dll">
+      <publishTime>03/28/2016 11:02:44</publishTime>
+    </File>
+    <File Include="bin/WeaponDesign.WebSite.dll">
+      <publishTime>03/31/2016 09:52:28</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Helpers.resources.dll">
+      <publishTime>11/26/2015 17:35:37</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Mvc.resources.dll">
+      <publishTime>11/26/2015 17:35:38</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Razor.resources.dll">
+      <publishTime>11/26/2015 17:35:36</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Webpages.Deployment.resources.dll">
+      <publishTime>11/26/2015 17:35:37</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Webpages.Razor.resources.dll">
+      <publishTime>11/26/2015 17:35:37</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Webpages.resources.dll">
+      <publishTime>11/26/2015 17:35:37</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>11/26/2015 17:47:28</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>11/26/2015 17:47:28</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>11/26/2015 17:47:26</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>11/26/2015 17:47:28</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>11/26/2015 17:47:28</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>11/26/2015 17:47:28</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>11/26/2015 17:47:28</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>11/26/2015 17:46:09</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>12/03/2015 19:36:31</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>11/26/2015 17:47:28</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>11/26/2015 17:47:28</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>11/26/2015 17:47:28</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>11/26/2015 17:47:28</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>11/26/2015 17:47:28</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.8.24.js">
+      <publishTime>12/18/2015 13:54:16</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>11/26/2015 17:47:32</publishTime>
+    </File>
+    <File Include="Upload/Pics/default.jpg">
+      <publishTime>12/22/2015 11:44:50</publishTime>
+    </File>
+    <File Include="Upload/SPics/spic_default.jpg">
+      <publishTime>12/22/2015 11:44:50</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>12/18/2015 14:47:56</publishTime>
+    </File>
+    <File Include="Views/WeaponDesign/aaTest.cshtml">
+      <publishTime>12/21/2015 13:57:59</publishTime>
+    </File>
+    <File Include="Views/WeaponDesign/AddWeapon.cshtml">
+      <publishTime>12/15/2015 14:43:55</publishTime>
+    </File>
+    <File Include="Views/WeaponDesign/Index.cshtml">
+      <publishTime>12/17/2015 11:13:56</publishTime>
+    </File>
+    <File Include="Views/WeaponDesign/ShowCommentsList.cshtml">
+      <publishTime>12/03/2015 14:04:13</publishTime>
+    </File>
+    <File Include="Views/WeaponDesign/ShowWeaponList.cshtml">
+      <publishTime>12/03/2015 12:22:16</publishTime>
+    </File>
+    <File Include="Views/WeaponDesign/U_ShowCommentsList.cshtml">
+      <publishTime>12/03/2015 12:57:18</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>12/03/2015 19:36:31</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>11/26/2015 17:47:25</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/31/2016 09:52:29</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

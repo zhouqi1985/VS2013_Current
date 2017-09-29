@@ -1,0 +1,64 @@
+﻿@{
+    ViewBag.Title = "ShowWeaponList";
+}
+
+@using WeaponDesign.Database.Database
+@model WeaponList
+
+<input type="button" value="增加" onclick="location.href='/WeaponDesign/AddWeapon'" />
+
+
+<div id="data">
+    <table>
+        <tr>
+            <th>角色名</th>
+            <th>区服</th>
+            <th>武器ID</th>
+            <th>武器名称</th>
+            <th>武器简介</th>
+            <th>点赞数</th>
+            <th>状态</th>
+            <th>创建时间</th>
+            <th>更新时间</th>
+            <th>操作</th>
+        </tr>
+        @foreach (WeaponUserList wl in ViewBag.List)
+        {
+            <tr>
+                <td>@wl.AvatarName</td>
+                <td>@wl.AreaName</td>
+                <td>@wl.WeaponID</td>
+                <td>@wl.WeaponName</td>
+                <td>@wl.WeaponDesc</td>
+                <td>@wl.ShowPraise</td>
+                <td>@wl.StatusType</td>
+                <td>@wl.CreateTS</td>
+                <td>@wl.UpdateTS</td>
+                @if (@wl.StatusID == 0 || @wl.StatusID == 2)
+                {
+                    <td><input id="edit" type="submit" value="编辑" onclick="location.href = '/WeaponDesign/EditWeapon?WeaponId=@wl.WeaponID'" /></td>
+                    <td><input id="delete" type="submit" value="删除" onclick="deletedata(@wl.WeaponID)" /></td>
+                }
+
+            </tr>
+        }
+    </table>
+</div>
+<script>
+    function deletedata(id){
+        debugger;
+        $.ajax("DelWeapon", {
+
+            data:{
+                WeaponID: id
+            },
+            success:function(data){
+
+                $('#data').html($(data).find("#data").html());
+
+            }
+        });
+    }
+
+
+</script>

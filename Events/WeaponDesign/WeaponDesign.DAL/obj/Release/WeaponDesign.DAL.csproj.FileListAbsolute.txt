@@ -1,0 +1,14 @@
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.DAL\bin\Release\WeaponDesign.DAL.dll
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.DAL\bin\Release\WeaponDesign.DAL.pdb
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.DAL\bin\Release\CommonLibs.Common.dll
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.DAL\bin\Release\CommonLibs.EnterpriseLibrary.dll
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.DAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.DAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.DAL\bin\Release\Microsoft.Practices.ServiceLocation.dll
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.DAL\bin\Release\Microsoft.Practices.Unity.dll
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.DAL\bin\Release\Microsoft.Practices.Unity.Interception.dll
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.DAL\bin\Release\WeaponDesign.Database.dll
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.DAL\bin\Release\WeaponDesign.Database.pdb
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.DAL\obj\Release\WeaponDesign.DAL.csprojResolveAssemblyReference.cache
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.DAL\obj\Release\WeaponDesign.DAL.dll
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.DAL\obj\Release\WeaponDesign.DAL.pdb

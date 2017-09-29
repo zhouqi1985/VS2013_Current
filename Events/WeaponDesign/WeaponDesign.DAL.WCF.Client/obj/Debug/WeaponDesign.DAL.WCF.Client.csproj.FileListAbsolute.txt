@@ -1,0 +1,17 @@
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.DAL.WCF.Client\bin\Debug\WeaponDesign.DAL.WCF.Client.dll.config
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.DAL.WCF.Client\bin\Debug\WeaponDesign.DAL.WCF.Client.dll
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.DAL.WCF.Client\bin\Debug\WeaponDesign.DAL.WCF.Client.pdb
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.DAL.WCF.Client\bin\Debug\CommonLibs.Common.dll
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.DAL.WCF.Client\bin\Debug\CommonLibs.EnterpriseLibrary.dll
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.DAL.WCF.Client\bin\Debug\CommonLibs.Web.dll
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.DAL.WCF.Client\bin\Debug\LogBLLV2.dll
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.DAL.WCF.Client\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.DAL.WCF.Client\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.DAL.WCF.Client\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.DAL.WCF.Client\bin\Debug\Microsoft.Practices.Unity.dll
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.DAL.WCF.Client\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.DAL.WCF.Client\bin\Debug\WeaponDesign.Database.dll
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.DAL.WCF.Client\bin\Debug\WeaponDesign.Database.pdb
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.DAL.WCF.Client\obj\Debug\WeaponDesign.DAL.WCF.Client.csprojResolveAssemblyReference.cache
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.DAL.WCF.Client\obj\Debug\WeaponDesign.DAL.WCF.Client.dll
+E:\ZyProject\Events\WeaponDesign\WeaponDesign.DAL.WCF.Client\obj\Debug\WeaponDesign.DAL.WCF.Client.pdb

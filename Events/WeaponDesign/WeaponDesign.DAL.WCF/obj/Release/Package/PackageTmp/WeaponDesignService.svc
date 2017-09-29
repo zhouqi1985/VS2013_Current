@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="WeaponDesign.DAL.WCF.WeaponDesignService" CodeBehind="WeaponDesignService.svc.cs" %>

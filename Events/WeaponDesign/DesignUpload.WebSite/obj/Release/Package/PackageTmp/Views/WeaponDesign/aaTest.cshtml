@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "aaTest";
+}
+
+@*@Html.Action("AddPraise", new { weaponID = 8 })*@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <title>javascript add</title>
+
+    <script type="text/javascript">
+
+        var div = document.getElementByd("a");
+
+        function calSum() {
+
+            var a = parseInt(document.getElementById("num1").value);
+
+            var b = parseInt(document.getElementById("num2").value);
+
+            document.getElementById("num3").value = (a + b);
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <input type="text" id="num1" />add<input type="text" id="num2" />
+
+    <input type="button" id="btnCal" onclick="calSum()" value="equal" /><input type="text" id="num3" />
+
+</body>
+
+</html>

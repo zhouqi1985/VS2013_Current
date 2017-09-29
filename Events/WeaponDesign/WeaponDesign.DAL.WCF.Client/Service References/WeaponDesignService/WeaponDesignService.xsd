@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://event.userapi.zygames.com/qqsm/201705/DesignUpload/WeaponDesignService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" />
+  <xs:import schemaLocation="http://event.userapi.zygames.com/qqsm/201705/DesignUpload/WeaponDesignService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/CommonLibs.Common" />
+  <xs:element name="AddUserList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" minOccurs="0" name="userList" nillable="true" type="q1:UserList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddUserListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddUserListResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddWeaponList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" minOccurs="0" name="weaponList" nillable="true" type="q2:WeaponList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddWeaponListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddWeaponListResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateWeaponList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" minOccurs="0" name="weaponList" nillable="true" type="q3:WeaponList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateWeaponListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateWeaponListResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateWeaponStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" minOccurs="0" name="weaponList" nillable="true" type="q4:WeaponList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateWeaponStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateWeaponStatusResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWeaponUserList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" minOccurs="0" name="weaponuserlist" nillable="true" type="q5:WeaponUserList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWeaponUserListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" minOccurs="0" name="GetWeaponUserListResult" nillable="true" type="q6:ArrayOfWeaponUserList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddCommentsList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" minOccurs="0" name="commentsList" nillable="true" type="q7:CommentsList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddCommentsListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddCommentsListResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWeaponCommentsList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q8:DataPage" />
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" minOccurs="0" name="searchWeaponComments" nillable="true" type="q9:WeaponComments" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWeaponCommentsListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" minOccurs="0" name="GetWeaponCommentsListResult" nillable="true" type="q10:ArrayOfWeaponComments" />
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q11:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddPraiseLog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" minOccurs="0" name="praiseLog" nillable="true" type="q12:PraiseLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddPraiseLogResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddPraiseLogResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWeaponList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" minOccurs="0" name="searchWeaponList" nillable="true" type="q13:WeaponList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWeaponListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" minOccurs="0" name="GetWeaponListResult" nillable="true" type="q14:WeaponList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDesignEventType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" minOccurs="0" name="searchDesignEventType" nillable="true" type="q15:DesignEventType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDesignEventTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" minOccurs="0" name="GetDesignEventTypeResult" nillable="true" type="q16:DesignEventType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

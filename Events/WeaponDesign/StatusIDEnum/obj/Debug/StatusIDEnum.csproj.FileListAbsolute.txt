@@ -1,0 +1,5 @@
+E:\ZyProject\Events\WeaponDesign\StatusIDEnum\bin\Debug\StatusIDEnum.dll
+E:\ZyProject\Events\WeaponDesign\StatusIDEnum\bin\Debug\StatusIDEnum.pdb
+E:\ZyProject\Events\WeaponDesign\StatusIDEnum\obj\Debug\StatusIDEnum.dll
+E:\ZyProject\Events\WeaponDesign\StatusIDEnum\obj\Debug\StatusIDEnum.pdb
+E:\ZyProject\Events\WeaponDesign\StatusIDEnum\obj\Debug\StatusIDEnum.csprojResolveAssemblyReference.cache

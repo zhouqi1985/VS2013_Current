@@ -1,0 +1,4 @@
+E:\ZyProject\Events\WeaponDesign\StatusIDEnum\bin\Release\StatusIDEnum.dll
+E:\ZyProject\Events\WeaponDesign\StatusIDEnum\bin\Release\StatusIDEnum.pdb
+E:\ZyProject\Events\WeaponDesign\StatusIDEnum\obj\Release\StatusIDEnum.dll
+E:\ZyProject\Events\WeaponDesign\StatusIDEnum\obj\Release\StatusIDEnum.pdb

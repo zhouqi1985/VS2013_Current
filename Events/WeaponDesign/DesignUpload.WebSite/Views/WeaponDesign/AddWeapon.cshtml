@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "AddWeapon";
+}
+
+@using CommonLibs.Common;
+@using WeaponDesign.Database.Database
+@model WeaponList
+
+
+@using (Html.BeginForm("AddWeapon", "WeaponDesign", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div style="display:none">武器ID：<input id="wid" type="text" value="" name="WeaponID" /></div>
+    <div>武器名称：<input id="wname" type="text" value="" name="WeaponName" /></div>
+    <div>武器类型：<input id="wtype" type="text" value="" name="WeaType" /></div>
+    <div>武器描述：<input id="wdesc" type="text" value="" name="WeaponDesc" /></div>
+
+        <div>武器图片：<input id="wpic" type="file" name="file" accept="jpg/gif/png" /></div>
+
+    <input type="submit" value=" 提交" />
+}

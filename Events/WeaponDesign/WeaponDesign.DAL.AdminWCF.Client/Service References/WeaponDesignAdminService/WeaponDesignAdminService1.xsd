@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WeaponDesign.Database.Database" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="WeaponList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AreaID" type="xs:int" />
+      <xs:element minOccurs="0" name="AreaName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AvatarID" type="xs:long" />
+      <xs:element minOccurs="0" name="AvatarName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ContactMethod" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateTS" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Gender" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Length" type="xs:int" />
+      <xs:element minOccurs="0" name="PicAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Reason" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SLength" type="xs:int" />
+      <xs:element minOccurs="0" name="SWidth" type="xs:int" />
+      <xs:element minOccurs="0" name="ShowPraise" type="xs:int" />
+      <xs:element minOccurs="0" name="SpicAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StatusID" type="xs:int" />
+      <xs:element minOccurs="0" name="TotalCom" type="xs:long" />
+      <xs:element minOccurs="0" name="TruePraise" type="xs:int" />
+      <xs:element minOccurs="0" name="UpdateTS" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UserID" type="xs:long" />
+      <xs:element minOccurs="0" name="WeaType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WeaponDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WeaponID" type="xs:int" />
+      <xs:element minOccurs="0" name="WeaponName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Width" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WeaponList" nillable="true" type="tns:WeaponList" />
+  <xs:complexType name="WeaponUserList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AreaID" type="xs:int" />
+      <xs:element minOccurs="0" name="AreaName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AvatarName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ContactMethod" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateTS" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Gender" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Length" type="xs:int" />
+      <xs:element minOccurs="0" name="LoginName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PicAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Reason" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SLength" type="xs:int" />
+      <xs:element minOccurs="0" name="SWidth" type="xs:int" />
+      <xs:element minOccurs="0" name="ShowPraise" type="xs:int" />
+      <xs:element minOccurs="0" name="Sort" type="xs:int" />
+      <xs:element minOccurs="0" name="SpicAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StatusID" type="xs:int" />
+      <xs:element minOccurs="0" name="StatusType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TotalCom" type="xs:int" />
+      <xs:element minOccurs="0" name="UpdateTS" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UserID" type="xs:long" />
+      <xs:element minOccurs="0" name="WeaType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WeaponDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WeaponID" type="xs:int" />
+      <xs:element minOccurs="0" name="WeaponName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Width" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WeaponUserList" nillable="true" type="tns:WeaponUserList" />
+  <xs:complexType name="ArrayOfWeaponUserList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="WeaponUserList" nillable="true" type="tns:WeaponUserList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWeaponUserList" nillable="true" type="tns:ArrayOfWeaponUserList" />
+  <xs:complexType name="PraiseLog">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AreaID" type="xs:int" />
+      <xs:element minOccurs="0" name="AreaName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AvatarID" type="xs:long" />
+      <xs:element minOccurs="0" name="CreateTS" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="PraiseID" type="xs:int" />
+      <xs:element minOccurs="0" name="PraiseIP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PraiseNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="Source" type="xs:int" />
+      <xs:element minOccurs="0" name="UserID" type="xs:long" />
+      <xs:element minOccurs="0" name="WeaponID" type="xs:int" />
+      <xs:element minOccurs="0" name="WeaponIDold" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PraiseLog" nillable="true" type="tns:PraiseLog" />
+  <xs:complexType name="ArrayOfPraiseLog">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PraiseLog" nillable="true" type="tns:PraiseLog" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPraiseLog" nillable="true" type="tns:ArrayOfPraiseLog" />
+  <xs:complexType name="CommentsList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AreaID" type="xs:int" />
+      <xs:element minOccurs="0" name="AreaName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AvatarID" type="xs:long" />
+      <xs:element minOccurs="0" name="AvatarName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Comments" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateTS" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="LoginName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserID" type="xs:long" />
+      <xs:element minOccurs="0" name="WeaponID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CommentsList" nillable="true" type="tns:CommentsList" />
+  <xs:complexType name="ArrayOfCommentsList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CommentsList" nillable="true" type="tns:CommentsList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCommentsList" nillable="true" type="tns:ArrayOfCommentsList" />
+  <xs:complexType name="PraiseNumber">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Num" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PraiseNumber" nillable="true" type="tns:PraiseNumber" />
+  <xs:complexType name="ArrayOfPraiseNumber">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PraiseNumber" nillable="true" type="tns:PraiseNumber" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPraiseNumber" nillable="true" type="tns:ArrayOfPraiseNumber" />
+  <xs:complexType name="PraiseSchedule">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EndTS" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Max" type="xs:int" />
+      <xs:element minOccurs="0" name="Min" type="xs:int" />
+      <xs:element minOccurs="0" name="RandNum" type="xs:int" />
+      <xs:element minOccurs="0" name="StartTS" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Status" type="xs:int" />
+      <xs:element minOccurs="0" name="WeaponID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PraiseSchedule" nillable="true" type="tns:PraiseSchedule" />
+  <xs:complexType name="ArrayOfPraiseSchedule">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PraiseSchedule" nillable="true" type="tns:PraiseSchedule" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPraiseSchedule" nillable="true" type="tns:ArrayOfPraiseSchedule" />
+</xs:schema>

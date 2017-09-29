@@ -1,0 +1,151 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeaponDesign.Database", "WeaponDesign.Database\WeaponDesign.Database.csproj", "{B6D4C5BE-C113-4F64-9463-EE680BEB8D21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeaponDesign.DAL", "WeaponDesign.DAL\WeaponDesign.DAL.csproj", "{91D203A3-3F0B-4D91-874A-D20790E717D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeaponDesign.WebSite", "WeaponDesign.WebSite\WeaponDesign.WebSite.csproj", "{F9A9C741-294B-4EE6-A88F-819820621045}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeaponDesign.Document", "WeaponDesign.Document\WeaponDesign.Document.csproj", "{7FF5A9AA-1458-4D74-99D9-7C8B46EC8858}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeaponDesign.DAL.WCF", "WeaponDesign.DAL.WCF\WeaponDesign.DAL.WCF.csproj", "{4A2D44D1-B403-477C-9EC5-F47DFB27EDDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeaponDesign.DAL.WCF.Client", "WeaponDesign.DAL.WCF.Client\WeaponDesign.DAL.WCF.Client.csproj", "{E93D6759-741E-4723-94FF-3BAF6BD75A4A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Public", "Public", "{B07109AF-61F2-47E6-8DEF-ACA549A43A0A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Admin", "Admin", "{739025C4-C1D8-46DB-81F3-FFD8E7444716}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Website", "Website", "{FC5967DF-F8BB-4DA7-ABCA-0299673FCD96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeaponDesign.AdminWebsite", "WeaponDesign.AdminWebsite\WeaponDesign.AdminWebsite.csproj", "{283CB4BC-A84B-4A40-84A2-60FA976DE63C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeaponDesign.DAL.AdminWCF", "WeaponDesign.DAL.AdminWCF\WeaponDesign.DAL.AdminWCF.csproj", "{EE4D7114-C9F3-4D68-BC3F-D7E8330DFC7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeaponDesign.DAL.AdminWCF.Client", "WeaponDesign.DAL.AdminWCF.Client\WeaponDesign.DAL.AdminWCF.Client.csproj", "{526A9B50-5C97-4F4D-8370-0939E078CD84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatusIDEnum", "StatusIDEnum\StatusIDEnum.csproj", "{CCBFC98B-FC94-4CB2-879B-DDE872460EB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignUpload.WebSite", "DesignUpload.WebSite\DesignUpload.WebSite.csproj", "{A9836CDD-99D2-4D2F-A4BE-C93DD257D31C}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 12
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.20.109:8080/tfs/platform
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WeaponDesign.Database\\WeaponDesign.Database.csproj
+		SccProjectTopLevelParentUniqueName1 = WeaponDesign.sln
+		SccProjectName1 = WeaponDesign.Database
+		SccLocalPath1 = WeaponDesign.Database
+		SccProjectUniqueName2 = WeaponDesign.DAL\\WeaponDesign.DAL.csproj
+		SccProjectTopLevelParentUniqueName2 = WeaponDesign.sln
+		SccProjectName2 = WeaponDesign.DAL
+		SccLocalPath2 = WeaponDesign.DAL
+		SccProjectUniqueName3 = WeaponDesign.WebSite\\WeaponDesign.WebSite.csproj
+		SccProjectTopLevelParentUniqueName3 = WeaponDesign.sln
+		SccProjectName3 = WeaponDesign.WebSite
+		SccLocalPath3 = WeaponDesign.WebSite
+		SccProjectUniqueName4 = WeaponDesign.Document\\WeaponDesign.Document.csproj
+		SccProjectTopLevelParentUniqueName4 = WeaponDesign.sln
+		SccProjectName4 = WeaponDesign.Document
+		SccLocalPath4 = WeaponDesign.Document
+		SccProjectUniqueName5 = WeaponDesign.DAL.WCF\\WeaponDesign.DAL.WCF.csproj
+		SccProjectTopLevelParentUniqueName5 = WeaponDesign.sln
+		SccProjectName5 = WeaponDesign.DAL.WCF
+		SccLocalPath5 = WeaponDesign.DAL.WCF
+		SccProjectUniqueName6 = WeaponDesign.DAL.WCF.Client\\WeaponDesign.DAL.WCF.Client.csproj
+		SccProjectTopLevelParentUniqueName6 = WeaponDesign.sln
+		SccProjectName6 = WeaponDesign.DAL.WCF.Client
+		SccLocalPath6 = WeaponDesign.DAL.WCF.Client
+		SccProjectUniqueName7 = WeaponDesign.AdminWebsite\\WeaponDesign.AdminWebsite.csproj
+		SccProjectTopLevelParentUniqueName7 = WeaponDesign.sln
+		SccProjectName7 = WeaponDesign.AdminWebsite
+		SccLocalPath7 = WeaponDesign.AdminWebsite
+		SccProjectUniqueName8 = WeaponDesign.DAL.AdminWCF\\WeaponDesign.DAL.AdminWCF.csproj
+		SccProjectTopLevelParentUniqueName8 = WeaponDesign.sln
+		SccProjectName8 = WeaponDesign.DAL.AdminWCF
+		SccLocalPath8 = WeaponDesign.DAL.AdminWCF
+		SccProjectUniqueName9 = WeaponDesign.DAL.AdminWCF.Client\\WeaponDesign.DAL.AdminWCF.Client.csproj
+		SccProjectTopLevelParentUniqueName9 = WeaponDesign.sln
+		SccProjectName9 = WeaponDesign.DAL.AdminWCF.Client
+		SccLocalPath9 = WeaponDesign.DAL.AdminWCF.Client
+		SccProjectUniqueName10 = StatusIDEnum\\StatusIDEnum.csproj
+		SccProjectTopLevelParentUniqueName10 = WeaponDesign.sln
+		SccProjectName10 = StatusIDEnum
+		SccLocalPath10 = StatusIDEnum
+		SccProjectUniqueName11 = DesignUpload.WebSite\\DesignUpload.WebSite.csproj
+		SccProjectTopLevelParentUniqueName11 = WeaponDesign.sln
+		SccProjectName11 = DesignUpload.WebSite
+		SccLocalPath11 = DesignUpload.WebSite
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6D4C5BE-C113-4F64-9463-EE680BEB8D21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6D4C5BE-C113-4F64-9463-EE680BEB8D21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6D4C5BE-C113-4F64-9463-EE680BEB8D21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6D4C5BE-C113-4F64-9463-EE680BEB8D21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91D203A3-3F0B-4D91-874A-D20790E717D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91D203A3-3F0B-4D91-874A-D20790E717D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91D203A3-3F0B-4D91-874A-D20790E717D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91D203A3-3F0B-4D91-874A-D20790E717D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9A9C741-294B-4EE6-A88F-819820621045}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9A9C741-294B-4EE6-A88F-819820621045}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9A9C741-294B-4EE6-A88F-819820621045}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9A9C741-294B-4EE6-A88F-819820621045}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FF5A9AA-1458-4D74-99D9-7C8B46EC8858}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FF5A9AA-1458-4D74-99D9-7C8B46EC8858}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FF5A9AA-1458-4D74-99D9-7C8B46EC8858}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FF5A9AA-1458-4D74-99D9-7C8B46EC8858}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A2D44D1-B403-477C-9EC5-F47DFB27EDDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A2D44D1-B403-477C-9EC5-F47DFB27EDDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A2D44D1-B403-477C-9EC5-F47DFB27EDDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A2D44D1-B403-477C-9EC5-F47DFB27EDDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E93D6759-741E-4723-94FF-3BAF6BD75A4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E93D6759-741E-4723-94FF-3BAF6BD75A4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E93D6759-741E-4723-94FF-3BAF6BD75A4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E93D6759-741E-4723-94FF-3BAF6BD75A4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{283CB4BC-A84B-4A40-84A2-60FA976DE63C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{283CB4BC-A84B-4A40-84A2-60FA976DE63C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{283CB4BC-A84B-4A40-84A2-60FA976DE63C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{283CB4BC-A84B-4A40-84A2-60FA976DE63C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE4D7114-C9F3-4D68-BC3F-D7E8330DFC7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE4D7114-C9F3-4D68-BC3F-D7E8330DFC7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE4D7114-C9F3-4D68-BC3F-D7E8330DFC7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE4D7114-C9F3-4D68-BC3F-D7E8330DFC7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{526A9B50-5C97-4F4D-8370-0939E078CD84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{526A9B50-5C97-4F4D-8370-0939E078CD84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{526A9B50-5C97-4F4D-8370-0939E078CD84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{526A9B50-5C97-4F4D-8370-0939E078CD84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCBFC98B-FC94-4CB2-879B-DDE872460EB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCBFC98B-FC94-4CB2-879B-DDE872460EB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCBFC98B-FC94-4CB2-879B-DDE872460EB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCBFC98B-FC94-4CB2-879B-DDE872460EB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9836CDD-99D2-4D2F-A4BE-C93DD257D31C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9836CDD-99D2-4D2F-A4BE-C93DD257D31C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9836CDD-99D2-4D2F-A4BE-C93DD257D31C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9836CDD-99D2-4D2F-A4BE-C93DD257D31C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B6D4C5BE-C113-4F64-9463-EE680BEB8D21} = {B07109AF-61F2-47E6-8DEF-ACA549A43A0A}
+		{91D203A3-3F0B-4D91-874A-D20790E717D5} = {B07109AF-61F2-47E6-8DEF-ACA549A43A0A}
+		{F9A9C741-294B-4EE6-A88F-819820621045} = {FC5967DF-F8BB-4DA7-ABCA-0299673FCD96}
+		{7FF5A9AA-1458-4D74-99D9-7C8B46EC8858} = {B07109AF-61F2-47E6-8DEF-ACA549A43A0A}
+		{4A2D44D1-B403-477C-9EC5-F47DFB27EDDF} = {FC5967DF-F8BB-4DA7-ABCA-0299673FCD96}
+		{E93D6759-741E-4723-94FF-3BAF6BD75A4A} = {FC5967DF-F8BB-4DA7-ABCA-0299673FCD96}
+		{283CB4BC-A84B-4A40-84A2-60FA976DE63C} = {739025C4-C1D8-46DB-81F3-FFD8E7444716}
+		{EE4D7114-C9F3-4D68-BC3F-D7E8330DFC7A} = {739025C4-C1D8-46DB-81F3-FFD8E7444716}
+		{526A9B50-5C97-4F4D-8370-0939E078CD84} = {739025C4-C1D8-46DB-81F3-FFD8E7444716}
+		{CCBFC98B-FC94-4CB2-879B-DDE872460EB2} = {B07109AF-61F2-47E6-8DEF-ACA549A43A0A}
+		{A9836CDD-99D2-4D2F-A4BE-C93DD257D31C} = {FC5967DF-F8BB-4DA7-ABCA-0299673FCD96}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+@using CommonLibs.Common;
+@using WeaponDesign.Database.Database
+
+
+
+@*<input type="button" value="我的武器" onclick="location.href='/WeaponDesign/ShowWeaponList'" />
+
+
+
+<div id="data">
+
+    @foreach (WeaponUserList wl in ViewBag.List)
+    {
+        if (@wl.StatusID == 1)
+        {
+            <div>
+                @{ string websitepath = AppSetting.GetString("WebsitePath");
+                 string addrres = websitepath + @wl.SpicAddress;}
+
+                <img src="@addrres" alt="" onclick="location.href = '/WeaponDesign/ShowCommentsList?wid=@wl.WeaponID'" />
+
+            </div>
+        }
+    }
+
+</div>*@
+
+
+<script>
+    $(document).ready(function () {
+        startPop_fmAvatar('@Url.Action("Login", "WeaponDesign")?returnUrl=http://event.zygames.com/qqsm/201512/Weapondesign/addweapon', '_top', 1);
+        @*startPop_fmlogin('@Url.Action("aaTest", "WeaponDesign")');*@
+    });
+
+    
+
+</script>

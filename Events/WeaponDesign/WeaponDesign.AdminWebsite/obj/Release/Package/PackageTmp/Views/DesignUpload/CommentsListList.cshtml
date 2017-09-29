@@ -1,0 +1,80 @@
+﻿@using ObjectUtil.Common
+@using ObjectUtil.Dictionary
+@using WeaponDesign.Database.Database
+@model List<CommentsList>
+
+@{
+    ViewBag.Title = "评论列表";
+}
+
+@section title
+{
+    <script type="text/javascript" src="@Url.Content("/Content/js/jquery.input.title.js")"></script>
+    <script src="@Url.Content("/Content/js/jtip.js")" type="text/javascript"></script>
+    <script type="text/javascript" src="@Url.Content("/Content/js/jquery.table.js")"></script>
+}
+
+@Html.HeadBegin("评论列表")
+@using (Html.BeginForm("CommentsListList", "DesignUpload"))
+{
+    <text>
+        <input type="hidden" name="PageIndex" value="1" />
+        LogoID
+        @Html.TextBox("WeaponID", null, new { Class = "input" })
+        用户ID
+        @Html.TextBox("UserID", null, new { Class = "input" })
+        区服
+        @Html.DropDownList("AreaID")
+        <input type="submit" value="搜索" class="bt-samll" />
+        <input type="submit" value="导出Excel" name="btnExportExcel" class="bt-samll" />
+    </text>
+}
+@Html.HeadEnd()
+
+<!--- data op --->
+
+<div id="data">
+    <table width="100%" align="center" cellpadding="0" cellspacing="0" class="table-data list">
+        <!-- 请程序注意 头部的jquery .list 已经变换成为特殊的 .list_cut ----------->
+        <tr>
+            <th>评论ID</th>
+            <th>LogoID</th>
+            <th>评论内容</th>
+            <th>评论时间</th>
+            <th>用户ID</th>
+            <th>用户名</th>
+            <th>区服</th>
+            <th>角色名</th>
+            <th>操作</th>
+        </tr>
+        <!------------->
+        @foreach (var item in Model)
+        {
+
+            <tr>
+
+                <td>&nbsp; @item.ID</td>
+                <td>&nbsp; @item.WeaponID</td>
+                <td>&nbsp; @item.Comments</td>
+                <td>&nbsp; @item.CreateTS</td>
+                <td>&nbsp; @item.UserID</td>
+                <td>&nbsp; @item.LoginName</td>
+                <td>&nbsp; @item.AreaName</td>
+                <td>&nbsp; @item.AvatarName</td>
+                <td>
+                    <input type="button" class="bt-list" value="删除" onclick="if(confirm('确定删除此项?'))location.href='/DesignUpload/DelCommentsList?id=@item.ID'" />
+                </td>
+
+            </tr>
+        }
+    </table>
+
+    <!--- page op --->
+    <div id="page">
+        @Html.Pager()
+    </div>
+    <!--- page ed --->
+
+</div>
+<!--- data ed --->
+@Html.Foot()

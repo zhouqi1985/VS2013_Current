@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "ShowCommentsList";
+}
+@using CommonLibs.Common;
+@using WeaponDesign.Database.Database
+@model WeaponComments
+
+@*<input type="button" value="增加" onclick="location.href='/WeaponDesign/AddWeapon'" />*@
+<div>武器ID：@Model.WeaponID</div>
+<div>武器名称：@Model.WeaponName</div>
+<div>武器简介：@Model.WeaponDesc</div>
+<div>点赞数：@Model.ShowPraise</div>
+@{ string websitepath = AppSetting.GetString("WebsitePath");
+ string addrres = websitepath + @Model.PicAddress;}
+<div>武器图片：<img src="@addrres" alt="" /></div>
+
+
+
+<div id="data">
+  
+
+    <div><input id="CommentText" type="text" value=""/></div>
+    <div><input id="comment" type="submit" value="评论" onclick="commentdata(@Model.WeaponID)" /></div>
+
+
+
+    <div>评论：</div>
+    @Html.Action("OnlyCommentsList", "WeaponDesign", new { wid =9})
+
+
+</div>
+<script>
+    function commentdata(wid) {
+       
+       
+        $.ajax("AddComment", {
+
+            data: {
+                weaponID: wid,
+                comment: $('#CommentText').val()
+            },
+            success: function (data) {        
+                $('#dataList').html(data);
+
+            }
+        });
+    }
+
+
+</script>

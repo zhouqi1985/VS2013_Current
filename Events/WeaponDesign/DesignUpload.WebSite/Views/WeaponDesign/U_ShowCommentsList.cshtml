@@ -1,0 +1,24 @@
+﻿@using WeaponDesign.Database.Database
+@model List<WeaponComments>
+
+
+
+<div class="teamPer" id="dataList">
+    <ul class="teamPer_ul" id="teamPerAll">
+        @ViewData["DataPage"]
+        @foreach (WeaponComments wl in Model)
+        {
+
+    <li>@wl.Comments</li>
+    <li>@wl.AvatarName @wl.CreateTS</li>
+        }
+    </ul>
+
+    
+    
+    @Html.AjaxPagingButton2(PaginationMode.NextPrevious,
+                        1, "OnlyCommentsList",
+                                 new RouteValueDictionary { { "wid", ViewBag.WeaponID } },
+                         "dataList")
+
+</div>

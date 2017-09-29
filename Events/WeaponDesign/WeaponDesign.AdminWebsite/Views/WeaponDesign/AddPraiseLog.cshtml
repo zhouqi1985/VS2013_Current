@@ -1,0 +1,67 @@
+﻿@using ObjectUtil.Common
+@using ObjectUtil.Dictionary
+@using WeaponDesign.Database.Database
+@model PraiseLog
+
+@{
+    ViewBag.Title = "增加赞数";
+}
+
+@section title
+{
+    <script type="text/javascript">
+		$(document).ready(function()
+		{
+		    //singer 选中变换class
+			$('.form .left, .form input, .form textarea, .form select').focus(function(){
+				$(this).parents('tr').addClass("over");
+			}).blur(function(){
+				$(this).parents('tr').removeClass("over");
+			});
+
+		});
+    </script>
+}
+
+@Html.HeadBegin("增加赞数")
+@Html.HeadEnd()
+
+
+<!--- data op --->
+<div id="data">
+    @using (Html.BeginForm())
+    {
+        <table width="100%" border="0" cellspacing="0" class="table-data form">
+            <!------------>
+            <!--  -->
+            <tr>
+                <th width="20%">LogoID:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.WeaponID, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("WeaponID").NotEmpty("武器ID不能为空"))
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">点赞数:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.PraiseNumber, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("PraiseNumber").Number("必须为大于1的整数").Min(1, "必须为大于1的整数"))
+                </td>
+            </tr>
+            <tr>
+                <th>&nbsp;</th>
+                <td height="50" class="clear-form-td">
+                <input type="submit" class="bt-big" name="button2" id="button2" value="提  交" />
+                <input type="button" name="goback" class="bt-big" value="返  回" onclick="javascript:history.go(-1);" />
+                </td>           
+            </tr>
+            <!------------>
+        </table>
+
+    }
+
+</div>
+<!--- data ed --->
+@Html.Foot()
+

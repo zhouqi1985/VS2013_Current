@@ -1,0 +1,81 @@
+﻿@using ObjectUtil.Common
+@using ObjectUtil.Dictionary
+@using WeaponDesign.Database.Database
+@model List<PraiseSchedule>
+
+@{
+    ViewBag.Title = "列表";
+}
+
+@section title
+{
+    <script type="text/javascript" src="@Url.Content("/Content/js/jquery.input.title.js")"></script>
+    <script src="@Url.Content("/Content/js/jtip.js")" type="text/javascript"></script>
+    <script type="text/javascript" src="@Url.Content("/Content/js/jquery.table.js")"></script>
+}
+
+@Html.HeadBegin("列表")
+@using (Html.BeginForm("PraiseScheduleList", "DesignUpload"))
+{
+    <text>
+        <input type="hidden" name="PageIndex" value="1" />
+        <input type="submit" value="搜索" class="bt-samll" />
+        <input type="submit" value="导出Excel" name="btnExportExcel" class="bt-samll" />
+    </text>
+}
+@Html.HeadEnd()
+
+<!--- data op --->
+
+<div id="data">
+    <table width="100%" align="center" cellpadding="0" cellspacing="0" class="table-data list">
+        <!-- 请程序注意 头部的jquery .list 已经变换成为特殊的 .list_cut ----------->
+        <tr>
+            <th>ID</th>
+            <th>StartTS</th>
+            <th>EndTS</th>
+            <th>Status</th>
+            <th>Min</th>
+            <th>Max</th>
+            <th>WeaponID</th>
+            <th>RandNum</th>
+            <th width="10%">操作</th>
+        </tr>
+        <!------------->
+        @foreach (var item in Model)
+        {
+
+            <tr>
+
+                <td>&nbsp; @item.ID</td>
+                <td>&nbsp; @item.StartTS</td>
+                <td>&nbsp; @item.EndTS</td>
+                @if (item.Status == 0)
+                {
+                    <td>&nbsp; 开启</td>
+                }
+                else
+                {
+                    <td>&nbsp; 已过期</td>
+                }
+                    <td>&nbsp; @item.Min</td>
+                    <td>&nbsp; @item.Max</td>
+                    <td>&nbsp; @item.WeaponID</td>
+                    <td>&nbsp; @item.RandNum</td>
+                    <td>
+                        <input type="button" class="bt-list" value="编辑" onclick="location.href='/DesignUpload/EditPraiseSchedule?ID=@item.ID'" />
+                        <input type="button" class="bt-list" value="删除" onclick="if(confirm('确定删除此项?'))location='/DesignUpload/DelPraiseSchedule?ID=@item.ID'" />
+                    </td>
+                </tr>
+        }
+    </table>
+
+    <!--- page op --->
+    <div id="page">
+        @Html.Pager(new AdminButton("/DesignUpload/AddPraiseSchedule", "增加"))
+    </div>
+    <!--- page ed --->
+
+</div>
+<!--- data ed --->
+@Html.Foot()

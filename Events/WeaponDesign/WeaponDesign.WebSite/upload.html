@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>《全球使命2》官方网站|qqsm.com —— 这就是第三人称射击网游</title>
+    <meta name="Description"
+          content="《全球使命2》官方网站——这就是第三人称射击网游,《全球使命2》是目前最具人气的国产第三人称射击网游《全球使命》的后续作品。《全球使命2》秉承《全球使命》的特色与创新优势，并对《全球使命》原有的游戏内容、操作界面以及特效表现等做出全方位的优化和加强。全新的“生死大乱斗”模式更将成为游戏最受期待的卖点之一。"/>
+    <meta name="Keywords"
+          content="全球使命2,qqsm2,全球使命2官网,qqsm2官网,全球使命2游戏下载,全球使命2下载,全球使命2官方下载,qqsm2下载,全球使命2掌上应用,全球使命2论坛,全球使命2微博,全球使命2视频,第三人称射击网游,3D射击网游,国产射击网游,虚幻引擎3,TPS,PVP排位赛,PVE赏金猎人,掩体作战,PVE,PVP,枪林弹雨,生化侵袭,火线突袭,生化危机大作战,团队竞技,团队重生,死亡竞赛,机甲,幸运靶场,战队龙虎榜"/>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" media="screen"/>
+    <script type="text/javascript" src="http://cdn1.zygames.com/qqsm/events/201512/design/resource/js/jquery1.10.2.min.js"></script>
+    <!--<script type="text/javascript" src="http://cdn1.zygames.com/Public/PopupLogin/js/pup-avatarSelector.js"></script>-->
+    <link href="http://cdn1.zygames.com/qqsm/events/201512/design/resource/css/style.css" rel="stylesheet" type="text/css">
+    <!--[if IE 6]>
+    <script type="text/javascript" src="http://cdn1.zygames.com/qqsm/events/201512/design/resource/js/dd.js"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('.nav_ul li a');
+    </script>
+    <![endif]-->
+</head>
+<body>
+<!--http://cdn1.zygames.com/qqsm/events/201512/design/proShow.html?weaponID=100-->
+<div class="mainbg">
+    <div class="main bg">
+        <div class="main_cont">
+            <!-- 导航-->
+            <div class="nav">
+                <ul class="nav_ul">
+                    <li class="nav1"><a href="index.html" target="_blank">活动首页</a></li>
+                    <li class="nav2"><a href="javascript:void(0)">活动规则</a></li>
+                    <li class="nav3"><a href="prize.html" target="_blank">奖项设置</a></li>
+                    <li class="nav4"><a href="myPro.html" target="_blank">我的作品</a></li>
+                    <li class="nav5"><a href="upload.html" target="_blank">我要上传</a></li>
+                </ul>
+            </div>
+            <!-- 瀑布-->
+            <div class="upload">
+                <div class="loginMsg">
+                    <h2>我要上传</h2>
+                    <div class="meMsg"></div>
+                </div>
+                <div class="uploadForm">
+                    <form class="modifyForm" method="post" enctype="multipart/form-data" action="http://event.zygames.com/qqsm/201512/WeaponDesign/addweapon">
+                        <ul class="upload_ul">
+                            <li>
+                                <span><b>*</b>武器名称：</span>
+                                <div class="rInput">
+                                    <input type="text" value="" class="fileText" name="WeaponName"/>
+                                    <div class="clearfix"></div>
+                                    <div class="upError">您必须要填写一个武器名称</div>
+                                </div>
+                            </li>
+                            <li class="type_wq">
+                                <span><b>*</b>武器类型：</span>
+                                <div class="rInput">
+                                    <label><input type="radio" name="WeaType" value="狙击枪" checked="checked"/>狙击枪</label>
+                                    <label><input type="radio" name="WeaType" value="突击枪" />突击枪</label>
+                                    <label><input type="radio" name="WeaType" value="冲锋枪"/>冲锋枪</label>
+                                    <label><input type="radio" name="WeaType" value="手枪" />手枪</label>
+                                    <label>
+                                        <input type="radio" name="WeaType" value="" class="typeTextR" />其它：
+                                        <input type="text" class="typeText" value=""/>
+                                    </label>
+                                    <div class="upError">请填写您上传的武器类型，或选择一个现有的类型！</div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>图片上传：</span>
+
+                                <div class="rInput">
+                                    <a href="javascript:void (0)" class="fileText"></a>
+                                    <div class="fileBtn">
+                                        <input type="file" class="upfile" name="file"/>
+                                    </div>
+                                    <div class="uptips">请填写您上传的武器类型，或选择一个现有的类型！</div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>武器描述：</span>
+                                <div class="rInput">
+                                    <textarea name="WeaponDesc" id="" class="uploadArea"></textarea>
+                                    <div class="uptips"> 您可以填写一段对该武器的描述文字，文字长度不超过200个汉字</div>
+                                </div>
+                            </li>
+                            <li>
+                                <span></span>
+                                <div class="rInput">
+                                    <input type="submit" class="subBtn" value=""/>
+                                    <!--<a href="javascript:;" class="subBtn"></a>-->
+                                </div>
+                            </li>
+                        </ul>
+
+
+                    </form>
+                </div>
+
+                <div class="upMsg">
+                    <h2>作品上传规则</h2>
+
+                    <p>您可以上传一张图片，允许上传的图片格式包括：<span>JPG/JPEG/PNG/GIF</span></p>
+
+                    <p>允许上传的图片文件最大值为：<span>2MB</span></p>
+
+                    <p>图片最大分辨率为：<span>2000PX × 2000PX（像素）</span></p>
+
+                    <p>玩家上传作品后将会进行审核，审核时间为每个工作日的：<span>10:00-18:00</span></p>
+
+                    <p>不得上传涉及低俗、暴力、黄色等内容，否则取消活动资格</p>
+
+                    <p> 本次活动最终解释权归《全球使命2》运营团队所有</p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--公用底部-->
+<script type="text/javascript" src="http://cdn1.zygames.com/quote/event_bot/event_bot_q.js"></script>
+<!--公用底部end-->
+<script type="text/javascript" src="http://cdn1.zygames.com/qqsm/events/201512/design/resource/js/common.js"></script>
+<script type="text/javascript" src="http://cdn1.zygames.com/qqsm/events/201512/design/resource/js/design.js"></script>
+<script>
+    $(function(){
+        weap.islogin(window.location.href,weap.getUMsg);
+        // 其他 val
+        var $typeText=$(".typeText").val();
+        $(".typeTextR").val($typeText);
+        $(".typeText").change(function(){
+            $(".typeTextR").val($(this).val());
+        });
+
+    })
+
+
+    //function postFowm() {
+    //    $.ajax({
+    //        cache: false,
+    //        type: "POST",
+    //        url: "http://event.zygames.com/qqsm/201512/WeaponDesign/addweapon",
+    //        data: $('.modifyForm').serialize(), //要发送的是ajaxFrm表单中的数据
+    //        dataType: 'jsonp',
+    //        jsonp: "jsonpcallback",
+    //        async: false,
+    //        error: function (request) {
+    //            alert("发送请求失败！");
+    //        },
+    //        success: function (data) {
+    //            if (data.Code == 0) {
+    //                if (data.Code == 11) {
+    //                    $('.upError').html(data.Message);
+    //                }
+    //                window.location.href="myPro.html";
+    //            }
+    //        }
+    //    });
+    //}
+
+    $(".modifyForm").ajaxSubmit({
+        type: "post",
+        url: "http://event.zygames.com/qqsm/201512/WeaponDesign/addweapon",
+        dataType: "jsonp",
+        success: function (result) {
+            alert(result.nickMsg);
+        }
+
+    });
+
+</script>
+</body>
+
+</html>

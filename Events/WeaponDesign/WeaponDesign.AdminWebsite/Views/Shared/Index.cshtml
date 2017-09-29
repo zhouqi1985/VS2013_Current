@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "管理首页";
+    
+    ViewBag.ShowTopMenu = false;   //Index页不显示顶部菜单 
+}
+
+@Html.HeadBegin("管理")
+@Html.HeadEnd()
+
+<!--- data op --->
+<div id="data">
+    <table width="100%" border="0" cellspacing="0" class="table-data form">
+        <!------------>
+        <tr>
+            <th width="20%">菜单</th>
+            <td width="80%">
+                @Html.Partial("U_Menu")  
+            </td>
+        </tr>
+        <!------------>
+    </table>
+</div>
+<!--- data ed --->
+
+@Html.Foot()

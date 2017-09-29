@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7421d144-d9d0-4fcf-a7af-ee9e392c6470" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://adminapi.zygames.com/Event/QQSM/201512/DesignUpload/WeaponDesignAdminService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WeaponDesignAdminService.xsd" MetadataType="Schema" ID="bdbbbef5-337e-45aa-9130-93d6226b9ccb" SourceId="1" SourceUrl="http://adminapi.zygames.com/Event/QQSM/201512/DesignUpload/WeaponDesignAdminService.svc?xsd=xsd1" />
+    <MetadataFile FileName="WeaponDesignAdminService.wsdl" MetadataType="Wsdl" ID="b48f646e-757b-4d0a-98c4-4eeed3336965" SourceId="1" SourceUrl="http://adminapi.zygames.com/Event/QQSM/201512/DesignUpload/WeaponDesignAdminService.svc?wsdl" />
+    <MetadataFile FileName="WeaponDesignAdminService1.xsd" MetadataType="Schema" ID="7a5f79d9-d67c-4c75-9251-4518b0915192" SourceId="1" SourceUrl="http://adminapi.zygames.com/Event/QQSM/201512/DesignUpload/WeaponDesignAdminService.svc?xsd=xsd2" />
+    <MetadataFile FileName="WeaponDesignAdminService2.xsd" MetadataType="Schema" ID="150c66f7-e632-4343-85e7-223bb564041d" SourceId="1" SourceUrl="http://adminapi.zygames.com/Event/QQSM/201512/DesignUpload/WeaponDesignAdminService.svc?xsd=xsd0" />
+    <MetadataFile FileName="WeaponDesignAdminService.disco" MetadataType="Disco" ID="1c105db9-8997-4426-aba4-3ca96d1df08d" SourceId="1" SourceUrl="http://adminapi.zygames.com/Event/QQSM/201512/DesignUpload/WeaponDesignAdminService.svc?disco" />
+    <MetadataFile FileName="WeaponDesignAdminService3.xsd" MetadataType="Schema" ID="fc6b2d90-dc16-4e5f-9f0c-f3664f515beb" SourceId="1" SourceUrl="http://adminapi.zygames.com/Event/QQSM/201512/DesignUpload/WeaponDesignAdminService.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
