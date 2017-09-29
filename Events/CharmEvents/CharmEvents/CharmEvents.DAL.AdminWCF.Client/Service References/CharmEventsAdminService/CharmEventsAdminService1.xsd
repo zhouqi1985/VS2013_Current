@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ExchangeAndDrawLog">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AreaId" type="xs:int" />
+      <xs:element minOccurs="0" name="AvatarId" type="xs:long" />
+      <xs:element minOccurs="0" name="AvatarName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ConsumeId" type="xs:long" />
+      <xs:element minOccurs="0" name="CreateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ExchangeId" type="xs:int" />
+      <xs:element minOccurs="0" name="LoginName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Points" type="xs:int" />
+      <xs:element minOccurs="0" name="RandNum" type="xs:int" />
+      <xs:element minOccurs="0" name="Sex" type="xs:int" />
+      <xs:element minOccurs="0" name="Source" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserId" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ExchangeAndDrawLog" nillable="true" type="tns:ExchangeAndDrawLog" />
+  <xs:complexType name="ArrayOfExchangeAndDrawLog">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ExchangeAndDrawLog" nillable="true" type="tns:ExchangeAndDrawLog" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfExchangeAndDrawLog" nillable="true" type="tns:ArrayOfExchangeAndDrawLog" />
+  <xs:complexType name="LoginPacketLog">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AreaId" type="xs:int" />
+      <xs:element minOccurs="0" name="AvatarId" type="xs:long" />
+      <xs:element minOccurs="0" name="AvatarName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+      <xs:element minOccurs="0" name="LoginName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PacketId" type="xs:int" />
+      <xs:element minOccurs="0" name="Sex" type="xs:int" />
+      <xs:element minOccurs="0" name="Source" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserId" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LoginPacketLog" nillable="true" type="tns:LoginPacketLog" />
+  <xs:complexType name="ArrayOfLoginPacketLog">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LoginPacketLog" nillable="true" type="tns:LoginPacketLog" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLoginPacketLog" nillable="true" type="tns:ArrayOfLoginPacketLog" />
+  <xs:complexType name="PacketQueueLog">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AreaId" type="xs:int" />
+      <xs:element minOccurs="0" name="AvatarId" type="xs:long" />
+      <xs:element minOccurs="0" name="AvatarName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FromId" type="xs:long" />
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+      <xs:element minOccurs="0" name="LoginName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PacketId" type="xs:long" />
+      <xs:element minOccurs="0" name="Sex" type="xs:int" />
+      <xs:element minOccurs="0" name="Source" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserId" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PacketQueueLog" nillable="true" type="tns:PacketQueueLog" />
+  <xs:complexType name="ArrayOfPacketQueueLog">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PacketQueueLog" nillable="true" type="tns:PacketQueueLog" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPacketQueueLog" nillable="true" type="tns:ArrayOfPacketQueueLog" />
+  <xs:complexType name="Wallets">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AreaId" type="xs:int" />
+      <xs:element minOccurs="0" name="AvatarId" type="xs:long" />
+      <xs:element minOccurs="0" name="AvatarName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BalancePoints" type="xs:int" />
+      <xs:element minOccurs="0" name="CreateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FromId" type="xs:long" />
+      <xs:element minOccurs="0" name="GetLastTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="GetPoints" type="xs:int" />
+      <xs:element minOccurs="0" name="RecordDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Source" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserId" type="xs:long" />
+      <xs:element minOccurs="0" name="WId" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Wallets" nillable="true" type="tns:Wallets" />
+  <xs:complexType name="ArrayOfWallets">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Wallets" nillable="true" type="tns:Wallets" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWallets" nillable="true" type="tns:ArrayOfWallets" />
+  <xs:complexType name="DrawPacketConfig">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="PacketDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PacketId" type="xs:long" />
+      <xs:element minOccurs="0" name="PacketName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RateBegin" type="xs:int" />
+      <xs:element minOccurs="0" name="RateEnd" type="xs:int" />
+      <xs:element minOccurs="0" name="RateValue" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DrawPacketConfig" nillable="true" type="tns:DrawPacketConfig" />
+  <xs:complexType name="ArrayOfDrawPacketConfig">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DrawPacketConfig" nillable="true" type="tns:DrawPacketConfig" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDrawPacketConfig" nillable="true" type="tns:ArrayOfDrawPacketConfig" />
+  <xs:complexType name="ExchangePacketTypeConfig">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccumulatePoints" type="xs:int" />
+      <xs:element minOccurs="0" name="ExchangeTypeDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExchangeTypeId" type="xs:int" />
+      <xs:element minOccurs="0" name="ExchangeTypeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="TypeLimit" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ExchangePacketTypeConfig" nillable="true" type="tns:ExchangePacketTypeConfig" />
+  <xs:complexType name="ArrayOfExchangePacketTypeConfig">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ExchangePacketTypeConfig" nillable="true" type="tns:ExchangePacketTypeConfig" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfExchangePacketTypeConfig" nillable="true" type="tns:ArrayOfExchangePacketTypeConfig" />
+  <xs:complexType name="ExchangePacketConfig">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ExchangeId" type="xs:int" />
+      <xs:element minOccurs="0" name="ExchangeLimit" type="xs:int" />
+      <xs:element minOccurs="0" name="ExchangePoints" type="xs:int" />
+      <xs:element minOccurs="0" name="ExchangeTypeId" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="PacketCount" type="xs:int" />
+      <xs:element minOccurs="0" name="PacketDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PacketId" type="xs:long" />
+      <xs:element minOccurs="0" name="PacketName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ExchangePacketConfig" nillable="true" type="tns:ExchangePacketConfig" />
+  <xs:complexType name="ArrayOfExchangePacketConfig">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ExchangePacketConfig" nillable="true" type="tns:ExchangePacketConfig" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfExchangePacketConfig" nillable="true" type="tns:ArrayOfExchangePacketConfig" />
+  <xs:complexType name="BasicConfig">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ConfigId" type="xs:int" />
+      <xs:element minOccurs="0" name="ConfigName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ConfigValue" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BasicConfig" nillable="true" type="tns:BasicConfig" />
+  <xs:complexType name="ArrayOfBasicConfig">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BasicConfig" nillable="true" type="tns:BasicConfig" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBasicConfig" nillable="true" type="tns:ArrayOfBasicConfig" />
+  <xs:complexType name="DailyReportTotalPeople">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AllPacketPeople" type="xs:int" />
+      <xs:element minOccurs="0" name="CreateTs" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DrawPacketPeople" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="RefreshCurrent" type="xs:int" />
+      <xs:element minOccurs="0" name="ReportDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DailyReportTotalPeople" nillable="true" type="tns:DailyReportTotalPeople" />
+  <xs:complexType name="ArrayOfDailyReportTotalPeople">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DailyReportTotalPeople" nillable="true" type="tns:DailyReportTotalPeople" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDailyReportTotalPeople" nillable="true" type="tns:ArrayOfDailyReportTotalPeople" />
+  <xs:complexType name="ArrayOfDailyReportItemConsume">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DailyReportItemConsume" nillable="true" type="tns:DailyReportItemConsume" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDailyReportItemConsume" nillable="true" type="tns:ArrayOfDailyReportItemConsume" />
+  <xs:complexType name="DailyReportItemConsume">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreateTs" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="ItemId" type="xs:int" />
+      <xs:element minOccurs="0" name="ItemName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReportDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TotalConsume" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DailyReportItemConsume" nillable="true" type="tns:DailyReportItemConsume" />
+  <xs:complexType name="ArrayOfDailyReportGameDetailsPerUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DailyReportGameDetailsPerUser" nillable="true" type="tns:DailyReportGameDetailsPerUser" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDailyReportGameDetailsPerUser" nillable="true" type="tns:ArrayOfDailyReportGameDetailsPerUser" />
+  <xs:complexType name="DailyReportGameDetailsPerUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AreaId" type="xs:int" />
+      <xs:element minOccurs="0" name="AvatarId" type="xs:long" />
+      <xs:element minOccurs="0" name="AvatarName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FromId" type="xs:long" />
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+      <xs:element minOccurs="0" name="RankOrder" type="xs:int" />
+      <xs:element minOccurs="0" name="StatisticalItem" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StatisticalResult" type="xs:long" />
+      <xs:element minOccurs="0" name="UserId" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DailyReportGameDetailsPerUser" nillable="true" type="tns:DailyReportGameDetailsPerUser" />
+  <xs:complexType name="TransferData_All_ReportDateConfig">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ConfigId" type="xs:int" />
+      <xs:element minOccurs="0" name="ConfigName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EndTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ReportId" type="xs:int" />
+      <xs:element minOccurs="0" name="StartTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Status" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TransferData_All_ReportDateConfig" nillable="true" type="tns:TransferData_All_ReportDateConfig" />
+  <xs:complexType name="ArrayOfTransferData_All_ReportDateConfig">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TransferData_All_ReportDateConfig" nillable="true" type="tns:TransferData_All_ReportDateConfig" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTransferData_All_ReportDateConfig" nillable="true" type="tns:ArrayOfTransferData_All_ReportDateConfig" />
+  <xs:complexType name="TransferData_GameDetails_ItemConfig">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="ItemId" type="xs:int" />
+      <xs:element minOccurs="0" name="ItemName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShowName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TransferData_GameDetails_ItemConfig" nillable="true" type="tns:TransferData_GameDetails_ItemConfig" />
+  <xs:complexType name="ArrayOfTransferData_GameDetails_ItemConfig">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TransferData_GameDetails_ItemConfig" nillable="true" type="tns:TransferData_GameDetails_ItemConfig" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTransferData_GameDetails_ItemConfig" nillable="true" type="tns:ArrayOfTransferData_GameDetails_ItemConfig" />
+  <xs:complexType name="TransferData_GameDetails_UsersConfig">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AreaId" type="xs:int" />
+      <xs:element minOccurs="0" name="AvatarId" type="xs:long" />
+      <xs:element minOccurs="0" name="AvatarName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FromId" type="xs:long" />
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+      <xs:element minOccurs="0" name="RankOrder" type="xs:int" />
+      <xs:element minOccurs="0" name="UserId" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TransferData_GameDetails_UsersConfig" nillable="true" type="tns:TransferData_GameDetails_UsersConfig" />
+  <xs:complexType name="ArrayOfTransferData_GameDetails_UsersConfig">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TransferData_GameDetails_UsersConfig" nillable="true" type="tns:TransferData_GameDetails_UsersConfig" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTransferData_GameDetails_UsersConfig" nillable="true" type="tns:ArrayOfTransferData_GameDetails_UsersConfig" />
+  <xs:complexType name="TransferData_ItemConsume_ItemConfig">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="ItemId" type="xs:int" />
+      <xs:element minOccurs="0" name="ItemName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShowName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TransferData_ItemConsume_ItemConfig" nillable="true" type="tns:TransferData_ItemConsume_ItemConfig" />
+  <xs:complexType name="ArrayOfTransferData_ItemConsume_ItemConfig">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TransferData_ItemConsume_ItemConfig" nillable="true" type="tns:TransferData_ItemConsume_ItemConfig" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTransferData_ItemConsume_ItemConfig" nillable="true" type="tns:ArrayOfTransferData_ItemConsume_ItemConfig" />
+  <xs:complexType name="RankList_TopN">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AreaId" type="xs:int" />
+      <xs:element minOccurs="0" name="AreaName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AvatarId" type="xs:long" />
+      <xs:element minOccurs="0" name="AvatarName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CutOffDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="GetLastTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="GetPoints" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+      <xs:element minOccurs="0" name="RankOrder" type="xs:int" />
+      <xs:element minOccurs="0" name="UserId" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RankList_TopN" nillable="true" type="tns:RankList_TopN" />
+  <xs:complexType name="ArrayOfRankList_TopN">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RankList_TopN" nillable="true" type="tns:RankList_TopN" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRankList_TopN" nillable="true" type="tns:ArrayOfRankList_TopN" />
+</xs:schema>

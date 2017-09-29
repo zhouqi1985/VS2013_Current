@@ -1,0 +1,74 @@
+﻿@using ObjectUtil.Common
+@using ObjectUtil.Dictionary
+@using CharmEvents.Database.Database
+@model BasicConfig
+
+@{
+    ViewBag.Title = "编辑";
+}
+
+@section title
+{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //singer 选中变换class
+            $('.form .left, .form input, .form textarea, .form select').focus(function () {
+                $(this).parents('tr').addClass("over");
+            }).blur(function () {
+                $(this).parents('tr').removeClass("over");
+            });
+
+        });
+    </script>
+}
+
+@Html.HeadBegin("编辑")
+@Html.HeadEnd()
+
+
+<!--- data op --->
+<div id="data">
+    @using (Html.BeginForm())
+    {
+        <table width="100%" border="0" cellspacing="0" class="table-data form">
+            <!------------>
+            <!--  -->
+            <tr >
+                <th width="20%">ConfigId:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.ConfigId, new { Class = "input", Size = "40", @readonly = "readonly" })
+                    @Html.JQueryValidationMessage(j => j.Bind("ConfigId").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">ConfigName:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.ConfigName, new { Class = "input", Size = "40", disabled = "disabled" })
+                    @Html.JQueryValidationMessage(j => j.Bind("ConfigName").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">ConfigValue:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.ConfigValue, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("ConfigValue").NotEmpty().Number())
+                </td>
+            </tr>
+            <tr>
+                <th>&nbsp;</th>
+                <td height="50" class="clear-form-td">
+                    <input type="submit" class="bt-big" name="button2" id="button2" value="提  交" />
+                    <input type="button" name="goback" class="bt-big" value="返  回" onclick="javascript:history.go(-1);" />
+                </td>
+            </tr>
+            <!------------>
+        </table>
+
+    }
+
+</div>
+<!--- data ed --->
+@Html.Foot()
+

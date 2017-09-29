@@ -1,0 +1,99 @@
+﻿@using ObjectUtil.Common
+@using ObjectUtil.Dictionary
+@using CharmEvents.Database.Database
+@model List<RankList_TopN>
+
+@{
+    ViewBag.Title = "列表";
+}
+
+@section title
+{
+    <script type="text/javascript" src="@Url.Content("/Content/js/jquery.input.title.js")"></script>
+    <script src="@Url.Content("/Content/js/jtip.js")" type="text/javascript"></script>
+    <script type="text/javascript" src="@Url.Content("/Content/js/jquery.table.js")"></script>
+}
+
+@Html.HeadBegin("列表")
+@using (Html.BeginForm("RankTopNList", "CharmEvents"))
+{
+    <text>
+        <input type="hidden" name="PageIndex" value="1" />
+        Id
+        @Html.TextBox("Id", null, new { Class = "input" })
+        UserId
+        @Html.TextBox("UserId", null, new { Class = "input" })
+        RankOrder
+        @Html.TextBox("RankOrder", null, new { Class = "input" })
+        CutOffDate
+        @Html.TextBoxWithCalendar("CutOffDate", DateTime.Now.AddDays(-1), new { Class = "input" })
+        <input type="submit" value="搜索" class="bt-samll" />
+        <input type="submit" value="导出Excel" name="btnExportExcel" class="bt-samll" />
+    </text>
+}
+@Html.HeadEnd()
+
+<!--- data op --->
+
+<div id="data">
+    <table width="100%" align="center" cellpadding="0" cellspacing="0" class="table-data list">
+        <!-- 请程序注意 头部的jquery .list 已经变换成为特殊的 .list_cut ----------->
+        <tr>
+            <th>Id</th>
+            <th>UserId</th>
+            <th>AvatarId</th>
+            <th>AvatarName</th>
+            <th>AreaId</th>
+            <th>AreaName</th>
+            <th>GetPoints</th>
+            <th>CreateTime</th>
+            <th>RankOrder</th>
+            <th>GetLastTime</th>
+            <th>CutOffDate</th>
+            <th width="10%">操作</th>
+        </tr>
+        <!------------->
+        @foreach (var item in Model)
+        {
+
+            <tr>
+
+                <td>&nbsp; @item.Id</td>
+                <td>&nbsp; @item.UserId</td>
+                <td>&nbsp; @item.AvatarId</td>
+                <td>&nbsp; @item.AvatarName</td>
+                <td>&nbsp; @item.AreaId</td>
+                <td>&nbsp; @item.AreaName</td>
+                <td>&nbsp; @item.GetPoints</td>
+                <td>&nbsp; @item.CreateTime</td>
+                <td>&nbsp; @item.RankOrder</td>
+                <td>&nbsp; @item.GetLastTime</td>
+                <td>&nbsp; @item.CutOffDate</td>
+                <td>
+                    <input type="button" class="bt-list" value="加入统计" onclick="location.href='/CharmEvents/AddTransferDataGameDetailsUsersConfig?Id=@item.Id'" />
+                </td>
+            </tr>
+        }
+    </table>
+
+    @using (Html.BeginForm("BatchAddTransferDataGameDetailsUsersConfig", "CharmEvents"))
+    {
+        <text>
+            批量统计设置：
+            开始编号
+            @Html.TextBox("startid", 0, new { Class = "input" })
+            结束编号
+            @Html.TextBox("endid", 0, new { Class = "input" })
+            <input type="submit" value="批量加入" class="bt-samll" />
+        </text>
+    }
+
+    <!--- page op --->
+    <div id="page">
+        @Html.Pager(new AdminButton("/CharmEvents/RefreshTopNList", "刷新玩家排名"))
+    </div>
+    <!--- page ed --->
+
+</div>
+<!--- data ed --->
+@Html.Foot()

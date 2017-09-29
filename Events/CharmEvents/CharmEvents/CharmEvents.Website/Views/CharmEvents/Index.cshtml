@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+@{string url = "http://event.zygames.com/qqsm/201705/CharmEvents/";}
+@using CharmEvents.Website.Enums;
+@using ObjectUtil.Common;
+<div>
+    <input id="loginBtn" type="button" value="Login" onclick="zy.loginLayer('@url')">
+    <input id="logoutBtn" type="button" value="Logout" onclick="location.href = 'https://passport.zygames.com/logout?returnUrl=@url'+'Index'">
+</div>
+<br>
+<div>
+    接口说明：<br>
+    活动接口连接：@url<br>
+    <br>
+    各个接口说明：<br>
+    IsLogin()：<input type="button" value="是否登录" onclick="location.href = '@url'+ 'IsLogin'" /><br>
+    Login()：<input type="button" value="登录后操作" onclick="location.href = '@url'+ 'Login'" /><br>
+    GetUserInfo()：<input type="button" value="获取用户信息" onclick="location.href = '@url'+ 'GetUserInfo'" /><br>
+    GetRankList()：<input type="button" value="排行榜" onclick="location.href ='@url'+ 'GetRankList'" /><br>
+    UsersLoginPacket()：<input type="button" value="领取登录礼包" onclick="location.href = '@url'+ 'UsersLoginPacket'" /><br>
+    UsersDrawPackets()：<input type="button" value="抽奖" onclick="location.href ='@url'+ 'UsersDrawPackets'" /><br>
+    UsersExchangePackets(int exchangeid)：<form method="post" action="UsersExchangePackets">
+        exchangeid:<input type="text" name="exchangeid" value=""><input type="submit" value="阶梯奖励兑换" /><br>
+    </form>
+</div>
+<br>
+<div>
+    所有返回Code如下：<br>
+    <table width="100%" align="center" cellpadding="0" cellspacing="0">
+        <!-- 请程序注意 头部的jquery .list 已经变换成为特殊的 .list_cut ----------->
+        <tr>
+            <th>Code</th>
+            <th>Description</th>
+        </tr>
+        <!------------->
+        @foreach (ErrorCode type in Enum.GetValues(typeof(ErrorCode)))
+        {
+
+            <tr align="center">
+                <td>@Enum.Format(typeof(ErrorCode), type, "D")</td>
+                <td>@type.ToDescription()</td>
+            </tr>
+        }
+    </table>
+
+
+
+</div>
+
+<script type="text/javascript">
+    var zy = {
+        loginLayer: function (url) {
+            return startPop_fmAvatar(url + 'login', "_top", 1);
+        }//登录弹窗
+    }
+</script>

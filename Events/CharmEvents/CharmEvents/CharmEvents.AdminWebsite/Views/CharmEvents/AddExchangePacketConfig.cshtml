@@ -1,0 +1,114 @@
+﻿@using ObjectUtil.Common
+@using ObjectUtil.Dictionary
+@using CharmEvents.Database.Database
+@model ExchangePacketConfig
+
+@{
+    ViewBag.Title = "编辑";
+}
+
+@section title
+{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //singer 选中变换class
+            $('.form .left, .form input, .form textarea, .form select').focus(function () {
+                $(this).parents('tr').addClass("over");
+            }).blur(function () {
+                $(this).parents('tr').removeClass("over");
+            });
+
+        });
+    </script>
+}
+
+@Html.HeadBegin("编辑")
+@Html.HeadEnd()
+
+
+<!--- data op --->
+<div id="data">
+    @using (Html.BeginForm())
+    {
+        <table width="100%" border="0" cellspacing="0" class="table-data form">
+            <!------------>
+            <!--  -->
+            <tr style="display:none;">
+                <th width="20%">Id:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.Id, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("Id").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">ExchangeId:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.ExchangeId, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("ExchangeId").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">PacketId:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.PacketId, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("PacketId").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">PacketName:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.PacketName, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("PacketName").NotEmpty().NoHtml())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">PacketDesc:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.PacketDesc, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("PacketDesc").NoHtml())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">ExchangeLimit:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.ExchangeLimit, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("ExchangeLimit").NotEmpty().Min(0, "必须大于0"))
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">ExchangePoints:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.ExchangePoints, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("ExchangePoints").NotEmpty().Min(1, "必须大于1"))
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">ExchangeTypeId:</th>
+                <td width="80%">
+                    @Html.DropDownList("ExchangeTypeId")
+                    @Html.JQueryValidationMessage(j => j.Bind("ExchangeTypeId").NotEmpty().Min(1))
+                </td>
+            </tr>
+            <tr>
+                <th>&nbsp;</th>
+                <td height="50" class="clear-form-td">
+                    <input type="submit" class="bt-big" name="button2" id="button2" value="提  交" />
+                    <input type="button" name="goback" class="bt-big" value="返  回" onclick="javascript:history.go(-1);" />
+                </td>
+            </tr>
+            <!------------>
+        </table>
+
+    }
+
+</div>
+<!--- data ed --->
+@Html.Foot()
+

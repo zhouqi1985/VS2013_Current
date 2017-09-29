@@ -1,0 +1,79 @@
+﻿@using ObjectUtil.Common
+@using ObjectUtil.Dictionary
+@using CharmEvents.Database.Database
+@model List<TransferData_ItemConsume_ItemConfig>
+
+@{
+    ViewBag.Title = "列表";
+}
+
+@section title
+{
+    <script type="text/javascript" src="@Url.Content("/Content/js/jquery.input.title.js")"></script>
+    <script src="@Url.Content("/Content/js/jtip.js")" type="text/javascript"></script>
+    <script type="text/javascript" src="@Url.Content("/Content/js/jquery.table.js")"></script>
+}
+
+@Html.HeadBegin("列表")
+@using (Html.BeginForm("TransferDataItemConsumeItemConfigList", "CharmEvents"))
+{
+    <text>
+        <input type="hidden" name="PageIndex" value="1" />
+        <input type="submit" value="导出Excel" name="btnExportExcel" class="bt-samll" />
+    </text>
+}
+@Html.HeadEnd()
+
+<!--- data op --->
+
+    <div id="data">
+        <form action="/CharmEvents/SynchroniseConsumeItemConfig" method="post">
+            <table width="100%" align="center" cellpadding="0" cellspacing="0" class="table-data list">
+                <!-- 请程序注意 头部的jquery .list 已经变换成为特殊的 .list_cut ----------->
+                <tr>
+                    <th><input type="checkbox" name="itemall"></th>
+                    <th>Id</th>
+                    <th>ItemId</th>
+                    <th>ItemName</th>
+                    <th>ShowName</th>
+                    <th>Status</th>
+                    <th width="10%">操作</th>
+                </tr>
+                <!------------->
+                @foreach (var item in Model)
+                {
+
+                    <tr>
+                        <td><input type="checkbox" name="ItemSelect" value="@item.ItemId"></td>
+                        <td>&nbsp; @item.Id</td>
+                        <td>&nbsp; @item.ItemId</td>
+                        <td>&nbsp; @item.ItemName</td>
+                        <td>&nbsp; @item.ShowName</td>
+                        <td>&nbsp; @item.Status</td>
+                        <td>
+                            <input type="button" class="bt-list" value="编辑" onclick="location.href='/CharmEvents/EditTransferDataItemConsumeItemConfig?ItemId=@item.ItemId'" />
+                            <input type="button" class="bt-list" value="删除" onclick="if(confirm('确定删除此项?'))location='/CharmEvents/DelTransferDataItemConsumeItemConfig?ItemId=@item.ItemId'" />
+                        </td>
+                    </tr>
+                }
+            </table>
+            <input type="submit" class="bt-big" name="button2" id="button2" value="数据同步" />
+        </form>
+</div>
+
+
+<script type="text/javascript">
+    $("input[name='itemall']").change(function () {
+        $("input[name='ItemSelect']").prop("checked", this.checked);
+    });
+
+</script>
+
+<div id="page">
+    @Html.Pager(new AdminButton("/CharmEvents/AddTransferDataItemConsumeItemConfig", "增加"))
+</div>
+    <!--- page op --->
+
+<!--- page ed --->
+<!--- data ed --->
+@Html.Foot()

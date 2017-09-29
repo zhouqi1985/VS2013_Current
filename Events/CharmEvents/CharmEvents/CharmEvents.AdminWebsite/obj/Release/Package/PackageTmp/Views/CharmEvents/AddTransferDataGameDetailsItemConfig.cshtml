@@ -1,0 +1,91 @@
+﻿@using ObjectUtil.Common
+@using ObjectUtil.Dictionary
+@using CharmEvents.Database.Database
+@model TransferData_GameDetails_ItemConfig
+
+@{
+    ViewBag.Title = "编辑";
+}
+
+@section title
+{
+    <script type="text/javascript">
+		$(document).ready(function()
+		{
+		    //singer 选中变换class
+			$('.form .left, .form input, .form textarea, .form select').focus(function(){
+				$(this).parents('tr').addClass("over");
+			}).blur(function(){
+				$(this).parents('tr').removeClass("over");
+			});
+
+		});
+    </script>
+}
+
+@Html.HeadBegin("编辑")
+@Html.HeadEnd()
+
+
+<!--- data op --->
+<div id="data">
+    @using (Html.BeginForm())
+    {
+        <table width="100%" border="0" cellspacing="0" class="table-data form">
+            <!------------>
+            <!--  -->
+            <tr style="display:none;">
+                <th width="20%">Id:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.Id, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("Id").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">ItemId:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.ItemId, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("ItemId").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">ItemName:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.ItemName, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("ItemName").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">ShowName:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.ShowName, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("ShowName").NotEmpty())
+                </td>
+            </tr>
+            <!--  -->
+            <tr>
+                <th width="20%">Status:</th>
+                <td width="80%">
+                    @Html.TextBoxFor(m => Model.Status, new { Class = "input", Size = "40" })
+                    @Html.JQueryValidationMessage(j => j.Bind("Status").NotEmpty())
+                </td>
+            </tr>
+            <tr>
+                <th>&nbsp;</th>
+                <td height="50" class="clear-form-td">
+                    <input type="submit" class="bt-big" name="button2" id="button2" value="提  交" />
+                    <input type="button" name="goback" class="bt-big" value="返  回" onclick="javascript:history.go(-1);" />
+                </td>
+            </tr>
+            <!------------>
+        </table>
+
+    }
+
+</div>
+<!--- data ed --->
+@Html.Foot()
+

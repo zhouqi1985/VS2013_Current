@@ -1,0 +1,17 @@
+E:\ZyProject\Events\CharmEvents\CharmEvents\CharmEvents.DAL.WCF\bin\CharmEvents.DAL.WCF.dll.config
+E:\ZyProject\Events\CharmEvents\CharmEvents\CharmEvents.DAL.WCF\bin\CharmEvents.DAL.WCF.dll
+E:\ZyProject\Events\CharmEvents\CharmEvents\CharmEvents.DAL.WCF\bin\CharmEvents.DAL.WCF.pdb
+E:\ZyProject\Events\CharmEvents\CharmEvents\CharmEvents.DAL.WCF\bin\CharmEvents.DAL.dll
+E:\ZyProject\Events\CharmEvents\CharmEvents\CharmEvents.DAL.WCF\bin\CharmEvents.Database.dll
+E:\ZyProject\Events\CharmEvents\CharmEvents\CharmEvents.DAL.WCF\bin\CommonLibs.Common.dll
+E:\ZyProject\Events\CharmEvents\CharmEvents\CharmEvents.DAL.WCF\bin\CommonLibs.EnterpriseLibrary.dll
+E:\ZyProject\Events\CharmEvents\CharmEvents\CharmEvents.DAL.WCF\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\ZyProject\Events\CharmEvents\CharmEvents\CharmEvents.DAL.WCF\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\ZyProject\Events\CharmEvents\CharmEvents\CharmEvents.DAL.WCF\bin\Microsoft.Practices.ServiceLocation.dll
+E:\ZyProject\Events\CharmEvents\CharmEvents\CharmEvents.DAL.WCF\bin\Microsoft.Practices.Unity.dll
+E:\ZyProject\Events\CharmEvents\CharmEvents\CharmEvents.DAL.WCF\bin\Microsoft.Practices.Unity.Interception.dll
+E:\ZyProject\Events\CharmEvents\CharmEvents\CharmEvents.DAL.WCF\bin\CharmEvents.DAL.pdb
+E:\ZyProject\Events\CharmEvents\CharmEvents\CharmEvents.DAL.WCF\bin\CharmEvents.Database.pdb
+E:\ZyProject\Events\CharmEvents\CharmEvents\CharmEvents.DAL.WCF\obj\Release\CharmEvents.DAL.WCF.csprojResolveAssemblyReference.cache
+E:\ZyProject\Events\CharmEvents\CharmEvents\CharmEvents.DAL.WCF\obj\Release\CharmEvents.DAL.WCF.dll
+E:\ZyProject\Events\CharmEvents\CharmEvents\CharmEvents.DAL.WCF\obj\Release\CharmEvents.DAL.WCF.pdb

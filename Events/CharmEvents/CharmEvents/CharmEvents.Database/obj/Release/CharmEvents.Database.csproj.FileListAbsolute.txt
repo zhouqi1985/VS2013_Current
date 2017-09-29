@@ -1,0 +1,5 @@
+E:\ZyProject\Events\CharmEvents\CharmEvents\CharmEvents.Database\bin\Release\CharmEvents.Database.dll
+E:\ZyProject\Events\CharmEvents\CharmEvents\CharmEvents.Database\bin\Release\CharmEvents.Database.pdb
+E:\ZyProject\Events\CharmEvents\CharmEvents\CharmEvents.Database\obj\Release\CharmEvents.Database.csprojResolveAssemblyReference.cache
+E:\ZyProject\Events\CharmEvents\CharmEvents\CharmEvents.Database\obj\Release\CharmEvents.Database.dll
+E:\ZyProject\Events\CharmEvents\CharmEvents\CharmEvents.Database\obj\Release\CharmEvents.Database.pdb

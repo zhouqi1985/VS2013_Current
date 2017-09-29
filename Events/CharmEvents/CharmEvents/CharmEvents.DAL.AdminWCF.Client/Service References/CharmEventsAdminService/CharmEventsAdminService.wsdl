@@ -1,0 +1,1496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CharmEventsAdminService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_ICharmEventsAdminService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://adminapi.zygames.com/CharmEvents/CharmEventsAdminService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://adminapi.zygames.com/CharmEvents/CharmEventsAdminService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://adminapi.zygames.com/CharmEvents/CharmEventsAdminService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CommonLibs.Common" />
+      <xsd:import schemaLocation="http://adminapi.zygames.com/CharmEvents/CharmEventsAdminService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" />
+      <xsd:import schemaLocation="http://adminapi.zygames.com/CharmEvents/CharmEventsAdminService.svc?xsd=xsd4" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICharmEventsAdminService_GetExchangeAndDrawLogList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExchangeAndDrawLogList" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_GetExchangeAndDrawLogList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExchangeAndDrawLogListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_GetLoginPacketLogList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLoginPacketLogList" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_GetLoginPacketLogList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLoginPacketLogListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_GetPacketQueueLogList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPacketQueueLogList" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_GetPacketQueueLogList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPacketQueueLogListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_GetWalletsList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWalletsList" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_GetWalletsList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWalletsListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_AddWallets_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddWallets" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_AddWallets_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddWalletsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_AddDrawPacketConfig_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddDrawPacketConfig" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_AddDrawPacketConfig_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddDrawPacketConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_UpdateDrawPacketConfig_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDrawPacketConfig" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_UpdateDrawPacketConfig_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDrawPacketConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_DelDrawPacketConfig_InputMessage">
+    <wsdl:part name="parameters" element="tns:DelDrawPacketConfig" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_DelDrawPacketConfig_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DelDrawPacketConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_GetDrawPacketConfig_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDrawPacketConfig" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_GetDrawPacketConfig_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDrawPacketConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_GetDrawPacketConfigList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDrawPacketConfigList" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_GetDrawPacketConfigList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDrawPacketConfigListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_SubmitDrawPacketConfigRate_InputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitDrawPacketConfigRate" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_SubmitDrawPacketConfigRate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitDrawPacketConfigRateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_AddExchangePacketTypeConfig_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddExchangePacketTypeConfig" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_AddExchangePacketTypeConfig_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddExchangePacketTypeConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_UpdateExchangePacketTypeConfig_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateExchangePacketTypeConfig" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_UpdateExchangePacketTypeConfig_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateExchangePacketTypeConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_DelExchangePacketTypeConfig_InputMessage">
+    <wsdl:part name="parameters" element="tns:DelExchangePacketTypeConfig" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_DelExchangePacketTypeConfig_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DelExchangePacketTypeConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_GetExchangePacketTypeConfig_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExchangePacketTypeConfig" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_GetExchangePacketTypeConfig_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExchangePacketTypeConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_GetExchangePacketTypeConfigList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExchangePacketTypeConfigList" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_GetExchangePacketTypeConfigList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExchangePacketTypeConfigListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_AddExchangePacketConfig_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddExchangePacketConfig" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_AddExchangePacketConfig_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddExchangePacketConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_UpdateExchangePacketConfig_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateExchangePacketConfig" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_UpdateExchangePacketConfig_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateExchangePacketConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_DelExchangePacketConfig_InputMessage">
+    <wsdl:part name="parameters" element="tns:DelExchangePacketConfig" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_DelExchangePacketConfig_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DelExchangePacketConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_GetExchangePacketConfig_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExchangePacketConfig" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_GetExchangePacketConfig_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExchangePacketConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_GetExchangePacketConfigList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExchangePacketConfigList" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_GetExchangePacketConfigList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExchangePacketConfigListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_UpdateBasicConfig_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBasicConfig" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_UpdateBasicConfig_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBasicConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_GetBasicConfigAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBasicConfigAll" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_GetBasicConfigAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBasicConfigAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_GetBasicConfig_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBasicConfig" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_GetBasicConfig_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBasicConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_importCSVtoDB_InputMessage">
+    <wsdl:part name="parameters" element="tns:importCSVtoDB" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_importCSVtoDB_OutputMessage">
+    <wsdl:part name="parameters" element="tns:importCSVtoDBResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_AddDailyReportTotalPeople_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddDailyReportTotalPeople" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_AddDailyReportTotalPeople_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddDailyReportTotalPeopleResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_GetDailyReportTotalPeopleList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDailyReportTotalPeopleList" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_GetDailyReportTotalPeopleList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDailyReportTotalPeopleListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_GetDailyReportItemConsumeAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDailyReportItemConsumeAll" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_GetDailyReportItemConsumeAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDailyReportItemConsumeAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_GetDailyReportGameDetailsPerUserAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDailyReportGameDetailsPerUserAll" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_GetDailyReportGameDetailsPerUserAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDailyReportGameDetailsPerUserAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataAllReportDateConfigAdd_InputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataAllReportDateConfigAdd" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataAllReportDateConfigAdd_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataAllReportDateConfigAddResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataAllReportDateConfigDel_InputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataAllReportDateConfigDel" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataAllReportDateConfigDel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataAllReportDateConfigDelResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataAllReportDateConfigGetByConfigId_InputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataAllReportDateConfigGetByConfigId" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataAllReportDateConfigGetByConfigId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataAllReportDateConfigGetByConfigIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataAllReportDateConfigGetList_InputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataAllReportDateConfigGetList" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataAllReportDateConfigGetList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataAllReportDateConfigGetListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataAllReportDateConfigUpdate_InputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataAllReportDateConfigUpdate" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataAllReportDateConfigUpdate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataAllReportDateConfigUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataGameDetailsItemConfigAdd_InputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataGameDetailsItemConfigAdd" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataGameDetailsItemConfigAdd_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataGameDetailsItemConfigAddResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataGameDetailsItemConfigDel_InputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataGameDetailsItemConfigDel" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataGameDetailsItemConfigDel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataGameDetailsItemConfigDelResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataGameDetailsItemConfigGetByItemId_InputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataGameDetailsItemConfigGetByItemId" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataGameDetailsItemConfigGetByItemId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataGameDetailsItemConfigGetByItemIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataGameDetailsItemConfigGetList_InputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataGameDetailsItemConfigGetList" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataGameDetailsItemConfigGetList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataGameDetailsItemConfigGetListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataGameDetailsItemConfigUpdate_InputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataGameDetailsItemConfigUpdate" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataGameDetailsItemConfigUpdate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataGameDetailsItemConfigUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataGameDetailsUsersConfigAdd_InputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataGameDetailsUsersConfigAdd" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataGameDetailsUsersConfigAdd_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataGameDetailsUsersConfigAddResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataGameDetailsUsersConfigDel_InputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataGameDetailsUsersConfigDel" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataGameDetailsUsersConfigDel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataGameDetailsUsersConfigDelResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataGameDetailsUsersConfigGetById_InputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataGameDetailsUsersConfigGetById" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataGameDetailsUsersConfigGetById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataGameDetailsUsersConfigGetByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataGameDetailsUsersConfigGetList_InputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataGameDetailsUsersConfigGetList" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataGameDetailsUsersConfigGetList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataGameDetailsUsersConfigGetListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataGameDetailsUsersConfigUpdate_InputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataGameDetailsUsersConfigUpdate" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataGameDetailsUsersConfigUpdate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataGameDetailsUsersConfigUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataItemConsumeItemConfigAdd_InputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataItemConsumeItemConfigAdd" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataItemConsumeItemConfigAdd_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataItemConsumeItemConfigAddResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataItemConsumeItemConfigDel_InputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataItemConsumeItemConfigDel" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataItemConsumeItemConfigDel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataItemConsumeItemConfigDelResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataItemConsumeItemConfigGetByItemId_InputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataItemConsumeItemConfigGetByItemId" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataItemConsumeItemConfigGetByItemId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataItemConsumeItemConfigGetByItemIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataItemConsumeItemConfigGetList_InputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataItemConsumeItemConfigGetList" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataItemConsumeItemConfigGetList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataItemConsumeItemConfigGetListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataItemConsumeItemConfigUpdate_InputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataItemConsumeItemConfigUpdate" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataItemConsumeItemConfigUpdate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataItemConsumeItemConfigUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_GetRankListTopNList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRankListTopNList" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_GetRankListTopNList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRankListTopNListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_RefreshTopNList_InputMessage">
+    <wsdl:part name="parameters" element="tns:RefreshTopNList" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_RefreshTopNList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RefreshTopNListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataGameDetailsUsersConfigBatchAdd_InputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataGameDetailsUsersConfigBatchAdd" />
+  </wsdl:message>
+  <wsdl:message name="ICharmEventsAdminService_TransferDataGameDetailsUsersConfigBatchAdd_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TransferDataGameDetailsUsersConfigBatchAddResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ICharmEventsAdminService">
+    <wsdl:operation name="GetExchangeAndDrawLogList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/GetExchangeAndDrawLogList" message="tns:ICharmEventsAdminService_GetExchangeAndDrawLogList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/GetExchangeAndDrawLogListResponse" message="tns:ICharmEventsAdminService_GetExchangeAndDrawLogList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLoginPacketLogList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/GetLoginPacketLogList" message="tns:ICharmEventsAdminService_GetLoginPacketLogList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/GetLoginPacketLogListResponse" message="tns:ICharmEventsAdminService_GetLoginPacketLogList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPacketQueueLogList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/GetPacketQueueLogList" message="tns:ICharmEventsAdminService_GetPacketQueueLogList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/GetPacketQueueLogListResponse" message="tns:ICharmEventsAdminService_GetPacketQueueLogList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWalletsList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/GetWalletsList" message="tns:ICharmEventsAdminService_GetWalletsList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/GetWalletsListResponse" message="tns:ICharmEventsAdminService_GetWalletsList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddWallets">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/AddWallets" message="tns:ICharmEventsAdminService_AddWallets_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/AddWalletsResponse" message="tns:ICharmEventsAdminService_AddWallets_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddDrawPacketConfig">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/AddDrawPacketConfig" message="tns:ICharmEventsAdminService_AddDrawPacketConfig_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/AddDrawPacketConfigResponse" message="tns:ICharmEventsAdminService_AddDrawPacketConfig_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDrawPacketConfig">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/UpdateDrawPacketConfig" message="tns:ICharmEventsAdminService_UpdateDrawPacketConfig_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/UpdateDrawPacketConfigResponse" message="tns:ICharmEventsAdminService_UpdateDrawPacketConfig_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DelDrawPacketConfig">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/DelDrawPacketConfig" message="tns:ICharmEventsAdminService_DelDrawPacketConfig_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/DelDrawPacketConfigResponse" message="tns:ICharmEventsAdminService_DelDrawPacketConfig_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDrawPacketConfig">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/GetDrawPacketConfig" message="tns:ICharmEventsAdminService_GetDrawPacketConfig_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/GetDrawPacketConfigResponse" message="tns:ICharmEventsAdminService_GetDrawPacketConfig_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDrawPacketConfigList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/GetDrawPacketConfigList" message="tns:ICharmEventsAdminService_GetDrawPacketConfigList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/GetDrawPacketConfigListResponse" message="tns:ICharmEventsAdminService_GetDrawPacketConfigList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitDrawPacketConfigRate">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/SubmitDrawPacketConfigRate" message="tns:ICharmEventsAdminService_SubmitDrawPacketConfigRate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/SubmitDrawPacketConfigRateResponse" message="tns:ICharmEventsAdminService_SubmitDrawPacketConfigRate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddExchangePacketTypeConfig">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/AddExchangePacketTypeConfig" message="tns:ICharmEventsAdminService_AddExchangePacketTypeConfig_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/AddExchangePacketTypeConfigResponse" message="tns:ICharmEventsAdminService_AddExchangePacketTypeConfig_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExchangePacketTypeConfig">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/UpdateExchangePacketTypeConfig" message="tns:ICharmEventsAdminService_UpdateExchangePacketTypeConfig_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/UpdateExchangePacketTypeConfigResponse" message="tns:ICharmEventsAdminService_UpdateExchangePacketTypeConfig_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DelExchangePacketTypeConfig">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/DelExchangePacketTypeConfig" message="tns:ICharmEventsAdminService_DelExchangePacketTypeConfig_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/DelExchangePacketTypeConfigResponse" message="tns:ICharmEventsAdminService_DelExchangePacketTypeConfig_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExchangePacketTypeConfig">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/GetExchangePacketTypeConfig" message="tns:ICharmEventsAdminService_GetExchangePacketTypeConfig_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/GetExchangePacketTypeConfigResponse" message="tns:ICharmEventsAdminService_GetExchangePacketTypeConfig_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExchangePacketTypeConfigList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/GetExchangePacketTypeConfigList" message="tns:ICharmEventsAdminService_GetExchangePacketTypeConfigList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/GetExchangePacketTypeConfigListResponse" message="tns:ICharmEventsAdminService_GetExchangePacketTypeConfigList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddExchangePacketConfig">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/AddExchangePacketConfig" message="tns:ICharmEventsAdminService_AddExchangePacketConfig_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/AddExchangePacketConfigResponse" message="tns:ICharmEventsAdminService_AddExchangePacketConfig_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExchangePacketConfig">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/UpdateExchangePacketConfig" message="tns:ICharmEventsAdminService_UpdateExchangePacketConfig_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/UpdateExchangePacketConfigResponse" message="tns:ICharmEventsAdminService_UpdateExchangePacketConfig_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DelExchangePacketConfig">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/DelExchangePacketConfig" message="tns:ICharmEventsAdminService_DelExchangePacketConfig_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/DelExchangePacketConfigResponse" message="tns:ICharmEventsAdminService_DelExchangePacketConfig_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExchangePacketConfig">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/GetExchangePacketConfig" message="tns:ICharmEventsAdminService_GetExchangePacketConfig_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/GetExchangePacketConfigResponse" message="tns:ICharmEventsAdminService_GetExchangePacketConfig_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExchangePacketConfigList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/GetExchangePacketConfigList" message="tns:ICharmEventsAdminService_GetExchangePacketConfigList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/GetExchangePacketConfigListResponse" message="tns:ICharmEventsAdminService_GetExchangePacketConfigList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBasicConfig">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/UpdateBasicConfig" message="tns:ICharmEventsAdminService_UpdateBasicConfig_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/UpdateBasicConfigResponse" message="tns:ICharmEventsAdminService_UpdateBasicConfig_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBasicConfigAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/GetBasicConfigAll" message="tns:ICharmEventsAdminService_GetBasicConfigAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/GetBasicConfigAllResponse" message="tns:ICharmEventsAdminService_GetBasicConfigAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBasicConfig">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/GetBasicConfig" message="tns:ICharmEventsAdminService_GetBasicConfig_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/GetBasicConfigResponse" message="tns:ICharmEventsAdminService_GetBasicConfig_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="importCSVtoDB">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/importCSVtoDB" message="tns:ICharmEventsAdminService_importCSVtoDB_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/importCSVtoDBResponse" message="tns:ICharmEventsAdminService_importCSVtoDB_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddDailyReportTotalPeople">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/AddDailyReportTotalPeople" message="tns:ICharmEventsAdminService_AddDailyReportTotalPeople_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/AddDailyReportTotalPeopleResponse" message="tns:ICharmEventsAdminService_AddDailyReportTotalPeople_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDailyReportTotalPeopleList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/GetDailyReportTotalPeopleList" message="tns:ICharmEventsAdminService_GetDailyReportTotalPeopleList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/GetDailyReportTotalPeopleListResponse" message="tns:ICharmEventsAdminService_GetDailyReportTotalPeopleList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDailyReportItemConsumeAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/GetDailyReportItemConsumeAll" message="tns:ICharmEventsAdminService_GetDailyReportItemConsumeAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/GetDailyReportItemConsumeAllResponse" message="tns:ICharmEventsAdminService_GetDailyReportItemConsumeAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDailyReportGameDetailsPerUserAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/GetDailyReportGameDetailsPerUserAll" message="tns:ICharmEventsAdminService_GetDailyReportGameDetailsPerUserAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/GetDailyReportGameDetailsPerUserAllResponse" message="tns:ICharmEventsAdminService_GetDailyReportGameDetailsPerUserAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataAllReportDateConfigAdd">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataAllReportDateConfigAdd" message="tns:ICharmEventsAdminService_TransferDataAllReportDateConfigAdd_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataAllReportDateConfigAddResponse" message="tns:ICharmEventsAdminService_TransferDataAllReportDateConfigAdd_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataAllReportDateConfigDel">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataAllReportDateConfigDel" message="tns:ICharmEventsAdminService_TransferDataAllReportDateConfigDel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataAllReportDateConfigDelResponse" message="tns:ICharmEventsAdminService_TransferDataAllReportDateConfigDel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataAllReportDateConfigGetByConfigId">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataAllReportDateConfigGetByConfigId" message="tns:ICharmEventsAdminService_TransferDataAllReportDateConfigGetByConfigId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataAllReportDateConfigGetByConfigIdResponse" message="tns:ICharmEventsAdminService_TransferDataAllReportDateConfigGetByConfigId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataAllReportDateConfigGetList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataAllReportDateConfigGetList" message="tns:ICharmEventsAdminService_TransferDataAllReportDateConfigGetList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataAllReportDateConfigGetListResponse" message="tns:ICharmEventsAdminService_TransferDataAllReportDateConfigGetList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataAllReportDateConfigUpdate">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataAllReportDateConfigUpdate" message="tns:ICharmEventsAdminService_TransferDataAllReportDateConfigUpdate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataAllReportDateConfigUpdateResponse" message="tns:ICharmEventsAdminService_TransferDataAllReportDateConfigUpdate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataGameDetailsItemConfigAdd">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsItemConfigAdd" message="tns:ICharmEventsAdminService_TransferDataGameDetailsItemConfigAdd_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsItemConfigAddResponse" message="tns:ICharmEventsAdminService_TransferDataGameDetailsItemConfigAdd_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataGameDetailsItemConfigDel">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsItemConfigDel" message="tns:ICharmEventsAdminService_TransferDataGameDetailsItemConfigDel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsItemConfigDelResponse" message="tns:ICharmEventsAdminService_TransferDataGameDetailsItemConfigDel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataGameDetailsItemConfigGetByItemId">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsItemConfigGetByItemId" message="tns:ICharmEventsAdminService_TransferDataGameDetailsItemConfigGetByItemId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsItemConfigGetByItemIdResponse" message="tns:ICharmEventsAdminService_TransferDataGameDetailsItemConfigGetByItemId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataGameDetailsItemConfigGetList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsItemConfigGetList" message="tns:ICharmEventsAdminService_TransferDataGameDetailsItemConfigGetList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsItemConfigGetListResponse" message="tns:ICharmEventsAdminService_TransferDataGameDetailsItemConfigGetList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataGameDetailsItemConfigUpdate">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsItemConfigUpdate" message="tns:ICharmEventsAdminService_TransferDataGameDetailsItemConfigUpdate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsItemConfigUpdateResponse" message="tns:ICharmEventsAdminService_TransferDataGameDetailsItemConfigUpdate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataGameDetailsUsersConfigAdd">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsUsersConfigAdd" message="tns:ICharmEventsAdminService_TransferDataGameDetailsUsersConfigAdd_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsUsersConfigAddResponse" message="tns:ICharmEventsAdminService_TransferDataGameDetailsUsersConfigAdd_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataGameDetailsUsersConfigDel">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsUsersConfigDel" message="tns:ICharmEventsAdminService_TransferDataGameDetailsUsersConfigDel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsUsersConfigDelResponse" message="tns:ICharmEventsAdminService_TransferDataGameDetailsUsersConfigDel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataGameDetailsUsersConfigGetById">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsUsersConfigGetById" message="tns:ICharmEventsAdminService_TransferDataGameDetailsUsersConfigGetById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsUsersConfigGetByIdResponse" message="tns:ICharmEventsAdminService_TransferDataGameDetailsUsersConfigGetById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataGameDetailsUsersConfigGetList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsUsersConfigGetList" message="tns:ICharmEventsAdminService_TransferDataGameDetailsUsersConfigGetList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsUsersConfigGetListResponse" message="tns:ICharmEventsAdminService_TransferDataGameDetailsUsersConfigGetList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataGameDetailsUsersConfigUpdate">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsUsersConfigUpdate" message="tns:ICharmEventsAdminService_TransferDataGameDetailsUsersConfigUpdate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsUsersConfigUpdateResponse" message="tns:ICharmEventsAdminService_TransferDataGameDetailsUsersConfigUpdate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataItemConsumeItemConfigAdd">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataItemConsumeItemConfigAdd" message="tns:ICharmEventsAdminService_TransferDataItemConsumeItemConfigAdd_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataItemConsumeItemConfigAddResponse" message="tns:ICharmEventsAdminService_TransferDataItemConsumeItemConfigAdd_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataItemConsumeItemConfigDel">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataItemConsumeItemConfigDel" message="tns:ICharmEventsAdminService_TransferDataItemConsumeItemConfigDel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataItemConsumeItemConfigDelResponse" message="tns:ICharmEventsAdminService_TransferDataItemConsumeItemConfigDel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataItemConsumeItemConfigGetByItemId">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataItemConsumeItemConfigGetByItemId" message="tns:ICharmEventsAdminService_TransferDataItemConsumeItemConfigGetByItemId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataItemConsumeItemConfigGetByItemIdResponse" message="tns:ICharmEventsAdminService_TransferDataItemConsumeItemConfigGetByItemId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataItemConsumeItemConfigGetList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataItemConsumeItemConfigGetList" message="tns:ICharmEventsAdminService_TransferDataItemConsumeItemConfigGetList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataItemConsumeItemConfigGetListResponse" message="tns:ICharmEventsAdminService_TransferDataItemConsumeItemConfigGetList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataItemConsumeItemConfigUpdate">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataItemConsumeItemConfigUpdate" message="tns:ICharmEventsAdminService_TransferDataItemConsumeItemConfigUpdate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataItemConsumeItemConfigUpdateResponse" message="tns:ICharmEventsAdminService_TransferDataItemConsumeItemConfigUpdate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRankListTopNList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/GetRankListTopNList" message="tns:ICharmEventsAdminService_GetRankListTopNList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/GetRankListTopNListResponse" message="tns:ICharmEventsAdminService_GetRankListTopNList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RefreshTopNList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/RefreshTopNList" message="tns:ICharmEventsAdminService_RefreshTopNList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/RefreshTopNListResponse" message="tns:ICharmEventsAdminService_RefreshTopNList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataGameDetailsUsersConfigBatchAdd">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsUsersConfigBatchAdd" message="tns:ICharmEventsAdminService_TransferDataGameDetailsUsersConfigBatchAdd_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsUsersConfigBatchAddResponse" message="tns:ICharmEventsAdminService_TransferDataGameDetailsUsersConfigBatchAdd_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ICharmEventsAdminService" type="tns:ICharmEventsAdminService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetExchangeAndDrawLogList">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/GetExchangeAndDrawLogList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLoginPacketLogList">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/GetLoginPacketLogList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPacketQueueLogList">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/GetPacketQueueLogList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWalletsList">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/GetWalletsList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWallets">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/AddWallets" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddDrawPacketConfig">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/AddDrawPacketConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDrawPacketConfig">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/UpdateDrawPacketConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelDrawPacketConfig">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/DelDrawPacketConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDrawPacketConfig">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/GetDrawPacketConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDrawPacketConfigList">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/GetDrawPacketConfigList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitDrawPacketConfigRate">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/SubmitDrawPacketConfigRate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExchangePacketTypeConfig">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/AddExchangePacketTypeConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExchangePacketTypeConfig">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/UpdateExchangePacketTypeConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelExchangePacketTypeConfig">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/DelExchangePacketTypeConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExchangePacketTypeConfig">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/GetExchangePacketTypeConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExchangePacketTypeConfigList">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/GetExchangePacketTypeConfigList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExchangePacketConfig">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/AddExchangePacketConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExchangePacketConfig">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/UpdateExchangePacketConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelExchangePacketConfig">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/DelExchangePacketConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExchangePacketConfig">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/GetExchangePacketConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExchangePacketConfigList">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/GetExchangePacketConfigList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBasicConfig">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/UpdateBasicConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBasicConfigAll">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/GetBasicConfigAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBasicConfig">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/GetBasicConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="importCSVtoDB">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/importCSVtoDB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddDailyReportTotalPeople">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/AddDailyReportTotalPeople" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDailyReportTotalPeopleList">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/GetDailyReportTotalPeopleList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDailyReportItemConsumeAll">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/GetDailyReportItemConsumeAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDailyReportGameDetailsPerUserAll">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/GetDailyReportGameDetailsPerUserAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataAllReportDateConfigAdd">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataAllReportDateConfigAdd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataAllReportDateConfigDel">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataAllReportDateConfigDel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataAllReportDateConfigGetByConfigId">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataAllReportDateConfigGetByConfigId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataAllReportDateConfigGetList">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataAllReportDateConfigGetList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataAllReportDateConfigUpdate">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataAllReportDateConfigUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataGameDetailsItemConfigAdd">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsItemConfigAdd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataGameDetailsItemConfigDel">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsItemConfigDel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataGameDetailsItemConfigGetByItemId">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsItemConfigGetByItemId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataGameDetailsItemConfigGetList">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsItemConfigGetList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataGameDetailsItemConfigUpdate">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsItemConfigUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataGameDetailsUsersConfigAdd">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsUsersConfigAdd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataGameDetailsUsersConfigDel">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsUsersConfigDel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataGameDetailsUsersConfigGetById">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsUsersConfigGetById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataGameDetailsUsersConfigGetList">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsUsersConfigGetList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataGameDetailsUsersConfigUpdate">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsUsersConfigUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataItemConsumeItemConfigAdd">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataItemConsumeItemConfigAdd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataItemConsumeItemConfigDel">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataItemConsumeItemConfigDel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataItemConsumeItemConfigGetByItemId">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataItemConsumeItemConfigGetByItemId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataItemConsumeItemConfigGetList">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataItemConsumeItemConfigGetList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataItemConsumeItemConfigUpdate">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataItemConsumeItemConfigUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRankListTopNList">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/GetRankListTopNList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefreshTopNList">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/RefreshTopNList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataGameDetailsUsersConfigBatchAdd">
+      <soap:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsUsersConfigBatchAdd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="NetTcpBinding_ICharmEventsAdminService" type="tns:ICharmEventsAdminService">
+    <wsp:PolicyReference URI="#NetTcpBinding_ICharmEventsAdminService_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="GetExchangeAndDrawLogList">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/GetExchangeAndDrawLogList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLoginPacketLogList">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/GetLoginPacketLogList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPacketQueueLogList">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/GetPacketQueueLogList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWalletsList">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/GetWalletsList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWallets">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/AddWallets" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddDrawPacketConfig">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/AddDrawPacketConfig" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDrawPacketConfig">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/UpdateDrawPacketConfig" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelDrawPacketConfig">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/DelDrawPacketConfig" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDrawPacketConfig">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/GetDrawPacketConfig" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDrawPacketConfigList">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/GetDrawPacketConfigList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitDrawPacketConfigRate">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/SubmitDrawPacketConfigRate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExchangePacketTypeConfig">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/AddExchangePacketTypeConfig" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExchangePacketTypeConfig">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/UpdateExchangePacketTypeConfig" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelExchangePacketTypeConfig">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/DelExchangePacketTypeConfig" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExchangePacketTypeConfig">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/GetExchangePacketTypeConfig" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExchangePacketTypeConfigList">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/GetExchangePacketTypeConfigList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExchangePacketConfig">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/AddExchangePacketConfig" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExchangePacketConfig">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/UpdateExchangePacketConfig" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelExchangePacketConfig">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/DelExchangePacketConfig" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExchangePacketConfig">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/GetExchangePacketConfig" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExchangePacketConfigList">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/GetExchangePacketConfigList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBasicConfig">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/UpdateBasicConfig" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBasicConfigAll">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/GetBasicConfigAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBasicConfig">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/GetBasicConfig" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="importCSVtoDB">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/importCSVtoDB" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddDailyReportTotalPeople">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/AddDailyReportTotalPeople" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDailyReportTotalPeopleList">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/GetDailyReportTotalPeopleList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDailyReportItemConsumeAll">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/GetDailyReportItemConsumeAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDailyReportGameDetailsPerUserAll">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/GetDailyReportGameDetailsPerUserAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataAllReportDateConfigAdd">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataAllReportDateConfigAdd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataAllReportDateConfigDel">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataAllReportDateConfigDel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataAllReportDateConfigGetByConfigId">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataAllReportDateConfigGetByConfigId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataAllReportDateConfigGetList">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataAllReportDateConfigGetList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataAllReportDateConfigUpdate">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataAllReportDateConfigUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataGameDetailsItemConfigAdd">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsItemConfigAdd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataGameDetailsItemConfigDel">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsItemConfigDel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataGameDetailsItemConfigGetByItemId">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsItemConfigGetByItemId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataGameDetailsItemConfigGetList">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsItemConfigGetList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataGameDetailsItemConfigUpdate">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsItemConfigUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataGameDetailsUsersConfigAdd">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsUsersConfigAdd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataGameDetailsUsersConfigDel">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsUsersConfigDel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataGameDetailsUsersConfigGetById">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsUsersConfigGetById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataGameDetailsUsersConfigGetList">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsUsersConfigGetList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataGameDetailsUsersConfigUpdate">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsUsersConfigUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataItemConsumeItemConfigAdd">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataItemConsumeItemConfigAdd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataItemConsumeItemConfigDel">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataItemConsumeItemConfigDel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataItemConsumeItemConfigGetByItemId">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataItemConsumeItemConfigGetByItemId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataItemConsumeItemConfigGetList">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataItemConsumeItemConfigGetList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataItemConsumeItemConfigUpdate">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataItemConsumeItemConfigUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRankListTopNList">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/GetRankListTopNList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefreshTopNList">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/RefreshTopNList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferDataGameDetailsUsersConfigBatchAdd">
+      <soap12:operation soapAction="http://tempuri.org/ICharmEventsAdminService/TransferDataGameDetailsUsersConfigBatchAdd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CharmEventsAdminService">
+    <wsdl:port name="BasicHttpBinding_ICharmEventsAdminService" binding="tns:BasicHttpBinding_ICharmEventsAdminService">
+      <soap:address location="http://adminapi.zygames.com/CharmEvents/CharmEventsAdminService.svc" />
+    </wsdl:port>
+    <wsdl:port name="NetTcpBinding_ICharmEventsAdminService" binding="tns:NetTcpBinding_ICharmEventsAdminService">
+      <soap12:address location="net.tcp://web1:7100/CharmEvents/CharmEventsAdminService.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://web1:7100/CharmEvents/CharmEventsAdminService.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

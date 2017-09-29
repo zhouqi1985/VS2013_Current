@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e66e1ce8-1551-48b6-a6b6-f6cd0c3e21e7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://adminapi.zygames.com/CharmEvents/CharmEventsAdminService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CharmEventsAdminService4.xsd" MetadataType="Schema" ID="e455289c-0620-405a-b25f-7146acb03209" SourceId="1" SourceUrl="http://adminapi.zygames.com/CharmEvents/CharmEventsAdminService.svc?xsd=xsd4" />
+    <MetadataFile FileName="CharmEventsAdminService.xsd" MetadataType="Schema" ID="c2d5fe4a-1664-48ff-a3d3-d10d3520d431" SourceId="1" SourceUrl="http://adminapi.zygames.com/CharmEvents/CharmEventsAdminService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CharmEventsAdminService1.xsd" MetadataType="Schema" ID="c0d18d7f-81aa-4c69-9b2a-a3a61cae6c9b" SourceId="1" SourceUrl="http://adminapi.zygames.com/CharmEvents/CharmEventsAdminService.svc?xsd=xsd3" />
+    <MetadataFile FileName="CharmEventsAdminService.disco" MetadataType="Disco" ID="49eae8ac-788a-47fd-abfd-04d938baac25" SourceId="1" SourceUrl="http://adminapi.zygames.com/CharmEvents/CharmEventsAdminService.svc?disco" />
+    <MetadataFile FileName="CharmEventsAdminService2.xsd" MetadataType="Schema" ID="fb612d66-20bd-4cb0-8252-ecbe2e0d2a07" SourceId="1" SourceUrl="http://adminapi.zygames.com/CharmEvents/CharmEventsAdminService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CharmEventsAdminService.wsdl" MetadataType="Wsdl" ID="8daf3409-d0e2-43e4-8aeb-02d3c1feeacb" SourceId="1" SourceUrl="http://adminapi.zygames.com/CharmEvents/CharmEventsAdminService.svc?wsdl" />
+    <MetadataFile FileName="CharmEventsAdminService3.xsd" MetadataType="Schema" ID="d1871eba-506b-4f39-8b16-5bd3feee3ffc" SourceId="1" SourceUrl="http://adminapi.zygames.com/CharmEvents/CharmEventsAdminService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

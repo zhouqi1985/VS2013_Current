@@ -1,0 +1,4 @@
+E:\ZyProject\Events\CharmEvents\CharmEvents\CharmEvents.Database\bin\Debug\CharmEvents.Database.dll
+E:\ZyProject\Events\CharmEvents\CharmEvents\CharmEvents.Database\bin\Debug\CharmEvents.Database.pdb
+E:\ZyProject\Events\CharmEvents\CharmEvents\CharmEvents.Database\obj\Debug\CharmEvents.Database.dll
+E:\ZyProject\Events\CharmEvents\CharmEvents\CharmEvents.Database\obj\Debug\CharmEvents.Database.pdb

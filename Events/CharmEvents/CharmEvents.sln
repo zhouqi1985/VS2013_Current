@@ -1,0 +1,118 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharmEvents.Database", "CharmEvents\CharmEvents.Database\CharmEvents.Database.csproj", "{C4D97AEF-8C9E-4AB0-AC8A-B76DFCA6AF57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharmEvents.DAL", "CharmEvents\CharmEvents.DAL\CharmEvents.DAL.csproj", "{A012B46F-4282-43E7-81FD-77BE071804C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharmEvents.DAL.WCF", "CharmEvents\CharmEvents.DAL.WCF\CharmEvents.DAL.WCF.csproj", "{12615916-9162-47E2-8122-09F8ED67002B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharmEvents.DAL.WCF.Client", "CharmEvents\CharmEvents.DAL.WCF.Client\CharmEvents.DAL.WCF.Client.csproj", "{B962E0B2-FD24-4B6B-A5B9-15D6DC93FF5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharmEvents.DAL.AdminWCF", "CharmEvents\CharmEvents.DAL.AdminWCF\CharmEvents.DAL.AdminWCF.csproj", "{BCA4AA59-B615-43C7-A86E-82449B74F1E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharmEvents.DAL.AdminWCF.Client", "CharmEvents\CharmEvents.DAL.AdminWCF.Client\CharmEvents.DAL.AdminWCF.Client.csproj", "{B7570A82-730B-4C4E-9788-4AFB76A2BCAE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Admin", "Admin", "{18874DBB-A000-4A84-8C21-F30A0CA63408}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Website", "Website", "{30E280FC-6AE4-471A-94E1-9ACF1124D239}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Public", "Public", "{6B8170B3-74A8-417B-AAA4-C58783FD8AF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharmEvents.Website", "CharmEvents\CharmEvents.Website\CharmEvents.Website.csproj", "{B035334A-0B59-4067-BA61-89E08B863A29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharmEvents.AdminWebsite", "CharmEvents\CharmEvents.AdminWebsite\CharmEvents.AdminWebsite.csproj", "{E8B58536-FE13-4FB6-9043-B419CDEFFF40}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.20.109:8080/tfs/platform
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CharmEvents\\CharmEvents.DAL.AdminWCF.Client\\CharmEvents.DAL.AdminWCF.Client.csproj
+		SccProjectTopLevelParentUniqueName1 = CharmEvents.sln
+		SccProjectName1 = CharmEvents/CharmEvents.DAL.AdminWCF.Client
+		SccLocalPath1 = CharmEvents\\CharmEvents.DAL.AdminWCF.Client
+		SccProjectUniqueName2 = CharmEvents\\CharmEvents.DAL.AdminWCF\\CharmEvents.DAL.AdminWCF.csproj
+		SccProjectTopLevelParentUniqueName2 = CharmEvents.sln
+		SccProjectName2 = CharmEvents/CharmEvents.DAL.AdminWCF
+		SccLocalPath2 = CharmEvents\\CharmEvents.DAL.AdminWCF
+		SccProjectUniqueName3 = CharmEvents\\CharmEvents.DAL.WCF.Client\\CharmEvents.DAL.WCF.Client.csproj
+		SccProjectTopLevelParentUniqueName3 = CharmEvents.sln
+		SccProjectName3 = CharmEvents/CharmEvents.DAL.WCF.Client
+		SccLocalPath3 = CharmEvents\\CharmEvents.DAL.WCF.Client
+		SccProjectUniqueName4 = CharmEvents\\CharmEvents.DAL.WCF\\CharmEvents.DAL.WCF.csproj
+		SccProjectTopLevelParentUniqueName4 = CharmEvents.sln
+		SccProjectName4 = CharmEvents/CharmEvents.DAL.WCF
+		SccLocalPath4 = CharmEvents\\CharmEvents.DAL.WCF
+		SccProjectUniqueName5 = CharmEvents\\CharmEvents.DAL\\CharmEvents.DAL.csproj
+		SccProjectTopLevelParentUniqueName5 = CharmEvents.sln
+		SccProjectName5 = CharmEvents/CharmEvents.DAL
+		SccLocalPath5 = CharmEvents\\CharmEvents.DAL
+		SccProjectUniqueName6 = CharmEvents\\CharmEvents.Database\\CharmEvents.Database.csproj
+		SccProjectTopLevelParentUniqueName6 = CharmEvents.sln
+		SccProjectName6 = CharmEvents/CharmEvents.Database
+		SccLocalPath6 = CharmEvents\\CharmEvents.Database
+		SccProjectUniqueName7 = CharmEvents\\CharmEvents.Website\\CharmEvents.Website.csproj
+		SccProjectTopLevelParentUniqueName7 = CharmEvents.sln
+		SccProjectName7 = CharmEvents/CharmEvents.Website
+		SccLocalPath7 = CharmEvents\\CharmEvents.Website
+		SccProjectUniqueName8 = CharmEvents\\CharmEvents.AdminWebsite\\CharmEvents.AdminWebsite.csproj
+		SccProjectTopLevelParentUniqueName8 = CharmEvents.sln
+		SccProjectName8 = CharmEvents/CharmEvents.AdminWebsite
+		SccLocalPath8 = CharmEvents\\CharmEvents.AdminWebsite
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4D97AEF-8C9E-4AB0-AC8A-B76DFCA6AF57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4D97AEF-8C9E-4AB0-AC8A-B76DFCA6AF57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4D97AEF-8C9E-4AB0-AC8A-B76DFCA6AF57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4D97AEF-8C9E-4AB0-AC8A-B76DFCA6AF57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A012B46F-4282-43E7-81FD-77BE071804C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A012B46F-4282-43E7-81FD-77BE071804C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A012B46F-4282-43E7-81FD-77BE071804C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A012B46F-4282-43E7-81FD-77BE071804C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12615916-9162-47E2-8122-09F8ED67002B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12615916-9162-47E2-8122-09F8ED67002B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12615916-9162-47E2-8122-09F8ED67002B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12615916-9162-47E2-8122-09F8ED67002B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B962E0B2-FD24-4B6B-A5B9-15D6DC93FF5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B962E0B2-FD24-4B6B-A5B9-15D6DC93FF5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B962E0B2-FD24-4B6B-A5B9-15D6DC93FF5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B962E0B2-FD24-4B6B-A5B9-15D6DC93FF5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCA4AA59-B615-43C7-A86E-82449B74F1E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCA4AA59-B615-43C7-A86E-82449B74F1E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCA4AA59-B615-43C7-A86E-82449B74F1E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCA4AA59-B615-43C7-A86E-82449B74F1E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7570A82-730B-4C4E-9788-4AFB76A2BCAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7570A82-730B-4C4E-9788-4AFB76A2BCAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7570A82-730B-4C4E-9788-4AFB76A2BCAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7570A82-730B-4C4E-9788-4AFB76A2BCAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B035334A-0B59-4067-BA61-89E08B863A29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B035334A-0B59-4067-BA61-89E08B863A29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B035334A-0B59-4067-BA61-89E08B863A29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B035334A-0B59-4067-BA61-89E08B863A29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8B58536-FE13-4FB6-9043-B419CDEFFF40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8B58536-FE13-4FB6-9043-B419CDEFFF40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8B58536-FE13-4FB6-9043-B419CDEFFF40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8B58536-FE13-4FB6-9043-B419CDEFFF40}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C4D97AEF-8C9E-4AB0-AC8A-B76DFCA6AF57} = {6B8170B3-74A8-417B-AAA4-C58783FD8AF5}
+		{A012B46F-4282-43E7-81FD-77BE071804C5} = {6B8170B3-74A8-417B-AAA4-C58783FD8AF5}
+		{12615916-9162-47E2-8122-09F8ED67002B} = {30E280FC-6AE4-471A-94E1-9ACF1124D239}
+		{B962E0B2-FD24-4B6B-A5B9-15D6DC93FF5C} = {30E280FC-6AE4-471A-94E1-9ACF1124D239}
+		{BCA4AA59-B615-43C7-A86E-82449B74F1E2} = {18874DBB-A000-4A84-8C21-F30A0CA63408}
+		{B7570A82-730B-4C4E-9788-4AFB76A2BCAE} = {18874DBB-A000-4A84-8C21-F30A0CA63408}
+		{B035334A-0B59-4067-BA61-89E08B863A29} = {30E280FC-6AE4-471A-94E1-9ACF1124D239}
+		{E8B58536-FE13-4FB6-9043-B419CDEFFF40} = {18874DBB-A000-4A84-8C21-F30A0CA63408}
+	EndGlobalSection
+EndGlobal

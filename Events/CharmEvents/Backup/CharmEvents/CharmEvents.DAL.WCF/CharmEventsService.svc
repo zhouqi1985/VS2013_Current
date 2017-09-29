@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="CharmEvents.DAL.WCF.CharmEventsService" CodeBehind="CharmEventsService.svc.cs" %>

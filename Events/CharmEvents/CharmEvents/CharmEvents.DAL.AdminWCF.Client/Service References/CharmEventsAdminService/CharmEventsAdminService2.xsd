@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://adminapi.zygames.com/CharmEvents/CharmEventsAdminService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CommonLibs.Common" />
+  <xs:import schemaLocation="http://adminapi.zygames.com/CharmEvents/CharmEventsAdminService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" />
+  <xs:element name="GetExchangeAndDrawLogList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q1:DataPage" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="searchExchangeAndDrawLog" nillable="true" type="q2:ExchangeAndDrawLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExchangeAndDrawLogListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="GetExchangeAndDrawLogListResult" nillable="true" type="q3:ArrayOfExchangeAndDrawLog" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q4:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLoginPacketLogList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q5:DataPage" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="searchLoginPacketLog" nillable="true" type="q6:LoginPacketLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLoginPacketLogListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="GetLoginPacketLogListResult" nillable="true" type="q7:ArrayOfLoginPacketLog" />
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q8:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPacketQueueLogList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q9:DataPage" />
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="searchPacketQueueLog" nillable="true" type="q10:PacketQueueLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPacketQueueLogListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="GetPacketQueueLogListResult" nillable="true" type="q11:ArrayOfPacketQueueLog" />
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q12:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWalletsList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q13:DataPage" />
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="searchWallets" nillable="true" type="q14:Wallets" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWalletsListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="GetWalletsListResult" nillable="true" type="q15:ArrayOfWallets" />
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q16:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddWallets">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="wallets" nillable="true" type="q17:Wallets" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddWalletsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddWalletsResult" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddDrawPacketConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="drawPacketConfig" nillable="true" type="q18:DrawPacketConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddDrawPacketConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddDrawPacketConfigResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateDrawPacketConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="drawPacketConfig" nillable="true" type="q19:DrawPacketConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateDrawPacketConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateDrawPacketConfigResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DelDrawPacketConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="drawPacketConfig" nillable="true" type="q20:DrawPacketConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DelDrawPacketConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DelDrawPacketConfigResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDrawPacketConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="searchDrawPacketConfig" nillable="true" type="q21:DrawPacketConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDrawPacketConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="GetDrawPacketConfigResult" nillable="true" type="q22:DrawPacketConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDrawPacketConfigList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q23:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDrawPacketConfigListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="GetDrawPacketConfigListResult" nillable="true" type="q24:ArrayOfDrawPacketConfig" />
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q25:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitDrawPacketConfigRate">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitDrawPacketConfigRateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SubmitDrawPacketConfigRateResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddExchangePacketTypeConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="exchangePacketTypeConfig" nillable="true" type="q26:ExchangePacketTypeConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddExchangePacketTypeConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddExchangePacketTypeConfigResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateExchangePacketTypeConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="exchangePacketTypeConfig" nillable="true" type="q27:ExchangePacketTypeConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateExchangePacketTypeConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateExchangePacketTypeConfigResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DelExchangePacketTypeConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="exchangePacketTypeConfig" nillable="true" type="q28:ExchangePacketTypeConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DelExchangePacketTypeConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DelExchangePacketTypeConfigResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExchangePacketTypeConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="searchExchangePacketTypeConfig" nillable="true" type="q29:ExchangePacketTypeConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExchangePacketTypeConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="GetExchangePacketTypeConfigResult" nillable="true" type="q30:ExchangePacketTypeConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExchangePacketTypeConfigList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q31:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExchangePacketTypeConfigListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="GetExchangePacketTypeConfigListResult" nillable="true" type="q32:ArrayOfExchangePacketTypeConfig" />
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q33:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddExchangePacketConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="exchangePacketConfig" nillable="true" type="q34:ExchangePacketConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddExchangePacketConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddExchangePacketConfigResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateExchangePacketConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="exchangePacketConfig" nillable="true" type="q35:ExchangePacketConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateExchangePacketConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateExchangePacketConfigResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DelExchangePacketConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="exchangePacketConfig" nillable="true" type="q36:ExchangePacketConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DelExchangePacketConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DelExchangePacketConfigResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExchangePacketConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="searchExchangePacketConfig" nillable="true" type="q37:ExchangePacketConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExchangePacketConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="GetExchangePacketConfigResult" nillable="true" type="q38:ExchangePacketConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExchangePacketConfigList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q39:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExchangePacketConfigListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="GetExchangePacketConfigListResult" nillable="true" type="q40:ArrayOfExchangePacketConfig" />
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q41:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateBasicConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="basicConfig" nillable="true" type="q42:BasicConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateBasicConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateBasicConfigResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBasicConfigAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBasicConfigAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="GetBasicConfigAllResult" nillable="true" type="q43:ArrayOfBasicConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBasicConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="searchBasicConfig" nillable="true" type="q44:BasicConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBasicConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="GetBasicConfigResult" nillable="true" type="q45:BasicConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="importCSVtoDB">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ds" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="TableName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="importCSVtoDBResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="importCSVtoDBResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddDailyReportTotalPeople">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="dailyReportTotalPeople" nillable="true" type="q46:DailyReportTotalPeople" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddDailyReportTotalPeopleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddDailyReportTotalPeopleResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDailyReportTotalPeopleList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q47:DataPage" />
+        <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="searchDailyReportTotalPeople" nillable="true" type="q48:DailyReportTotalPeople" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDailyReportTotalPeopleListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="GetDailyReportTotalPeopleListResult" nillable="true" type="q49:ArrayOfDailyReportTotalPeople" />
+        <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q50:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDailyReportItemConsumeAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDailyReportItemConsumeAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="GetDailyReportItemConsumeAllResult" nillable="true" type="q51:ArrayOfDailyReportItemConsume" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDailyReportGameDetailsPerUserAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDailyReportGameDetailsPerUserAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="GetDailyReportGameDetailsPerUserAllResult" nillable="true" type="q52:ArrayOfDailyReportGameDetailsPerUser" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataAllReportDateConfigAdd">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q53="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="searchTransferData_All_ReportDateConfig" nillable="true" type="q53:TransferData_All_ReportDateConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataAllReportDateConfigAddResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TransferDataAllReportDateConfigAddResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataAllReportDateConfigDel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q54="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="searchTransferData_All_ReportDateConfig" nillable="true" type="q54:TransferData_All_ReportDateConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataAllReportDateConfigDelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TransferDataAllReportDateConfigDelResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataAllReportDateConfigGetByConfigId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q55="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="searchTransferData_All_ReportDateConfig" nillable="true" type="q55:TransferData_All_ReportDateConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataAllReportDateConfigGetByConfigIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q56="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="TransferDataAllReportDateConfigGetByConfigIdResult" nillable="true" type="q56:TransferData_All_ReportDateConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataAllReportDateConfigGetList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q57:DataPage" />
+        <xs:element xmlns:q58="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="searchTransferData_All_ReportDateConfig" nillable="true" type="q58:TransferData_All_ReportDateConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataAllReportDateConfigGetListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q59="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="TransferDataAllReportDateConfigGetListResult" nillable="true" type="q59:ArrayOfTransferData_All_ReportDateConfig" />
+        <xs:element xmlns:q60="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q60:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataAllReportDateConfigUpdate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q61="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="searchTransferData_All_ReportDateConfig" nillable="true" type="q61:TransferData_All_ReportDateConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataAllReportDateConfigUpdateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TransferDataAllReportDateConfigUpdateResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataGameDetailsItemConfigAdd">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q62="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="searchTransferData_GameDetails_ItemConfig" nillable="true" type="q62:TransferData_GameDetails_ItemConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataGameDetailsItemConfigAddResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TransferDataGameDetailsItemConfigAddResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataGameDetailsItemConfigDel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q63="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="searchTransferData_GameDetails_ItemConfig" nillable="true" type="q63:TransferData_GameDetails_ItemConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataGameDetailsItemConfigDelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TransferDataGameDetailsItemConfigDelResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataGameDetailsItemConfigGetByItemId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q64="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="searchTransferData_GameDetails_ItemConfig" nillable="true" type="q64:TransferData_GameDetails_ItemConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataGameDetailsItemConfigGetByItemIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q65="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="TransferDataGameDetailsItemConfigGetByItemIdResult" nillable="true" type="q65:TransferData_GameDetails_ItemConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataGameDetailsItemConfigGetList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q66="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q66:DataPage" />
+        <xs:element xmlns:q67="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="searchTransferData_GameDetails_ItemConfig" nillable="true" type="q67:TransferData_GameDetails_ItemConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataGameDetailsItemConfigGetListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q68="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="TransferDataGameDetailsItemConfigGetListResult" nillable="true" type="q68:ArrayOfTransferData_GameDetails_ItemConfig" />
+        <xs:element xmlns:q69="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q69:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataGameDetailsItemConfigUpdate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q70="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="searchTransferData_GameDetails_ItemConfig" nillable="true" type="q70:TransferData_GameDetails_ItemConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataGameDetailsItemConfigUpdateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TransferDataGameDetailsItemConfigUpdateResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataGameDetailsUsersConfigAdd">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q71="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="searchTransferData_GameDetails_UsersConfig" nillable="true" type="q71:TransferData_GameDetails_UsersConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataGameDetailsUsersConfigAddResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TransferDataGameDetailsUsersConfigAddResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataGameDetailsUsersConfigDel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q72="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="searchTransferData_GameDetails_UsersConfig" nillable="true" type="q72:TransferData_GameDetails_UsersConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataGameDetailsUsersConfigDelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TransferDataGameDetailsUsersConfigDelResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataGameDetailsUsersConfigGetById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q73="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="searchTransferData_GameDetails_UsersConfig" nillable="true" type="q73:TransferData_GameDetails_UsersConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataGameDetailsUsersConfigGetByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q74="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="TransferDataGameDetailsUsersConfigGetByIdResult" nillable="true" type="q74:TransferData_GameDetails_UsersConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataGameDetailsUsersConfigGetList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q75="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q75:DataPage" />
+        <xs:element xmlns:q76="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="searchTransferData_GameDetails_UsersConfig" nillable="true" type="q76:TransferData_GameDetails_UsersConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataGameDetailsUsersConfigGetListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q77="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="TransferDataGameDetailsUsersConfigGetListResult" nillable="true" type="q77:ArrayOfTransferData_GameDetails_UsersConfig" />
+        <xs:element xmlns:q78="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q78:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataGameDetailsUsersConfigUpdate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q79="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="searchTransferData_GameDetails_UsersConfig" nillable="true" type="q79:TransferData_GameDetails_UsersConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataGameDetailsUsersConfigUpdateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TransferDataGameDetailsUsersConfigUpdateResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataItemConsumeItemConfigAdd">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q80="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="searchTransferData_ItemConsume_ItemConfig" nillable="true" type="q80:TransferData_ItemConsume_ItemConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataItemConsumeItemConfigAddResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TransferDataItemConsumeItemConfigAddResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataItemConsumeItemConfigDel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q81="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="searchTransferData_ItemConsume_ItemConfig" nillable="true" type="q81:TransferData_ItemConsume_ItemConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataItemConsumeItemConfigDelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TransferDataItemConsumeItemConfigDelResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataItemConsumeItemConfigGetByItemId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q82="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="searchTransferData_ItemConsume_ItemConfig" nillable="true" type="q82:TransferData_ItemConsume_ItemConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataItemConsumeItemConfigGetByItemIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q83="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="TransferDataItemConsumeItemConfigGetByItemIdResult" nillable="true" type="q83:TransferData_ItemConsume_ItemConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataItemConsumeItemConfigGetList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q84="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q84:DataPage" />
+        <xs:element xmlns:q85="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="searchTransferData_ItemConsume_ItemConfig" nillable="true" type="q85:TransferData_ItemConsume_ItemConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataItemConsumeItemConfigGetListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q86="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="TransferDataItemConsumeItemConfigGetListResult" nillable="true" type="q86:ArrayOfTransferData_ItemConsume_ItemConfig" />
+        <xs:element xmlns:q87="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q87:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataItemConsumeItemConfigUpdate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q88="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="searchTransferData_ItemConsume_ItemConfig" nillable="true" type="q88:TransferData_ItemConsume_ItemConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataItemConsumeItemConfigUpdateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TransferDataItemConsumeItemConfigUpdateResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRankListTopNList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q89="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q89:DataPage" />
+        <xs:element xmlns:q90="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="searchRankListTopN" nillable="true" type="q90:RankList_TopN" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRankListTopNListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q91="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="GetRankListTopNListResult" nillable="true" type="q91:ArrayOfRankList_TopN" />
+        <xs:element xmlns:q92="http://schemas.datacontract.org/2004/07/CommonLibs.Common" minOccurs="0" name="dp" nillable="true" type="q92:DataPage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RefreshTopNList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RefreshTopNListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RefreshTopNListResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataGameDetailsUsersConfigBatchAdd">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q93="http://schemas.datacontract.org/2004/07/CharmEvents.Database.Database" minOccurs="0" name="listuserconfig" nillable="true" type="q93:ArrayOfTransferData_GameDetails_UsersConfig" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataGameDetailsUsersConfigBatchAddResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TransferDataGameDetailsUsersConfigBatchAddResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

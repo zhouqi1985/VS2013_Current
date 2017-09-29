@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="06805736-9242-4a3d-adcc-ac6a77d191f8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://event.userapi.zygames.com/qqsm/201705/CharmEvents/CharmEventsService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CharmEventsService.xsd" MetadataType="Schema" ID="031703d6-6db2-4857-a230-63e2bace9648" SourceId="1" SourceUrl="http://event.userapi.zygames.com/qqsm/201705/CharmEvents/CharmEventsService.svc?xsd=xsd2" />
+    <MetadataFile FileName="CharmEventsService1.xsd" MetadataType="Schema" ID="582edab0-a252-47d9-bc47-87dd4961f4e0" SourceId="1" SourceUrl="http://event.userapi.zygames.com/qqsm/201705/CharmEvents/CharmEventsService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CharmEventsService.wsdl" MetadataType="Wsdl" ID="ec022a3a-41a7-4559-9c9e-d18a434a20db" SourceId="1" SourceUrl="http://event.userapi.zygames.com/qqsm/201705/CharmEvents/CharmEventsService.svc?wsdl" />
+    <MetadataFile FileName="CharmEventsService2.xsd" MetadataType="Schema" ID="28309532-492c-42e8-af6b-1e29a2449d0e" SourceId="1" SourceUrl="http://event.userapi.zygames.com/qqsm/201705/CharmEvents/CharmEventsService.svc?xsd=xsd3" />
+    <MetadataFile FileName="CharmEventsService3.xsd" MetadataType="Schema" ID="82be5f92-ba22-43b9-b2c1-158877a17603" SourceId="1" SourceUrl="http://event.userapi.zygames.com/qqsm/201705/CharmEvents/CharmEventsService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CharmEventsService.disco" MetadataType="Disco" ID="2c7bed68-a1b3-4f33-b8ff-2af13c3635d8" SourceId="1" SourceUrl="http://event.userapi.zygames.com/qqsm/201705/CharmEvents/CharmEventsService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
